@@ -4,13 +4,11 @@ from models import get_model
 from data import make_data_loader
 import warnings
 
-# from trainer_optimizer import Trainer
-from trainer_tdrg import Trainer
+from trainer import Trainer
 import torch
 import torch.backends.cudnn as cudnn
 import random
 import torch.nn as nn
-# from loss_functions.losses import AsymmetricLoss, AsymmetricLossOptimized
 
 parser = argparse.ArgumentParser(description='PyTorch Training for Multi-label Image Classification')
 
