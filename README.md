@@ -3,15 +3,27 @@ Unofficial PyTorch implementation of the paper [Transformer-based Dual Relation 
 
 ![TDRG](./figs/motivation.png)
 
+## Architecture
+The overall architecture of the proposed Transformer-based Dual Relation Graph (TDRG) network, the structural relation graph module to incorporate long-term contextual information, and the semantic relation graph module to model the dynamic class-wise dependencies.
+![enter description here](./figs/TDRG.png)
+
+
+## Reproducing result
+
+
+| Author | Reproducing |
+| :----: | :---------: |
+|  84.56 |    84.75    |
+|  94.95 |    95.10    |
+
+
+
 ## Prerequisites
 
-Python 3.6+
-
-Pytorch 1.6
-
-CUDA 10.1
-
-Tesla V100 × 2
+Python 3.8
+Pytorch 1.8.1
+CUDA 11.6
+RTX3090 × 1
 
 ## Datasets
 
@@ -21,13 +33,13 @@ Tesla V100 × 2
 ## Train
 
 ```
-CUDA_VISIBLE_DEVICES=0,1 python main.py  --data COCO2014 --data_root_dir $DATA_PATH$ --save_dir $SAVE_PATH$ --i 448  --lr 0.03 -b 64
+python main.py -d -s -up
 ```
 
 ## Test
 
 ```
-python main.py  --data COCO2014 --data_root_dir $DATA_PATH$ --save_dir $SAVE_PATH$ --i 448  --lr 0.03 -b 64 -e --resume checkpoint/COCO2014/checkpoint_COCO.pth
+python main.py -d -s -up -e --resume checkpoint/COCO2014/checkpoint_COCO.pth
 ```
 
 ## Visualization
@@ -36,7 +48,7 @@ python main.py  --data COCO2014 --data_root_dir $DATA_PATH$ --save_dir $SAVE_PAT
 
 ## Citation
 
-- If you find this work is helpful, please cite our paper
+- If you find this work is helpful, please cite the paper
 
 ```
 @InProceedings{Zhao2021TDRG,
@@ -48,4 +60,3 @@ python main.py  --data COCO2014 --data_root_dir $DATA_PATH$ --save_dir $SAVE_PAT
     pages     = {163-172}
 }
 ```
-

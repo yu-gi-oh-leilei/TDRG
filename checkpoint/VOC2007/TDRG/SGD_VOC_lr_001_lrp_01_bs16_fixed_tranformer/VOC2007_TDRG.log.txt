@@ -1,0 +1,722 @@
+2022-09-29 10:48:28,109 INFO     ==========================================
+2022-09-29 10:48:28,109 INFO     ==========       CONFIG      =============
+2022-09-29 10:48:28,109 INFO     ==========================================
+2022-09-29 10:48:28,109 INFO     data_root_dir: /media/data2/MLICdataset
+2022-09-29 10:48:28,109 INFO     image_size: 448
+2022-09-29 10:48:28,109 INFO     epochs: 50
+2022-09-29 10:48:28,109 INFO     epoch_step: [10, 20]
+2022-09-29 10:48:28,109 INFO     batch_size: 16
+2022-09-29 10:48:28,109 INFO     num_workers: 4
+2022-09-29 10:48:28,109 INFO     display_interval: 400
+2022-09-29 10:48:28,109 INFO     lr: 0.01
+2022-09-29 10:48:28,109 INFO     lrp: 0.1
+2022-09-29 10:48:28,110 INFO     momentum: 0.9
+2022-09-29 10:48:28,110 INFO     weight_decay: 0.0001
+2022-09-29 10:48:28,110 INFO     max_clip_grad_norm: 10.0
+2022-09-29 10:48:28,110 INFO     seed: 1
+2022-09-29 10:48:28,110 INFO     num_classes: 20
+2022-09-29 10:48:28,110 INFO     optimizer: SGD
+2022-09-29 10:48:28,110 INFO     backbone: ResNet101
+2022-09-29 10:48:28,110 INFO     warmup_epoch: 3
+2022-09-29 10:48:28,110 INFO     warmup_scheduler: True
+2022-09-29 10:48:28,110 INFO     cutmix_pretrained: False
+2022-09-29 10:48:28,110 INFO     data: VOC2007
+2022-09-29 10:48:28,110 INFO     model_name: TDRG
+2022-09-29 10:48:28,110 INFO     save_dir: ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer
+2022-09-29 10:48:28,110 INFO     evaluate: False
+2022-09-29 10:48:28,110 INFO     resume: 
+2022-09-29 10:48:28,110 INFO     display: True
+2022-09-29 10:48:28,110 INFO     summary_writer: True
+2022-09-29 10:48:28,110 INFO     iter_per_epoch: 313
+2022-09-29 10:48:28,110 INFO     ==========================================
+2022-09-29 10:48:28,110 INFO     ===========        END        ============
+2022-09-29 10:48:28,110 INFO     ==========================================
+2022-09-29 10:48:28,110 INFO     
+
+2022-09-29 10:48:28,112 INFO     ======== Start WarmUp ========
+2022-09-29 10:48:33,244 INFO     2022-09-29 10:48:33, 1 Epoch, lrp:0.00000106, lr:0.00001065, 0 Iter, Loss: 30.8635, Data time: 0.3680, Batch time: 3.5931
+2022-09-29 10:50:35,816 INFO     ====== star eval ======
+2022-09-29 10:50:36,217 INFO     2022-09-29 10:50:36, 1 Epoch, 0 Iter, Loss: 0.5675, Data time: 0.2596, Batch time: 0.4006
+2022-09-29 10:51:18,905 INFO     * Test
+2022-09-29 10:51:18,905 INFO     tensor([0.9721, 0.9331, 0.9121, 0.8920, 0.5366, 0.8054, 0.9575, 0.9298, 0.6484,
+        0.6010, 0.8135, 0.9165, 0.9273, 0.9049, 0.9709, 0.5521, 0.6568, 0.7661,
+        0.9750, 0.8110])
+2022-09-29 10:51:18,906 INFO     * Loss: 0.5132	 mAP: 0.8241	Data_time: 0.0009	 Batch_time: 0.1356
+2022-09-29 10:51:18,906 INFO     OP: 0.941	 OR: 0.615	 OF1: 0.744	CP: 0.919	 CR: 0.503	 CF1: 0.650
+2022-09-29 10:51:18,906 INFO     OP_3: 0.941	 OR_3: 0.615	 OF1_3: 0.744	CP_3: 0.919	 CR_3: 0.503	 CF1_3: 0.650
+2022-09-29 10:51:18,906 INFO     Now lrp:0.00033333, lr:0.00333333
+2022-09-29 10:51:18,908 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 10:51:19,329 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 10:51:19,415 INFO      * best mAP=0.8241
+2022-09-29 10:51:20,102 INFO     2022-09-29 10:51:20, 2 Epoch, lrp:0.00033440, lr:0.00334398, 0 Iter, Loss: 0.3857, Data time: 0.2747, Batch time: 0.6823
+2022-09-29 10:53:23,458 INFO     ====== star eval ======
+2022-09-29 10:53:23,876 INFO     2022-09-29 10:53:23, 2 Epoch, 0 Iter, Loss: 0.3568, Data time: 0.2811, Batch time: 0.4162
+2022-09-29 10:54:05,704 INFO     * Test
+2022-09-29 10:54:05,704 INFO     tensor([0.9970, 0.9794, 0.9732, 0.9671, 0.7756, 0.9155, 0.9646, 0.9820, 0.7419,
+        0.8655, 0.8497, 0.9802, 0.9746, 0.9617, 0.9817, 0.7501, 0.9074, 0.8603,
+        0.9891, 0.9363])
+2022-09-29 10:54:05,704 INFO     * Loss: 0.3204	 mAP: 0.9176	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 10:54:05,704 INFO     OP: 0.897	 OR: 0.839	 OF1: 0.867	CP: 0.882	 CR: 0.797	 CF1: 0.837
+2022-09-29 10:54:05,704 INFO     OP_3: 0.900	 OR_3: 0.838	 OF1_3: 0.868	CP_3: 0.885	 CR_3: 0.795	 CF1_3: 0.838
+2022-09-29 10:54:05,705 INFO     Now lrp:0.00066667, lr:0.00666667
+2022-09-29 10:54:05,706 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 10:54:06,177 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 10:54:06,267 INFO      * best mAP=0.9176
+2022-09-29 10:54:06,928 INFO     2022-09-29 10:54:06, 3 Epoch, lrp:0.00066773, lr:0.00667732, 0 Iter, Loss: 0.4773, Data time: 0.2535, Batch time: 0.6598
+2022-09-29 10:56:10,245 INFO     ====== star eval ======
+2022-09-29 10:56:10,668 INFO     2022-09-29 10:56:10, 3 Epoch, 0 Iter, Loss: 0.3374, Data time: 0.2874, Batch time: 0.4225
+2022-09-29 10:56:52,404 INFO     * Test
+2022-09-29 10:56:52,404 INFO     tensor([0.9958, 0.9836, 0.9800, 0.9817, 0.7782, 0.9305, 0.9585, 0.9795, 0.7931,
+        0.9012, 0.8431, 0.9820, 0.9808, 0.9546, 0.9885, 0.7904, 0.9497, 0.8588,
+        0.9870, 0.9359])
+2022-09-29 10:56:52,405 INFO     * Loss: 0.3035	 mAP: 0.9276	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 10:56:52,405 INFO     OP: 0.862	 OR: 0.879	 OF1: 0.871	CP: 0.867	 CR: 0.852	 CF1: 0.859
+2022-09-29 10:56:52,405 INFO     OP_3: 0.870	 OR_3: 0.875	 OF1_3: 0.872	CP_3: 0.871	 CR_3: 0.845	 CF1_3: 0.857
+2022-09-29 10:56:52,405 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 10:56:52,407 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 10:56:52,867 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 10:56:52,953 INFO      * best mAP=0.9276
+2022-09-29 10:56:53,645 INFO     2022-09-29 10:56:53, 4 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.4536, Data time: 0.2803, Batch time: 0.6896
+2022-09-29 10:58:56,869 INFO     ====== star eval ======
+2022-09-29 10:58:57,290 INFO     2022-09-29 10:58:57, 4 Epoch, 0 Iter, Loss: 0.3554, Data time: 0.2852, Batch time: 0.4195
+2022-09-29 10:59:39,096 INFO     * Test
+2022-09-29 10:59:39,096 INFO     tensor([0.9975, 0.9812, 0.9793, 0.9843, 0.8094, 0.9442, 0.9671, 0.9787, 0.7900,
+        0.9344, 0.8328, 0.9788, 0.9811, 0.9714, 0.9889, 0.8368, 0.9615, 0.8830,
+        0.9887, 0.9497])
+2022-09-29 10:59:39,096 INFO     * Loss: 0.2758	 mAP: 0.9369	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 10:59:39,096 INFO     OP: 0.884	 OR: 0.864	 OF1: 0.874	CP: 0.859	 CR: 0.852	 CF1: 0.855
+2022-09-29 10:59:39,096 INFO     OP_3: 0.886	 OR_3: 0.863	 OF1_3: 0.874	CP_3: 0.861	 CR_3: 0.850	 CF1_3: 0.855
+2022-09-29 10:59:39,097 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 10:59:39,098 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 10:59:39,570 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 10:59:39,659 INFO      * best mAP=0.9369
+2022-09-29 10:59:40,322 INFO     2022-09-29 10:59:40, 5 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.2948, Data time: 0.2595, Batch time: 0.6618
+2022-09-29 11:01:43,637 INFO     ====== star eval ======
+2022-09-29 11:01:44,047 INFO     2022-09-29 11:01:44, 5 Epoch, 0 Iter, Loss: 0.3088, Data time: 0.2683, Batch time: 0.4087
+2022-09-29 11:02:25,906 INFO     * Test
+2022-09-29 11:02:25,906 INFO     tensor([0.9937, 0.9847, 0.9795, 0.9836, 0.8183, 0.9410, 0.9700, 0.9851, 0.8284,
+        0.9518, 0.8387, 0.9798, 0.9832, 0.9697, 0.9885, 0.8603, 0.9700, 0.7447,
+        0.9914, 0.9452])
+2022-09-29 11:02:25,907 INFO     * Loss: 0.2616	 mAP: 0.9354	Data_time: 0.0009	 Batch_time: 0.1327
+2022-09-29 11:02:25,907 INFO     OP: 0.889	 OR: 0.875	 OF1: 0.882	CP: 0.883	 CR: 0.843	 CF1: 0.862
+2022-09-29 11:02:25,907 INFO     OP_3: 0.891	 OR_3: 0.872	 OF1_3: 0.882	CP_3: 0.885	 CR_3: 0.839	 CF1_3: 0.861
+2022-09-29 11:02:25,907 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 11:02:25,909 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:02:26,282 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:02:26,372 INFO      * best mAP=0.9369
+2022-09-29 11:02:27,083 INFO     2022-09-29 11:02:27, 6 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.2108, Data time: 0.3076, Batch time: 0.7089
+2022-09-29 11:04:30,247 INFO     ====== star eval ======
+2022-09-29 11:04:30,678 INFO     2022-09-29 11:04:30, 6 Epoch, 0 Iter, Loss: 0.2587, Data time: 0.2849, Batch time: 0.4291
+2022-09-29 11:05:12,586 INFO     * Test
+2022-09-29 11:05:12,586 INFO     tensor([0.9942, 0.9845, 0.9840, 0.9856, 0.7985, 0.9486, 0.9742, 0.9779, 0.8331,
+        0.9418, 0.8773, 0.9875, 0.9812, 0.9657, 0.9875, 0.8458, 0.9725, 0.8671,
+        0.9926, 0.9476])
+2022-09-29 11:05:12,586 INFO     * Loss: 0.2445	 mAP: 0.9424	Data_time: 0.0010	 Batch_time: 0.1329
+2022-09-29 11:05:12,586 INFO     OP: 0.870	 OR: 0.907	 OF1: 0.889	CP: 0.862	 CR: 0.893	 CF1: 0.877
+2022-09-29 11:05:12,586 INFO     OP_3: 0.874	 OR_3: 0.905	 OF1_3: 0.889	CP_3: 0.864	 CR_3: 0.890	 CF1_3: 0.877
+2022-09-29 11:05:12,587 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 11:05:12,589 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:05:13,046 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:05:13,132 INFO      * best mAP=0.9424
+2022-09-29 11:05:13,834 INFO     2022-09-29 11:05:13, 7 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.1953, Data time: 0.3010, Batch time: 0.7004
+2022-09-29 11:07:17,136 INFO     ====== star eval ======
+2022-09-29 11:07:17,542 INFO     2022-09-29 11:07:17, 7 Epoch, 0 Iter, Loss: 0.2928, Data time: 0.2613, Batch time: 0.4048
+2022-09-29 11:07:59,360 INFO     * Test
+2022-09-29 11:07:59,361 INFO     tensor([0.9978, 0.9900, 0.9788, 0.9836, 0.8195, 0.9533, 0.9711, 0.9799, 0.8098,
+        0.9594, 0.8683, 0.9826, 0.9842, 0.9717, 0.9898, 0.8508, 0.9684, 0.8836,
+        0.9901, 0.9469])
+2022-09-29 11:07:59,361 INFO     * Loss: 0.2333	 mAP: 0.9440	Data_time: 0.0009	 Batch_time: 0.1327
+2022-09-29 11:07:59,361 INFO     OP: 0.891	 OR: 0.886	 OF1: 0.888	CP: 0.886	 CR: 0.866	 CF1: 0.876
+2022-09-29 11:07:59,361 INFO     OP_3: 0.893	 OR_3: 0.885	 OF1_3: 0.889	CP_3: 0.887	 CR_3: 0.864	 CF1_3: 0.875
+2022-09-29 11:07:59,362 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 11:07:59,363 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:07:59,887 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:07:59,973 INFO      * best mAP=0.9440
+2022-09-29 11:08:00,635 INFO     2022-09-29 11:08:00, 8 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.2138, Data time: 0.2509, Batch time: 0.6600
+2022-09-29 11:10:03,817 INFO     ====== star eval ======
+2022-09-29 11:10:04,226 INFO     2022-09-29 11:10:04, 8 Epoch, 0 Iter, Loss: 0.2350, Data time: 0.2692, Batch time: 0.4078
+2022-09-29 11:10:45,940 INFO     * Test
+2022-09-29 11:10:45,941 INFO     tensor([0.9991, 0.9851, 0.9814, 0.9843, 0.8119, 0.9593, 0.9753, 0.9768, 0.8375,
+        0.9503, 0.8596, 0.9807, 0.9859, 0.9715, 0.9886, 0.8699, 0.9571, 0.8688,
+        0.9924, 0.9520])
+2022-09-29 11:10:45,941 INFO     * Loss: 0.2347	 mAP: 0.9444	Data_time: 0.0009	 Batch_time: 0.1326
+2022-09-29 11:10:45,941 INFO     OP: 0.889	 OR: 0.898	 OF1: 0.894	CP: 0.873	 CR: 0.881	 CF1: 0.877
+2022-09-29 11:10:45,941 INFO     OP_3: 0.891	 OR_3: 0.897	 OF1_3: 0.894	CP_3: 0.874	 CR_3: 0.878	 CF1_3: 0.876
+2022-09-29 11:10:45,941 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 11:10:45,943 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:10:46,397 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:10:46,482 INFO      * best mAP=0.9444
+2022-09-29 11:10:47,161 INFO     2022-09-29 11:10:47, 9 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.1194, Data time: 0.2682, Batch time: 0.6772
+2022-09-29 11:12:50,335 INFO     ====== star eval ======
+2022-09-29 11:12:50,764 INFO     2022-09-29 11:12:50, 9 Epoch, 0 Iter, Loss: 0.2808, Data time: 0.2941, Batch time: 0.4285
+2022-09-29 11:13:32,496 INFO     * Test
+2022-09-29 11:13:32,496 INFO     tensor([0.9975, 0.9834, 0.9782, 0.9753, 0.8319, 0.9439, 0.9713, 0.9823, 0.8303,
+        0.9561, 0.8720, 0.9824, 0.9846, 0.9687, 0.9869, 0.8646, 0.9538, 0.8754,
+        0.9891, 0.9519])
+2022-09-29 11:13:32,496 INFO     * Loss: 0.2373	 mAP: 0.9440	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 11:13:32,496 INFO     OP: 0.894	 OR: 0.898	 OF1: 0.896	CP: 0.876	 CR: 0.882	 CF1: 0.879
+2022-09-29 11:13:32,496 INFO     OP_3: 0.896	 OR_3: 0.896	 OF1_3: 0.896	CP_3: 0.878	 CR_3: 0.879	 CF1_3: 0.878
+2022-09-29 11:13:32,497 INFO     Now lrp:0.00100000, lr:0.01000000
+2022-09-29 11:13:32,498 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:13:32,801 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:13:32,886 INFO      * best mAP=0.9444
+2022-09-29 11:13:33,542 INFO     2022-09-29 11:13:33, 10 Epoch, lrp:0.00100000, lr:0.01000000, 0 Iter, Loss: 0.0864, Data time: 0.2484, Batch time: 0.6540
+2022-09-29 11:15:36,889 INFO     ====== star eval ======
+2022-09-29 11:15:37,310 INFO     2022-09-29 11:15:37, 10 Epoch, 0 Iter, Loss: 0.3289, Data time: 0.2847, Batch time: 0.4196
+2022-09-29 11:16:19,089 INFO     * Test
+2022-09-29 11:16:19,089 INFO     tensor([0.9981, 0.9862, 0.9828, 0.9869, 0.8073, 0.9479, 0.9741, 0.9806, 0.8439,
+        0.9594, 0.8572, 0.9845, 0.9869, 0.9704, 0.9902, 0.8622, 0.9689, 0.8814,
+        0.9903, 0.9537])
+2022-09-29 11:16:19,090 INFO     * Loss: 0.2289	 mAP: 0.9457	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 11:16:19,090 INFO     OP: 0.845	 OR: 0.928	 OF1: 0.885	CP: 0.848	 CR: 0.908	 CF1: 0.877
+2022-09-29 11:16:19,090 INFO     OP_3: 0.850	 OR_3: 0.925	 OF1_3: 0.886	CP_3: 0.851	 CR_3: 0.904	 CF1_3: 0.877
+2022-09-29 11:16:19,090 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:16:19,092 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:16:19,549 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:16:19,635 INFO      * best mAP=0.9457
+2022-09-29 11:16:20,290 INFO     2022-09-29 11:16:20, 11 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.2346, Data time: 0.2503, Batch time: 0.6537
+2022-09-29 11:18:23,588 INFO     ====== star eval ======
+2022-09-29 11:18:24,005 INFO     2022-09-29 11:18:24, 11 Epoch, 0 Iter, Loss: 0.2538, Data time: 0.2775, Batch time: 0.4162
+2022-09-29 11:19:05,746 INFO     * Test
+2022-09-29 11:19:05,747 INFO     tensor([0.9977, 0.9875, 0.9826, 0.9874, 0.8214, 0.9525, 0.9758, 0.9803, 0.8467,
+        0.9615, 0.8569, 0.9848, 0.9884, 0.9711, 0.9914, 0.8660, 0.9685, 0.8802,
+        0.9913, 0.9559])
+2022-09-29 11:19:05,747 INFO     * Loss: 0.2155	 mAP: 0.9474	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 11:19:05,747 INFO     OP: 0.869	 OR: 0.925	 OF1: 0.896	CP: 0.856	 CR: 0.912	 CF1: 0.883
+2022-09-29 11:19:05,747 INFO     OP_3: 0.872	 OR_3: 0.922	 OF1_3: 0.897	CP_3: 0.858	 CR_3: 0.907	 CF1_3: 0.882
+2022-09-29 11:19:05,747 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:19:05,749 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:19:06,208 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:19:06,294 INFO      * best mAP=0.9474
+2022-09-29 11:19:06,957 INFO     2022-09-29 11:19:06, 12 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.0660, Data time: 0.2550, Batch time: 0.6608
+2022-09-29 11:21:10,099 INFO     ====== star eval ======
+2022-09-29 11:21:10,504 INFO     2022-09-29 11:21:10, 12 Epoch, 0 Iter, Loss: 0.2456, Data time: 0.2630, Batch time: 0.4038
+2022-09-29 11:21:52,249 INFO     * Test
+2022-09-29 11:21:52,249 INFO     tensor([0.9977, 0.9863, 0.9825, 0.9862, 0.8252, 0.9571, 0.9772, 0.9802, 0.8520,
+        0.9635, 0.8660, 0.9850, 0.9880, 0.9738, 0.9915, 0.8672, 0.9725, 0.8760,
+        0.9914, 0.9565])
+2022-09-29 11:21:52,250 INFO     * Loss: 0.2097	 mAP: 0.9488	Data_time: 0.0009	 Batch_time: 0.1326
+2022-09-29 11:21:52,250 INFO     OP: 0.868	 OR: 0.928	 OF1: 0.897	CP: 0.856	 CR: 0.914	 CF1: 0.884
+2022-09-29 11:21:52,250 INFO     OP_3: 0.871	 OR_3: 0.925	 OF1_3: 0.897	CP_3: 0.858	 CR_3: 0.909	 CF1_3: 0.883
+2022-09-29 11:21:52,250 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:21:52,252 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:21:52,708 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:21:52,794 INFO      * best mAP=0.9488
+2022-09-29 11:21:53,446 INFO     2022-09-29 11:21:53, 13 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.1599, Data time: 0.2481, Batch time: 0.6496
+2022-09-29 11:23:56,705 INFO     ====== star eval ======
+2022-09-29 11:23:57,120 INFO     2022-09-29 11:23:57, 13 Epoch, 0 Iter, Loss: 0.2721, Data time: 0.2800, Batch time: 0.4144
+2022-09-29 11:24:38,876 INFO     * Test
+2022-09-29 11:24:38,876 INFO     tensor([0.9974, 0.9873, 0.9826, 0.9866, 0.8256, 0.9546, 0.9775, 0.9776, 0.8490,
+        0.9640, 0.8587, 0.9859, 0.9881, 0.9730, 0.9914, 0.8650, 0.9749, 0.8743,
+        0.9916, 0.9550])
+2022-09-29 11:24:38,877 INFO     * Loss: 0.2080	 mAP: 0.9480	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 11:24:38,877 INFO     OP: 0.883	 OR: 0.918	 OF1: 0.900	CP: 0.869	 CR: 0.899	 CF1: 0.884
+2022-09-29 11:24:38,877 INFO     OP_3: 0.885	 OR_3: 0.916	 OF1_3: 0.900	CP_3: 0.870	 CR_3: 0.896	 CF1_3: 0.883
+2022-09-29 11:24:38,877 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:24:38,879 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:24:39,180 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:24:39,265 INFO      * best mAP=0.9488
+2022-09-29 11:24:39,946 INFO     2022-09-29 11:24:39, 14 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.2099, Data time: 0.2697, Batch time: 0.6788
+2022-09-29 11:26:43,119 INFO     ====== star eval ======
+2022-09-29 11:26:43,545 INFO     2022-09-29 11:26:43, 14 Epoch, 0 Iter, Loss: 0.2722, Data time: 0.2900, Batch time: 0.4246
+2022-09-29 11:27:25,347 INFO     * Test
+2022-09-29 11:27:25,347 INFO     tensor([0.9978, 0.9878, 0.9827, 0.9872, 0.8284, 0.9553, 0.9773, 0.9802, 0.8496,
+        0.9634, 0.8632, 0.9853, 0.9886, 0.9730, 0.9911, 0.8657, 0.9730, 0.8731,
+        0.9917, 0.9579])
+2022-09-29 11:27:25,348 INFO     * Loss: 0.2070	 mAP: 0.9486	Data_time: 0.0010	 Batch_time: 0.1329
+2022-09-29 11:27:25,348 INFO     OP: 0.880	 OR: 0.921	 OF1: 0.900	CP: 0.863	 CR: 0.906	 CF1: 0.884
+2022-09-29 11:27:25,348 INFO     OP_3: 0.882	 OR_3: 0.919	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.902	 CF1_3: 0.883
+2022-09-29 11:27:25,348 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:27:25,350 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:27:25,650 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:27:25,735 INFO      * best mAP=0.9488
+2022-09-29 11:27:26,393 INFO     2022-09-29 11:27:26, 15 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.2010, Data time: 0.2508, Batch time: 0.6567
+2022-09-29 11:29:29,599 INFO     ====== star eval ======
+2022-09-29 11:29:30,000 INFO     2022-09-29 11:29:30, 15 Epoch, 0 Iter, Loss: 0.2740, Data time: 0.2630, Batch time: 0.3997
+2022-09-29 11:30:11,744 INFO     * Test
+2022-09-29 11:30:11,744 INFO     tensor([0.9983, 0.9880, 0.9829, 0.9866, 0.8285, 0.9546, 0.9770, 0.9803, 0.8511,
+        0.9647, 0.8663, 0.9856, 0.9891, 0.9736, 0.9910, 0.8646, 0.9707, 0.8805,
+        0.9914, 0.9562])
+2022-09-29 11:30:11,744 INFO     * Loss: 0.2092	 mAP: 0.9491	Data_time: 0.0009	 Batch_time: 0.1326
+2022-09-29 11:30:11,744 INFO     OP: 0.881	 OR: 0.919	 OF1: 0.900	CP: 0.864	 CR: 0.903	 CF1: 0.883
+2022-09-29 11:30:11,745 INFO     OP_3: 0.884	 OR_3: 0.917	 OF1_3: 0.900	CP_3: 0.867	 CR_3: 0.901	 CF1_3: 0.883
+2022-09-29 11:30:11,745 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:30:11,747 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:30:12,206 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:30:12,292 INFO      * best mAP=0.9491
+2022-09-29 11:30:12,946 INFO     2022-09-29 11:30:12, 16 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.1759, Data time: 0.2468, Batch time: 0.6527
+2022-09-29 11:32:16,185 INFO     ====== star eval ======
+2022-09-29 11:32:16,607 INFO     2022-09-29 11:32:16, 16 Epoch, 0 Iter, Loss: 0.2641, Data time: 0.2846, Batch time: 0.4205
+2022-09-29 11:32:58,412 INFO     * Test
+2022-09-29 11:32:58,412 INFO     tensor([0.9980, 0.9878, 0.9825, 0.9865, 0.8291, 0.9543, 0.9773, 0.9809, 0.8501,
+        0.9635, 0.8606, 0.9849, 0.9890, 0.9730, 0.9910, 0.8653, 0.9721, 0.8779,
+        0.9919, 0.9568])
+2022-09-29 11:32:58,413 INFO     * Loss: 0.2081	 mAP: 0.9486	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 11:32:58,413 INFO     OP: 0.879	 OR: 0.923	 OF1: 0.900	CP: 0.863	 CR: 0.906	 CF1: 0.884
+2022-09-29 11:32:58,413 INFO     OP_3: 0.881	 OR_3: 0.920	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.903	 CF1_3: 0.883
+2022-09-29 11:32:58,413 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:32:58,415 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:32:58,724 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:32:58,812 INFO      * best mAP=0.9491
+2022-09-29 11:32:59,469 INFO     2022-09-29 11:32:59, 17 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.0902, Data time: 0.2519, Batch time: 0.6543
+2022-09-29 11:35:02,812 INFO     ====== star eval ======
+2022-09-29 11:35:03,252 INFO     2022-09-29 11:35:03, 17 Epoch, 0 Iter, Loss: 0.2795, Data time: 0.3051, Batch time: 0.4397
+2022-09-29 11:35:45,075 INFO     * Test
+2022-09-29 11:35:45,075 INFO     tensor([0.9984, 0.9876, 0.9824, 0.9868, 0.8245, 0.9548, 0.9774, 0.9789, 0.8453,
+        0.9610, 0.8632, 0.9843, 0.9894, 0.9716, 0.9908, 0.8609, 0.9700, 0.8805,
+        0.9918, 0.9581])
+2022-09-29 11:35:45,075 INFO     * Loss: 0.2112	 mAP: 0.9479	Data_time: 0.0011	 Batch_time: 0.1329
+2022-09-29 11:35:45,076 INFO     OP: 0.886	 OR: 0.915	 OF1: 0.900	CP: 0.869	 CR: 0.899	 CF1: 0.884
+2022-09-29 11:35:45,076 INFO     OP_3: 0.889	 OR_3: 0.912	 OF1_3: 0.901	CP_3: 0.871	 CR_3: 0.896	 CF1_3: 0.883
+2022-09-29 11:35:45,076 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:35:45,078 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:35:45,387 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:35:45,475 INFO      * best mAP=0.9491
+2022-09-29 11:35:46,165 INFO     2022-09-29 11:35:46, 18 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.2076, Data time: 0.2820, Batch time: 0.6872
+2022-09-29 11:37:49,396 INFO     ====== star eval ======
+2022-09-29 11:37:49,810 INFO     2022-09-29 11:37:49, 18 Epoch, 0 Iter, Loss: 0.2711, Data time: 0.2780, Batch time: 0.4132
+2022-09-29 11:38:31,700 INFO     * Test
+2022-09-29 11:38:31,700 INFO     tensor([0.9988, 0.9884, 0.9823, 0.9874, 0.8263, 0.9565, 0.9784, 0.9786, 0.8502,
+        0.9640, 0.8716, 0.9860, 0.9893, 0.9716, 0.9908, 0.8633, 0.9723, 0.8827,
+        0.9918, 0.9589])
+2022-09-29 11:38:31,701 INFO     * Loss: 0.2109	 mAP: 0.9495	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 11:38:31,701 INFO     OP: 0.878	 OR: 0.924	 OF1: 0.900	CP: 0.863	 CR: 0.909	 CF1: 0.885
+2022-09-29 11:38:31,701 INFO     OP_3: 0.880	 OR_3: 0.921	 OF1_3: 0.900	CP_3: 0.865	 CR_3: 0.905	 CF1_3: 0.884
+2022-09-29 11:38:31,701 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:38:31,703 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:38:32,172 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:38:32,260 INFO      * best mAP=0.9495
+2022-09-29 11:38:32,952 INFO     2022-09-29 11:38:32, 19 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.0995, Data time: 0.2887, Batch time: 0.6901
+2022-09-29 11:40:36,223 INFO     ====== star eval ======
+2022-09-29 11:40:36,623 INFO     2022-09-29 11:40:36, 19 Epoch, 0 Iter, Loss: 0.2503, Data time: 0.2616, Batch time: 0.3997
+2022-09-29 11:41:18,404 INFO     * Test
+2022-09-29 11:41:18,404 INFO     tensor([0.9982, 0.9868, 0.9827, 0.9868, 0.8245, 0.9554, 0.9770, 0.9789, 0.8503,
+        0.9651, 0.8718, 0.9849, 0.9883, 0.9710, 0.9908, 0.8634, 0.9735, 0.8829,
+        0.9913, 0.9583])
+2022-09-29 11:41:18,404 INFO     * Loss: 0.2128	 mAP: 0.9491	Data_time: 0.0009	 Batch_time: 0.1326
+2022-09-29 11:41:18,404 INFO     OP: 0.889	 OR: 0.916	 OF1: 0.902	CP: 0.869	 CR: 0.902	 CF1: 0.885
+2022-09-29 11:41:18,404 INFO     OP_3: 0.891	 OR_3: 0.913	 OF1_3: 0.902	CP_3: 0.870	 CR_3: 0.899	 CF1_3: 0.884
+2022-09-29 11:41:18,405 INFO     Now lrp:0.00010000, lr:0.00100000
+2022-09-29 11:41:18,406 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:41:18,718 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:41:18,806 INFO      * best mAP=0.9495
+2022-09-29 11:41:19,511 INFO     2022-09-29 11:41:19, 20 Epoch, lrp:0.00010000, lr:0.00100000, 0 Iter, Loss: 0.0750, Data time: 0.2930, Batch time: 0.7030
+2022-09-29 11:43:22,720 INFO     ====== star eval ======
+2022-09-29 11:43:23,152 INFO     2022-09-29 11:43:23, 20 Epoch, 0 Iter, Loss: 0.2838, Data time: 0.2946, Batch time: 0.4308
+2022-09-29 11:44:04,922 INFO     * Test
+2022-09-29 11:44:04,922 INFO     tensor([0.9988, 0.9879, 0.9826, 0.9868, 0.8297, 0.9586, 0.9772, 0.9793, 0.8508,
+        0.9632, 0.8709, 0.9846, 0.9891, 0.9712, 0.9904, 0.8609, 0.9727, 0.8805,
+        0.9922, 0.9587])
+2022-09-29 11:44:04,922 INFO     * Loss: 0.2137	 mAP: 0.9493	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 11:44:04,922 INFO     OP: 0.878	 OR: 0.923	 OF1: 0.900	CP: 0.864	 CR: 0.909	 CF1: 0.886
+2022-09-29 11:44:04,923 INFO     OP_3: 0.880	 OR_3: 0.920	 OF1_3: 0.900	CP_3: 0.865	 CR_3: 0.905	 CF1_3: 0.885
+2022-09-29 11:44:04,923 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 11:44:04,924 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:44:05,236 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:44:05,323 INFO      * best mAP=0.9495
+2022-09-29 11:44:06,019 INFO     2022-09-29 11:44:06, 21 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1740, Data time: 0.2883, Batch time: 0.6943
+2022-09-29 11:46:09,188 INFO     ====== star eval ======
+2022-09-29 11:46:09,608 INFO     2022-09-29 11:46:09, 21 Epoch, 0 Iter, Loss: 0.2747, Data time: 0.2841, Batch time: 0.4192
+2022-09-29 11:46:51,416 INFO     * Test
+2022-09-29 11:46:51,416 INFO     tensor([0.9980, 0.9871, 0.9826, 0.9865, 0.8290, 0.9550, 0.9780, 0.9808, 0.8513,
+        0.9642, 0.8724, 0.9844, 0.9888, 0.9717, 0.9906, 0.8604, 0.9718, 0.8807,
+        0.9922, 0.9594])
+2022-09-29 11:46:51,416 INFO     * Loss: 0.2110	 mAP: 0.9492	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 11:46:51,416 INFO     OP: 0.881	 OR: 0.922	 OF1: 0.901	CP: 0.865	 CR: 0.907	 CF1: 0.886
+2022-09-29 11:46:51,416 INFO     OP_3: 0.883	 OR_3: 0.919	 OF1_3: 0.901	CP_3: 0.866	 CR_3: 0.903	 CF1_3: 0.884
+2022-09-29 11:46:51,417 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 11:46:51,418 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:46:51,727 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:46:51,816 INFO      * best mAP=0.9495
+2022-09-29 11:46:52,513 INFO     2022-09-29 11:46:52, 22 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.3693, Data time: 0.2981, Batch time: 0.6954
+2022-09-29 11:48:55,859 INFO     ====== star eval ======
+2022-09-29 11:48:56,281 INFO     2022-09-29 11:48:56, 22 Epoch, 0 Iter, Loss: 0.2759, Data time: 0.2851, Batch time: 0.4211
+2022-09-29 11:49:38,172 INFO     * Test
+2022-09-29 11:49:38,172 INFO     tensor([0.9985, 0.9876, 0.9827, 0.9867, 0.8281, 0.9550, 0.9779, 0.9804, 0.8513,
+        0.9664, 0.8703, 0.9847, 0.9891, 0.9703, 0.9909, 0.8646, 0.9719, 0.8758,
+        0.9922, 0.9576])
+2022-09-29 11:49:38,172 INFO     * Loss: 0.2108	 mAP: 0.9491	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 11:49:38,172 INFO     OP: 0.879	 OR: 0.923	 OF1: 0.901	CP: 0.865	 CR: 0.909	 CF1: 0.886
+2022-09-29 11:49:38,172 INFO     OP_3: 0.880	 OR_3: 0.920	 OF1_3: 0.900	CP_3: 0.866	 CR_3: 0.904	 CF1_3: 0.885
+2022-09-29 11:49:38,173 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 11:49:38,175 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:49:38,488 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:49:38,576 INFO      * best mAP=0.9495
+2022-09-29 11:49:39,266 INFO     2022-09-29 11:49:39, 23 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1806, Data time: 0.2814, Batch time: 0.6880
+2022-09-29 11:51:42,462 INFO     ====== star eval ======
+2022-09-29 11:51:42,878 INFO     2022-09-29 11:51:42, 23 Epoch, 0 Iter, Loss: 0.2756, Data time: 0.2762, Batch time: 0.4148
+2022-09-29 11:52:24,674 INFO     * Test
+2022-09-29 11:52:24,674 INFO     tensor([0.9981, 0.9873, 0.9824, 0.9865, 0.8308, 0.9590, 0.9779, 0.9812, 0.8500,
+        0.9659, 0.8705, 0.9848, 0.9895, 0.9722, 0.9911, 0.8631, 0.9734, 0.8791,
+        0.9919, 0.9586])
+2022-09-29 11:52:24,675 INFO     * Loss: 0.2104	 mAP: 0.9497	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 11:52:24,675 INFO     OP: 0.876	 OR: 0.925	 OF1: 0.900	CP: 0.862	 CR: 0.909	 CF1: 0.885
+2022-09-29 11:52:24,675 INFO     OP_3: 0.878	 OR_3: 0.922	 OF1_3: 0.900	CP_3: 0.863	 CR_3: 0.905	 CF1_3: 0.884
+2022-09-29 11:52:24,675 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 11:52:24,677 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:52:25,131 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:52:25,217 INFO      * best mAP=0.9497
+2022-09-29 11:52:25,902 INFO     2022-09-29 11:52:25, 24 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1776, Data time: 0.2790, Batch time: 0.6826
+2022-09-29 11:54:29,150 INFO     ====== star eval ======
+2022-09-29 11:54:29,554 INFO     2022-09-29 11:54:29, 24 Epoch, 0 Iter, Loss: 0.2741, Data time: 0.2611, Batch time: 0.4032
+2022-09-29 11:55:11,351 INFO     * Test
+2022-09-29 11:55:11,351 INFO     tensor([0.9981, 0.9878, 0.9827, 0.9868, 0.8277, 0.9571, 0.9772, 0.9791, 0.8516,
+        0.9638, 0.8686, 0.9846, 0.9888, 0.9720, 0.9906, 0.8612, 0.9708, 0.8766,
+        0.9919, 0.9591])
+2022-09-29 11:55:11,352 INFO     * Loss: 0.2133	 mAP: 0.9488	Data_time: 0.0009	 Batch_time: 0.1328
+2022-09-29 11:55:11,352 INFO     OP: 0.876	 OR: 0.924	 OF1: 0.899	CP: 0.862	 CR: 0.908	 CF1: 0.884
+2022-09-29 11:55:11,352 INFO     OP_3: 0.878	 OR_3: 0.921	 OF1_3: 0.899	CP_3: 0.863	 CR_3: 0.904	 CF1_3: 0.883
+2022-09-29 11:55:11,352 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 11:55:11,354 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:55:11,654 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:55:11,740 INFO      * best mAP=0.9497
+2022-09-29 11:55:12,435 INFO     2022-09-29 11:55:12, 25 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1823, Data time: 0.2871, Batch time: 0.6930
+2022-09-29 11:57:15,742 INFO     ====== star eval ======
+2022-09-29 11:57:16,168 INFO     2022-09-29 11:57:16, 25 Epoch, 0 Iter, Loss: 0.2812, Data time: 0.2886, Batch time: 0.4255
+2022-09-29 11:57:57,980 INFO     * Test
+2022-09-29 11:57:57,980 INFO     tensor([0.9986, 0.9868, 0.9826, 0.9868, 0.8279, 0.9565, 0.9780, 0.9796, 0.8492,
+        0.9639, 0.8668, 0.9846, 0.9891, 0.9726, 0.9907, 0.8620, 0.9708, 0.8773,
+        0.9924, 0.9588])
+2022-09-29 11:57:57,981 INFO     * Loss: 0.2106	 mAP: 0.9488	Data_time: 0.0010	 Batch_time: 0.1326
+2022-09-29 11:57:57,981 INFO     OP: 0.878	 OR: 0.924	 OF1: 0.900	CP: 0.864	 CR: 0.909	 CF1: 0.886
+2022-09-29 11:57:57,981 INFO     OP_3: 0.879	 OR_3: 0.921	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.905	 CF1_3: 0.884
+2022-09-29 11:57:57,981 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 11:57:57,983 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 11:57:58,295 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 11:57:58,383 INFO      * best mAP=0.9497
+2022-09-29 11:57:59,090 INFO     2022-09-29 11:57:59, 26 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1445, Data time: 0.3055, Batch time: 0.7050
+2022-09-29 12:00:02,347 INFO     ====== star eval ======
+2022-09-29 12:00:02,770 INFO     2022-09-29 12:00:02, 26 Epoch, 0 Iter, Loss: 0.2662, Data time: 0.2863, Batch time: 0.4218
+2022-09-29 12:00:44,749 INFO     * Test
+2022-09-29 12:00:44,750 INFO     tensor([0.9984, 0.9878, 0.9825, 0.9870, 0.8285, 0.9563, 0.9778, 0.9802, 0.8492,
+        0.9642, 0.8692, 0.9851, 0.9887, 0.9708, 0.9908, 0.8622, 0.9722, 0.8822,
+        0.9923, 0.9586])
+2022-09-29 12:00:44,750 INFO     * Loss: 0.2108	 mAP: 0.9492	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 12:00:44,750 INFO     OP: 0.879	 OR: 0.923	 OF1: 0.900	CP: 0.865	 CR: 0.909	 CF1: 0.886
+2022-09-29 12:00:44,750 INFO     OP_3: 0.881	 OR_3: 0.920	 OF1_3: 0.900	CP_3: 0.866	 CR_3: 0.904	 CF1_3: 0.885
+2022-09-29 12:00:44,750 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:00:44,752 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:00:45,064 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:00:45,153 INFO      * best mAP=0.9497
+2022-09-29 12:00:45,819 INFO     2022-09-29 12:00:45, 27 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0857, Data time: 0.2609, Batch time: 0.6646
+2022-09-29 12:02:49,073 INFO     ====== star eval ======
+2022-09-29 12:02:49,508 INFO     2022-09-29 12:02:49, 27 Epoch, 0 Iter, Loss: 0.2818, Data time: 0.2974, Batch time: 0.4335
+2022-09-29 12:03:31,424 INFO     * Test
+2022-09-29 12:03:31,424 INFO     tensor([0.9987, 0.9877, 0.9825, 0.9871, 0.8293, 0.9558, 0.9776, 0.9801, 0.8500,
+        0.9635, 0.8690, 0.9852, 0.9895, 0.9716, 0.9908, 0.8586, 0.9719, 0.8784,
+        0.9921, 0.9589])
+2022-09-29 12:03:31,425 INFO     * Loss: 0.2093	 mAP: 0.9489	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 12:03:31,425 INFO     OP: 0.875	 OR: 0.925	 OF1: 0.899	CP: 0.862	 CR: 0.910	 CF1: 0.885
+2022-09-29 12:03:31,425 INFO     OP_3: 0.877	 OR_3: 0.921	 OF1_3: 0.898	CP_3: 0.862	 CR_3: 0.905	 CF1_3: 0.883
+2022-09-29 12:03:31,425 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:03:31,427 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:03:31,739 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:03:31,828 INFO      * best mAP=0.9497
+2022-09-29 12:03:32,510 INFO     2022-09-29 12:03:32, 28 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1981, Data time: 0.2794, Batch time: 0.6802
+2022-09-29 12:05:35,726 INFO     ====== star eval ======
+2022-09-29 12:05:36,168 INFO     2022-09-29 12:05:36, 28 Epoch, 0 Iter, Loss: 0.2821, Data time: 0.2997, Batch time: 0.4395
+2022-09-29 12:06:18,054 INFO     * Test
+2022-09-29 12:06:18,054 INFO     tensor([0.9986, 0.9878, 0.9826, 0.9869, 0.8293, 0.9574, 0.9780, 0.9811, 0.8494,
+        0.9641, 0.8686, 0.9851, 0.9893, 0.9711, 0.9909, 0.8612, 0.9720, 0.8823,
+        0.9918, 0.9602])
+2022-09-29 12:06:18,054 INFO     * Loss: 0.2097	 mAP: 0.9494	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 12:06:18,054 INFO     OP: 0.880	 OR: 0.924	 OF1: 0.901	CP: 0.865	 CR: 0.909	 CF1: 0.886
+2022-09-29 12:06:18,054 INFO     OP_3: 0.881	 OR_3: 0.921	 OF1_3: 0.901	CP_3: 0.866	 CR_3: 0.905	 CF1_3: 0.885
+2022-09-29 12:06:18,054 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:06:18,056 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:06:18,363 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:06:18,451 INFO      * best mAP=0.9497
+2022-09-29 12:06:19,117 INFO     2022-09-29 12:06:19, 29 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1669, Data time: 0.2548, Batch time: 0.6633
+2022-09-29 12:08:22,436 INFO     ====== star eval ======
+2022-09-29 12:08:22,858 INFO     2022-09-29 12:08:22, 29 Epoch, 0 Iter, Loss: 0.2771, Data time: 0.2862, Batch time: 0.4210
+2022-09-29 12:09:04,611 INFO     * Test
+2022-09-29 12:09:04,611 INFO     tensor([0.9983, 0.9879, 0.9828, 0.9870, 0.8281, 0.9565, 0.9778, 0.9789, 0.8505,
+        0.9640, 0.8652, 0.9856, 0.9892, 0.9717, 0.9910, 0.8610, 0.9703, 0.8809,
+        0.9921, 0.9587])
+2022-09-29 12:09:04,612 INFO     * Loss: 0.2099	 mAP: 0.9489	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 12:09:04,612 INFO     OP: 0.877	 OR: 0.926	 OF1: 0.901	CP: 0.864	 CR: 0.911	 CF1: 0.887
+2022-09-29 12:09:04,612 INFO     OP_3: 0.879	 OR_3: 0.923	 OF1_3: 0.900	CP_3: 0.865	 CR_3: 0.907	 CF1_3: 0.886
+2022-09-29 12:09:04,612 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:09:04,614 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:09:04,914 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:09:04,999 INFO      * best mAP=0.9497
+2022-09-29 12:09:05,688 INFO     2022-09-29 12:09:05, 30 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1060, Data time: 0.2836, Batch time: 0.6875
+2022-09-29 12:11:08,866 INFO     ====== star eval ======
+2022-09-29 12:11:09,281 INFO     2022-09-29 12:11:09, 30 Epoch, 0 Iter, Loss: 0.2706, Data time: 0.2792, Batch time: 0.4140
+2022-09-29 12:11:51,030 INFO     * Test
+2022-09-29 12:11:51,030 INFO     tensor([0.9983, 0.9872, 0.9825, 0.9871, 0.8262, 0.9579, 0.9778, 0.9798, 0.8489,
+        0.9655, 0.8648, 0.9858, 0.9893, 0.9718, 0.9909, 0.8624, 0.9707, 0.8799,
+        0.9920, 0.9575])
+2022-09-29 12:11:51,031 INFO     * Loss: 0.2111	 mAP: 0.9488	Data_time: 0.0010	 Batch_time: 0.1326
+2022-09-29 12:11:51,031 INFO     OP: 0.876	 OR: 0.924	 OF1: 0.899	CP: 0.861	 CR: 0.909	 CF1: 0.884
+2022-09-29 12:11:51,031 INFO     OP_3: 0.877	 OR_3: 0.920	 OF1_3: 0.898	CP_3: 0.861	 CR_3: 0.905	 CF1_3: 0.883
+2022-09-29 12:11:51,031 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:11:51,033 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:11:51,334 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:11:51,420 INFO      * best mAP=0.9497
+2022-09-29 12:11:52,128 INFO     2022-09-29 12:11:52, 31 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1179, Data time: 0.3083, Batch time: 0.7060
+2022-09-29 12:13:55,341 INFO     ====== star eval ======
+2022-09-29 12:13:55,758 INFO     2022-09-29 12:13:55, 31 Epoch, 0 Iter, Loss: 0.2904, Data time: 0.2819, Batch time: 0.4162
+2022-09-29 12:14:37,546 INFO     * Test
+2022-09-29 12:14:37,547 INFO     tensor([0.9988, 0.9880, 0.9833, 0.9866, 0.8293, 0.9566, 0.9781, 0.9803, 0.8494,
+        0.9650, 0.8678, 0.9857, 0.9895, 0.9717, 0.9907, 0.8609, 0.9720, 0.8822,
+        0.9922, 0.9590])
+2022-09-29 12:14:37,547 INFO     * Loss: 0.2094	 mAP: 0.9494	Data_time: 0.0010	 Batch_time: 0.1327
+2022-09-29 12:14:37,547 INFO     OP: 0.878	 OR: 0.925	 OF1: 0.901	CP: 0.863	 CR: 0.910	 CF1: 0.886
+2022-09-29 12:14:37,547 INFO     OP_3: 0.880	 OR_3: 0.921	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.905	 CF1_3: 0.884
+2022-09-29 12:14:37,547 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:14:37,549 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:14:37,858 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:14:37,945 INFO      * best mAP=0.9497
+2022-09-29 12:14:38,654 INFO     2022-09-29 12:14:38, 32 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1780, Data time: 0.3087, Batch time: 0.7066
+2022-09-29 12:16:41,821 INFO     ====== star eval ======
+2022-09-29 12:16:42,240 INFO     2022-09-29 12:16:42, 32 Epoch, 0 Iter, Loss: 0.2733, Data time: 0.2823, Batch time: 0.4177
+2022-09-29 12:17:23,984 INFO     * Test
+2022-09-29 12:17:23,984 INFO     tensor([0.9985, 0.9881, 0.9828, 0.9870, 0.8284, 0.9549, 0.9773, 0.9798, 0.8500,
+        0.9656, 0.8690, 0.9865, 0.9892, 0.9711, 0.9909, 0.8595, 0.9726, 0.8811,
+        0.9923, 0.9596])
+2022-09-29 12:17:23,985 INFO     * Loss: 0.2097	 mAP: 0.9492	Data_time: 0.0010	 Batch_time: 0.1326
+2022-09-29 12:17:23,985 INFO     OP: 0.880	 OR: 0.924	 OF1: 0.901	CP: 0.866	 CR: 0.908	 CF1: 0.887
+2022-09-29 12:17:23,985 INFO     OP_3: 0.883	 OR_3: 0.920	 OF1_3: 0.901	CP_3: 0.867	 CR_3: 0.904	 CF1_3: 0.885
+2022-09-29 12:17:23,985 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:17:23,987 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:17:24,296 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:17:24,385 INFO      * best mAP=0.9497
+2022-09-29 12:17:25,040 INFO     2022-09-29 12:17:25, 33 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1082, Data time: 0.2527, Batch time: 0.6530
+2022-09-29 12:19:28,119 INFO     ====== star eval ======
+2022-09-29 12:19:28,535 INFO     2022-09-29 12:19:28, 33 Epoch, 0 Iter, Loss: 0.2744, Data time: 0.2800, Batch time: 0.4143
+2022-09-29 12:20:10,308 INFO     * Test
+2022-09-29 12:20:10,308 INFO     tensor([0.9987, 0.9873, 0.9827, 0.9868, 0.8278, 0.9568, 0.9777, 0.9791, 0.8488,
+        0.9651, 0.8661, 0.9852, 0.9888, 0.9709, 0.9908, 0.8606, 0.9718, 0.8802,
+        0.9922, 0.9590])
+2022-09-29 12:20:10,309 INFO     * Loss: 0.2125	 mAP: 0.9488	Data_time: 0.0010	 Batch_time: 0.1326
+2022-09-29 12:20:10,309 INFO     OP: 0.876	 OR: 0.923	 OF1: 0.899	CP: 0.861	 CR: 0.910	 CF1: 0.885
+2022-09-29 12:20:10,309 INFO     OP_3: 0.878	 OR_3: 0.920	 OF1_3: 0.899	CP_3: 0.862	 CR_3: 0.906	 CF1_3: 0.883
+2022-09-29 12:20:10,309 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:20:10,311 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:20:10,623 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:20:10,712 INFO      * best mAP=0.9497
+2022-09-29 12:20:11,403 INFO     2022-09-29 12:20:11, 34 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.2970, Data time: 0.2809, Batch time: 0.6892
+2022-09-29 12:22:14,589 INFO     ====== star eval ======
+2022-09-29 12:22:15,068 INFO     2022-09-29 12:22:15, 34 Epoch, 0 Iter, Loss: 0.2803, Data time: 0.3383, Batch time: 0.4775
+2022-09-29 12:22:56,876 INFO     * Test
+2022-09-29 12:22:56,876 INFO     tensor([0.9983, 0.9874, 0.9832, 0.9869, 0.8296, 0.9564, 0.9779, 0.9780, 0.8507,
+        0.9659, 0.8689, 0.9854, 0.9893, 0.9714, 0.9909, 0.8600, 0.9717, 0.8817,
+        0.9922, 0.9587])
+2022-09-29 12:22:56,876 INFO     * Loss: 0.2113	 mAP: 0.9492	Data_time: 0.0012	 Batch_time: 0.1330
+2022-09-29 12:22:56,876 INFO     OP: 0.880	 OR: 0.924	 OF1: 0.901	CP: 0.864	 CR: 0.910	 CF1: 0.886
+2022-09-29 12:22:56,876 INFO     OP_3: 0.882	 OR_3: 0.921	 OF1_3: 0.901	CP_3: 0.866	 CR_3: 0.906	 CF1_3: 0.885
+2022-09-29 12:22:56,877 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:22:56,878 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:22:57,188 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:22:57,277 INFO      * best mAP=0.9497
+2022-09-29 12:22:57,971 INFO     2022-09-29 12:22:57, 35 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1443, Data time: 0.2702, Batch time: 0.6920
+2022-09-29 12:25:01,486 INFO     ====== star eval ======
+2022-09-29 12:25:01,899 INFO     2022-09-29 12:25:01, 35 Epoch, 0 Iter, Loss: 0.2766, Data time: 0.2772, Batch time: 0.4122
+2022-09-29 12:25:43,726 INFO     * Test
+2022-09-29 12:25:43,727 INFO     tensor([0.9981, 0.9881, 0.9824, 0.9871, 0.8274, 0.9556, 0.9778, 0.9794, 0.8487,
+        0.9626, 0.8664, 0.9843, 0.9894, 0.9701, 0.9908, 0.8585, 0.9692, 0.8796,
+        0.9923, 0.9583])
+2022-09-29 12:25:43,727 INFO     * Loss: 0.2125	 mAP: 0.9483	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 12:25:43,727 INFO     OP: 0.881	 OR: 0.923	 OF1: 0.901	CP: 0.866	 CR: 0.908	 CF1: 0.886
+2022-09-29 12:25:43,727 INFO     OP_3: 0.883	 OR_3: 0.920	 OF1_3: 0.901	CP_3: 0.866	 CR_3: 0.903	 CF1_3: 0.884
+2022-09-29 12:25:43,727 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:25:43,729 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:25:44,044 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:25:44,131 INFO      * best mAP=0.9497
+2022-09-29 12:25:44,838 INFO     2022-09-29 12:25:44, 36 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1124, Data time: 0.3075, Batch time: 0.7046
+2022-09-29 12:27:48,194 INFO     ====== star eval ======
+2022-09-29 12:27:48,587 INFO     2022-09-29 12:27:48, 36 Epoch, 0 Iter, Loss: 0.2824, Data time: 0.2433, Batch time: 0.3922
+2022-09-29 12:28:30,420 INFO     * Test
+2022-09-29 12:28:30,420 INFO     tensor([0.9979, 0.9881, 0.9828, 0.9866, 0.8253, 0.9572, 0.9775, 0.9790, 0.8505,
+        0.9645, 0.8642, 0.9848, 0.9895, 0.9712, 0.9910, 0.8597, 0.9719, 0.8778,
+        0.9924, 0.9580])
+2022-09-29 12:28:30,421 INFO     * Loss: 0.2112	 mAP: 0.9485	Data_time: 0.0009	 Batch_time: 0.1327
+2022-09-29 12:28:30,421 INFO     OP: 0.877	 OR: 0.925	 OF1: 0.901	CP: 0.862	 CR: 0.910	 CF1: 0.886
+2022-09-29 12:28:30,421 INFO     OP_3: 0.879	 OR_3: 0.922	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.906	 CF1_3: 0.884
+2022-09-29 12:28:30,421 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:28:30,423 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:28:30,737 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:28:30,825 INFO      * best mAP=0.9497
+2022-09-29 12:28:31,542 INFO     2022-09-29 12:28:31, 37 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0413, Data time: 0.3158, Batch time: 0.7157
+2022-09-29 12:30:34,935 INFO     ====== star eval ======
+2022-09-29 12:30:35,365 INFO     2022-09-29 12:30:35, 37 Epoch, 0 Iter, Loss: 0.2767, Data time: 0.2940, Batch time: 0.4287
+2022-09-29 12:31:17,180 INFO     * Test
+2022-09-29 12:31:17,180 INFO     tensor([0.9976, 0.9878, 0.9825, 0.9866, 0.8308, 0.9558, 0.9778, 0.9800, 0.8495,
+        0.9640, 0.8703, 0.9857, 0.9897, 0.9721, 0.9908, 0.8596, 0.9710, 0.8801,
+        0.9922, 0.9589])
+2022-09-29 12:31:17,180 INFO     * Loss: 0.2119	 mAP: 0.9491	Data_time: 0.0010	 Batch_time: 0.1330
+2022-09-29 12:31:17,180 INFO     OP: 0.876	 OR: 0.925	 OF1: 0.900	CP: 0.861	 CR: 0.910	 CF1: 0.885
+2022-09-29 12:31:17,181 INFO     OP_3: 0.879	 OR_3: 0.921	 OF1_3: 0.899	CP_3: 0.862	 CR_3: 0.906	 CF1_3: 0.883
+2022-09-29 12:31:17,181 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:31:17,183 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:31:17,484 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:31:17,568 INFO      * best mAP=0.9497
+2022-09-29 12:31:18,243 INFO     2022-09-29 12:31:18, 38 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0911, Data time: 0.2667, Batch time: 0.6728
+2022-09-29 12:33:21,536 INFO     ====== star eval ======
+2022-09-29 12:33:21,943 INFO     2022-09-29 12:33:21, 38 Epoch, 0 Iter, Loss: 0.2834, Data time: 0.2667, Batch time: 0.4063
+2022-09-29 12:34:03,780 INFO     * Test
+2022-09-29 12:34:03,780 INFO     tensor([0.9980, 0.9878, 0.9823, 0.9866, 0.8300, 0.9570, 0.9777, 0.9801, 0.8491,
+        0.9667, 0.8682, 0.9848, 0.9894, 0.9712, 0.9910, 0.8590, 0.9718, 0.8782,
+        0.9920, 0.9584])
+2022-09-29 12:34:03,780 INFO     * Loss: 0.2099	 mAP: 0.9490	Data_time: 0.0009	 Batch_time: 0.1328
+2022-09-29 12:34:03,780 INFO     OP: 0.880	 OR: 0.924	 OF1: 0.902	CP: 0.864	 CR: 0.909	 CF1: 0.886
+2022-09-29 12:34:03,780 INFO     OP_3: 0.882	 OR_3: 0.921	 OF1_3: 0.901	CP_3: 0.865	 CR_3: 0.905	 CF1_3: 0.885
+2022-09-29 12:34:03,781 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:34:03,782 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:34:04,093 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:34:04,181 INFO      * best mAP=0.9497
+2022-09-29 12:34:04,885 INFO     2022-09-29 12:34:04, 39 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0761, Data time: 0.3051, Batch time: 0.7017
+2022-09-29 12:36:08,141 INFO     ====== star eval ======
+2022-09-29 12:36:08,558 INFO     2022-09-29 12:36:08, 39 Epoch, 0 Iter, Loss: 0.2728, Data time: 0.2810, Batch time: 0.4158
+2022-09-29 12:36:50,369 INFO     * Test
+2022-09-29 12:36:50,369 INFO     tensor([0.9986, 0.9880, 0.9828, 0.9867, 0.8292, 0.9566, 0.9776, 0.9802, 0.8486,
+        0.9646, 0.8652, 0.9851, 0.9892, 0.9712, 0.9907, 0.8590, 0.9716, 0.8814,
+        0.9922, 0.9595])
+2022-09-29 12:36:50,369 INFO     * Loss: 0.2121	 mAP: 0.9489	Data_time: 0.0010	 Batch_time: 0.1329
+2022-09-29 12:36:50,369 INFO     OP: 0.880	 OR: 0.922	 OF1: 0.901	CP: 0.863	 CR: 0.910	 CF1: 0.885
+2022-09-29 12:36:50,369 INFO     OP_3: 0.883	 OR_3: 0.919	 OF1_3: 0.901	CP_3: 0.864	 CR_3: 0.906	 CF1_3: 0.884
+2022-09-29 12:36:50,370 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:36:50,371 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:36:50,673 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:36:50,757 INFO      * best mAP=0.9497
+2022-09-29 12:36:51,417 INFO     2022-09-29 12:36:51, 40 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1269, Data time: 0.2548, Batch time: 0.6579
+2022-09-29 12:38:54,922 INFO     ====== star eval ======
+2022-09-29 12:38:55,337 INFO     2022-09-29 12:38:55, 40 Epoch, 0 Iter, Loss: 0.2845, Data time: 0.2792, Batch time: 0.4145
+2022-09-29 12:39:37,206 INFO     * Test
+2022-09-29 12:39:37,206 INFO     tensor([0.9987, 0.9885, 0.9823, 0.9870, 0.8281, 0.9553, 0.9785, 0.9788, 0.8480,
+        0.9642, 0.8671, 0.9853, 0.9892, 0.9707, 0.9907, 0.8555, 0.9723, 0.8813,
+        0.9921, 0.9590])
+2022-09-29 12:39:37,207 INFO     * Loss: 0.2112	 mAP: 0.9486	Data_time: 0.0010	 Batch_time: 0.1331
+2022-09-29 12:39:37,207 INFO     OP: 0.877	 OR: 0.923	 OF1: 0.899	CP: 0.863	 CR: 0.907	 CF1: 0.884
+2022-09-29 12:39:37,207 INFO     OP_3: 0.879	 OR_3: 0.919	 OF1_3: 0.899	CP_3: 0.864	 CR_3: 0.902	 CF1_3: 0.883
+2022-09-29 12:39:37,207 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:39:37,209 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:39:37,511 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:39:37,596 INFO      * best mAP=0.9497
+2022-09-29 12:39:38,255 INFO     2022-09-29 12:39:38, 41 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1813, Data time: 0.2521, Batch time: 0.6574
+2022-09-29 12:41:41,815 INFO     ====== star eval ======
+2022-09-29 12:41:42,235 INFO     2022-09-29 12:41:42, 41 Epoch, 0 Iter, Loss: 0.2856, Data time: 0.2833, Batch time: 0.4188
+2022-09-29 12:42:24,014 INFO     * Test
+2022-09-29 12:42:24,014 INFO     tensor([0.9985, 0.9879, 0.9822, 0.9866, 0.8274, 0.9549, 0.9778, 0.9793, 0.8499,
+        0.9654, 0.8663, 0.9847, 0.9897, 0.9710, 0.9908, 0.8607, 0.9729, 0.8792,
+        0.9925, 0.9579])
+2022-09-29 12:42:24,014 INFO     * Loss: 0.2125	 mAP: 0.9488	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 12:42:24,014 INFO     OP: 0.879	 OR: 0.923	 OF1: 0.901	CP: 0.863	 CR: 0.909	 CF1: 0.886
+2022-09-29 12:42:24,014 INFO     OP_3: 0.881	 OR_3: 0.920	 OF1_3: 0.900	CP_3: 0.865	 CR_3: 0.905	 CF1_3: 0.884
+2022-09-29 12:42:24,015 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:42:24,016 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:42:24,318 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:42:24,404 INFO      * best mAP=0.9497
+2022-09-29 12:42:25,062 INFO     2022-09-29 12:42:25, 42 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1582, Data time: 0.2485, Batch time: 0.6551
+2022-09-29 12:44:28,449 INFO     ====== star eval ======
+2022-09-29 12:44:28,853 INFO     2022-09-29 12:44:28, 42 Epoch, 0 Iter, Loss: 0.2810, Data time: 0.2614, Batch time: 0.4026
+2022-09-29 12:45:10,700 INFO     * Test
+2022-09-29 12:45:10,700 INFO     tensor([0.9982, 0.9881, 0.9822, 0.9861, 0.8266, 0.9537, 0.9783, 0.9788, 0.8484,
+        0.9648, 0.8693, 0.9843, 0.9895, 0.9707, 0.9909, 0.8599, 0.9712, 0.8786,
+        0.9921, 0.9587])
+2022-09-29 12:45:10,701 INFO     * Loss: 0.2114	 mAP: 0.9485	Data_time: 0.0009	 Batch_time: 0.1330
+2022-09-29 12:45:10,701 INFO     OP: 0.879	 OR: 0.924	 OF1: 0.901	CP: 0.865	 CR: 0.908	 CF1: 0.886
+2022-09-29 12:45:10,701 INFO     OP_3: 0.880	 OR_3: 0.921	 OF1_3: 0.900	CP_3: 0.865	 CR_3: 0.904	 CF1_3: 0.884
+2022-09-29 12:45:10,701 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:45:10,703 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:45:11,005 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:45:11,092 INFO      * best mAP=0.9497
+2022-09-29 12:45:11,764 INFO     2022-09-29 12:45:11, 43 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1259, Data time: 0.2682, Batch time: 0.6705
+2022-09-29 12:47:15,301 INFO     ====== star eval ======
+2022-09-29 12:47:15,732 INFO     2022-09-29 12:47:15, 43 Epoch, 0 Iter, Loss: 0.2732, Data time: 0.2945, Batch time: 0.4299
+2022-09-29 12:47:57,625 INFO     * Test
+2022-09-29 12:47:57,625 INFO     tensor([0.9982, 0.9885, 0.9824, 0.9867, 0.8269, 0.9537, 0.9775, 0.9793, 0.8491,
+        0.9650, 0.8664, 0.9854, 0.9892, 0.9730, 0.9908, 0.8599, 0.9687, 0.8792,
+        0.9924, 0.9592])
+2022-09-29 12:47:57,625 INFO     * Loss: 0.2124	 mAP: 0.9486	Data_time: 0.0010	 Batch_time: 0.1331
+2022-09-29 12:47:57,625 INFO     OP: 0.878	 OR: 0.924	 OF1: 0.900	CP: 0.861	 CR: 0.909	 CF1: 0.885
+2022-09-29 12:47:57,625 INFO     OP_3: 0.880	 OR_3: 0.921	 OF1_3: 0.900	CP_3: 0.862	 CR_3: 0.905	 CF1_3: 0.883
+2022-09-29 12:47:57,625 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:47:57,627 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:47:57,940 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:47:58,028 INFO      * best mAP=0.9497
+2022-09-29 12:47:58,734 INFO     2022-09-29 12:47:58, 44 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0536, Data time: 0.3020, Batch time: 0.7046
+2022-09-29 12:50:02,383 INFO     ====== star eval ======
+2022-09-29 12:50:02,797 INFO     2022-09-29 12:50:02, 44 Epoch, 0 Iter, Loss: 0.2712, Data time: 0.2770, Batch time: 0.4123
+2022-09-29 12:50:44,673 INFO     * Test
+2022-09-29 12:50:44,673 INFO     tensor([0.9983, 0.9876, 0.9823, 0.9870, 0.8280, 0.9555, 0.9776, 0.9788, 0.8478,
+        0.9643, 0.8679, 0.9855, 0.9895, 0.9703, 0.9904, 0.8590, 0.9698, 0.8803,
+        0.9919, 0.9580])
+2022-09-29 12:50:44,674 INFO     * Loss: 0.2133	 mAP: 0.9485	Data_time: 0.0010	 Batch_time: 0.1330
+2022-09-29 12:50:44,674 INFO     OP: 0.881	 OR: 0.921	 OF1: 0.901	CP: 0.863	 CR: 0.908	 CF1: 0.885
+2022-09-29 12:50:44,674 INFO     OP_3: 0.883	 OR_3: 0.918	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.904	 CF1_3: 0.884
+2022-09-29 12:50:44,674 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:50:44,676 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:50:45,057 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:50:45,146 INFO      * best mAP=0.9497
+2022-09-29 12:50:45,875 INFO     2022-09-29 12:50:45, 45 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0956, Data time: 0.3232, Batch time: 0.7272
+2022-09-29 12:52:49,312 INFO     ====== star eval ======
+2022-09-29 12:52:49,745 INFO     2022-09-29 12:52:49, 45 Epoch, 0 Iter, Loss: 0.2701, Data time: 0.2968, Batch time: 0.4324
+2022-09-29 12:53:31,628 INFO     * Test
+2022-09-29 12:53:31,628 INFO     tensor([0.9986, 0.9879, 0.9824, 0.9872, 0.8265, 0.9545, 0.9777, 0.9788, 0.8471,
+        0.9654, 0.8655, 0.9852, 0.9889, 0.9701, 0.9905, 0.8579, 0.9716, 0.8764,
+        0.9925, 0.9584])
+2022-09-29 12:53:31,628 INFO     * Loss: 0.2134	 mAP: 0.9482	Data_time: 0.0010	 Batch_time: 0.1330
+2022-09-29 12:53:31,628 INFO     OP: 0.879	 OR: 0.921	 OF1: 0.900	CP: 0.863	 CR: 0.908	 CF1: 0.885
+2022-09-29 12:53:31,628 INFO     OP_3: 0.882	 OR_3: 0.918	 OF1_3: 0.900	CP_3: 0.865	 CR_3: 0.904	 CF1_3: 0.884
+2022-09-29 12:53:31,629 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:53:31,631 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:53:31,998 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:53:32,086 INFO      * best mAP=0.9497
+2022-09-29 12:53:32,796 INFO     2022-09-29 12:53:32, 46 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1159, Data time: 0.3087, Batch time: 0.7086
+2022-09-29 12:55:36,157 INFO     ====== star eval ======
+2022-09-29 12:55:36,571 INFO     2022-09-29 12:55:36, 46 Epoch, 0 Iter, Loss: 0.2875, Data time: 0.2743, Batch time: 0.4137
+2022-09-29 12:56:18,385 INFO     * Test
+2022-09-29 12:56:18,385 INFO     tensor([0.9980, 0.9880, 0.9825, 0.9869, 0.8289, 0.9578, 0.9778, 0.9798, 0.8463,
+        0.9641, 0.8629, 0.9849, 0.9899, 0.9705, 0.9906, 0.8592, 0.9687, 0.8772,
+        0.9917, 0.9588])
+2022-09-29 12:56:18,386 INFO     * Loss: 0.2120	 mAP: 0.9482	Data_time: 0.0010	 Batch_time: 0.1328
+2022-09-29 12:56:18,386 INFO     OP: 0.880	 OR: 0.923	 OF1: 0.901	CP: 0.865	 CR: 0.907	 CF1: 0.886
+2022-09-29 12:56:18,386 INFO     OP_3: 0.883	 OR_3: 0.920	 OF1_3: 0.901	CP_3: 0.867	 CR_3: 0.904	 CF1_3: 0.885
+2022-09-29 12:56:18,386 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:56:18,388 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:56:18,756 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:56:18,844 INFO      * best mAP=0.9497
+2022-09-29 12:56:19,533 INFO     2022-09-29 12:56:19, 47 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1266, Data time: 0.2766, Batch time: 0.6866
+2022-09-29 12:58:22,984 INFO     ====== star eval ======
+2022-09-29 12:58:23,408 INFO     2022-09-29 12:58:23, 47 Epoch, 0 Iter, Loss: 0.2774, Data time: 0.2884, Batch time: 0.4231
+2022-09-29 12:59:05,267 INFO     * Test
+2022-09-29 12:59:05,267 INFO     tensor([0.9984, 0.9889, 0.9825, 0.9869, 0.8279, 0.9564, 0.9781, 0.9791, 0.8491,
+        0.9647, 0.8656, 0.9852, 0.9893, 0.9716, 0.9909, 0.8585, 0.9696, 0.8808,
+        0.9923, 0.9590])
+2022-09-29 12:59:05,267 INFO     * Loss: 0.2116	 mAP: 0.9487	Data_time: 0.0010	 Batch_time: 0.1329
+2022-09-29 12:59:05,267 INFO     OP: 0.878	 OR: 0.924	 OF1: 0.901	CP: 0.863	 CR: 0.909	 CF1: 0.885
+2022-09-29 12:59:05,267 INFO     OP_3: 0.880	 OR_3: 0.920	 OF1_3: 0.900	CP_3: 0.864	 CR_3: 0.904	 CF1_3: 0.884
+2022-09-29 12:59:05,267 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 12:59:05,269 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 12:59:05,575 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 12:59:05,663 INFO      * best mAP=0.9497
+2022-09-29 12:59:06,367 INFO     2022-09-29 12:59:06, 48 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.1347, Data time: 0.2940, Batch time: 0.7022
+2022-09-29 13:01:09,825 INFO     ====== star eval ======
+2022-09-29 13:01:10,243 INFO     2022-09-29 13:01:10, 48 Epoch, 0 Iter, Loss: 0.2839, Data time: 0.2817, Batch time: 0.4162
+2022-09-29 13:01:52,156 INFO     * Test
+2022-09-29 13:01:52,156 INFO     tensor([0.9984, 0.9878, 0.9830, 0.9866, 0.8265, 0.9558, 0.9777, 0.9784, 0.8464,
+        0.9660, 0.8627, 0.9857, 0.9894, 0.9703, 0.9909, 0.8583, 0.9703, 0.8780,
+        0.9925, 0.9583])
+2022-09-29 13:01:52,157 INFO     * Loss: 0.2108	 mAP: 0.9481	Data_time: 0.0010	 Batch_time: 0.1331
+2022-09-29 13:01:52,157 INFO     OP: 0.882	 OR: 0.922	 OF1: 0.902	CP: 0.866	 CR: 0.907	 CF1: 0.886
+2022-09-29 13:01:52,157 INFO     OP_3: 0.884	 OR_3: 0.919	 OF1_3: 0.901	CP_3: 0.867	 CR_3: 0.903	 CF1_3: 0.885
+2022-09-29 13:01:52,157 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 13:01:52,159 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 13:01:52,480 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 13:01:52,568 INFO      * best mAP=0.9497
+2022-09-29 13:01:53,274 INFO     2022-09-29 13:01:53, 49 Epoch, lrp:0.00001000, lr:0.00010000, 0 Iter, Loss: 0.0811, Data time: 0.2985, Batch time: 0.7037
+2022-09-29 13:03:56,840 INFO     ====== star eval ======
+2022-09-29 13:03:57,261 INFO     2022-09-29 13:03:57, 49 Epoch, 0 Iter, Loss: 0.2707, Data time: 0.2844, Batch time: 0.4198
+2022-09-29 13:04:39,151 INFO     * Test
+2022-09-29 13:04:39,151 INFO     tensor([0.9985, 0.9873, 0.9826, 0.9873, 0.8304, 0.9542, 0.9767, 0.9782, 0.8524,
+        0.9651, 0.8678, 0.9860, 0.9892, 0.9712, 0.9906, 0.8586, 0.9725, 0.8792,
+        0.9921, 0.9594])
+2022-09-29 13:04:39,151 INFO     * Loss: 0.2145	 mAP: 0.9490	Data_time: 0.0010	 Batch_time: 0.1330
+2022-09-29 13:04:39,151 INFO     OP: 0.876	 OR: 0.925	 OF1: 0.900	CP: 0.859	 CR: 0.914	 CF1: 0.885
+2022-09-29 13:04:39,151 INFO     OP_3: 0.879	 OR_3: 0.921	 OF1_3: 0.900	CP_3: 0.861	 CR_3: 0.909	 CF1_3: 0.884
+2022-09-29 13:04:39,151 INFO     Now lrp:0.00001000, lr:0.00010000
+2022-09-29 13:04:39,153 INFO     Save checkpoint to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-09-29 13:04:39,467 INFO     Save results to ./checkpoint/VOC2007/TDRG/SGD_VOC_lr_001_lrp_01_bs16_fixed_tranformer/results.csv
+2022-09-29 13:04:39,554 INFO      * best mAP=0.9497

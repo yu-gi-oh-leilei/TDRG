@@ -101,7 +101,6 @@ if __name__ == "__main__":
     args.epochs = 50 #
     args.optimizer = {1:'SGD', 2: 'Adam', 3:'AdamW'}[1]
     args.display_interval = 400
-    args.batch_size = gpu_num * 18
     args.warmup_scheduler = {1: False, 2: True}[2]
     args.warmup_epoch = 0 if args.warmup_scheduler == False else args.warmup_epoch
 
@@ -110,6 +109,7 @@ if __name__ == "__main__":
         args.lr = 0.01
         args.lrp = 0.1
         args.epoch_step = [25, 35] # gap in COCO
+        args.epoch_step = [10, 20] # gap in VOC
     
     elif args.optimizer == 'Adam':
         args.lr = 5 * 1e-5
