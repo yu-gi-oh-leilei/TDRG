@@ -1,28 +1,32 @@
 # TDRG
 Unofficial PyTorch implementation of the paper [Transformer-based Dual Relation Graph for Multi-label Image Recognition. ICCV 2021](https://openaccess.thecvf.com/content/ICCV2021/html/Zhao_Transformer-Based_Dual_Relation_Graph_for_Multi-Label_Image_Recognition_ICCV_2021_paper.html)
-
 ![TDRG](./figs/motivation.png)
+
 
 ## Architecture
 The overall architecture of the proposed Transformer-based Dual Relation Graph (TDRG) network, the structural relation graph module to incorporate long-term contextual information, and the semantic relation graph module to model the dynamic class-wise dependencies.
 ![enter description here](./figs/TDRG.png)
 
 
+## Results on MS-COCO
+![TDRG](./figs/result.png)
+
+
 ## Reproducing result
-
-
 |DataSet | Author | Reproducing |
 |:----:  | :----: | :---------: |
 |MS-COCO |  84.56 |    84.75    |
 |VOC 2007|  94.95 |    95.10    |
 
 
-
 ## Prerequisites
 
 Python 3.8
+
 Pytorch 1.8.1
+
 CUDA 11.6
+
 RTX3090 × 1
 
 ## Datasets
