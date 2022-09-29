@@ -11,10 +11,10 @@ The overall architecture of the proposed Transformer-based Dual Relation Graph (
 ## Reproducing result
 
 
-| Author | Reproducing |
-| :----: | :---------: |
-|  84.56 |    84.75    |
-|  94.95 |    95.10    |
+|DataSet | Author | Reproducing |
+|:----:  | :----: | :---------: |
+|MS-COCO |  84.56 |    84.75    |
+|VOC 2007|  94.95 |    95.10    |
 
 
 
