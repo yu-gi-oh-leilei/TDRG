@@ -18,6 +18,7 @@ The overall architecture of the proposed Transformer-based Dual Relation Graph (
 |MS-COCO                   |  84.56 |    84.75    |
 |VOC 2007                  |  94.95 |    95.10    |
 |VOC 2007 pretrain on COCO |  -     |    96.43    |
+|NUS-WIDE                  |  -     |    63.50    |
 
 The results are reproduced in checkpoints
 
