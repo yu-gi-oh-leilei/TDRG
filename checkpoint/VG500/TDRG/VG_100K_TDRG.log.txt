@@ -1,0 +1,1213 @@
+2022-12-19 17:17:10,599 INFO     ==========================================
+2022-12-19 17:17:10,599 INFO     ==========       CONFIG      =============
+2022-12-19 17:17:10,599 INFO     ==========================================
+2022-12-19 17:17:10,599 INFO     data_root_dir: /media/mlldiskSSD/MLICdataset
+2022-12-19 17:17:10,599 INFO     image_size: 576
+2022-12-19 17:17:10,599 INFO     epochs: 50
+2022-12-19 17:17:10,599 INFO     epoch_step: [25, 35]
+2022-12-19 17:17:10,599 INFO     batch_size: 16
+2022-12-19 17:17:10,599 INFO     num_workers: 4
+2022-12-19 17:17:10,599 INFO     display_interval: 400
+2022-12-19 17:17:10,599 INFO     lr: 0.05
+2022-12-19 17:17:10,599 INFO     lrp: 0.1
+2022-12-19 17:17:10,599 INFO     momentum: 0.9
+2022-12-19 17:17:10,600 INFO     weight_decay: 0.0001
+2022-12-19 17:17:10,600 INFO     max_clip_grad_norm: 10.0
+2022-12-19 17:17:10,600 INFO     seed: 1
+2022-12-19 17:17:10,600 INFO     num_classes: 500
+2022-12-19 17:17:10,600 INFO     optimizer: SGD
+2022-12-19 17:17:10,600 INFO     backbone: ResNet101
+2022-12-19 17:17:10,600 INFO     warmup_epoch: 3
+2022-12-19 17:17:10,600 INFO     warmup_scheduler: True
+2022-12-19 17:17:10,600 INFO     cutmix_pretrained: False
+2022-12-19 17:17:10,600 INFO     data: VG_100K
+2022-12-19 17:17:10,600 INFO     model_name: TDRG
+2022-12-19 17:17:10,600 INFO     save_dir: ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer
+2022-12-19 17:17:10,600 INFO     evaluate: False
+2022-12-19 17:17:10,600 INFO     resume: 
+2022-12-19 17:17:10,600 INFO     display: False
+2022-12-19 17:17:10,600 INFO     summary_writer: True
+2022-12-19 17:17:10,600 INFO     gpus: 0
+2022-12-19 17:17:10,600 INFO     iter_per_epoch: 5181
+2022-12-19 17:17:10,600 INFO     ==========================================
+2022-12-19 17:17:10,600 INFO     ===========        END        ============
+2022-12-19 17:17:10,600 INFO     ==========================================
+2022-12-19 17:17:10,600 INFO     
+
+2022-12-19 17:17:10,604 INFO     ======== Start WarmUp ========
+2022-12-19 17:17:19,024 INFO     2022-12-19 17:17:19, 1 Epoch, lrp:0.00000032, lr:0.00000322, 0 Iter, Loss: 1435.9196, Data time: 1.0192, Batch time: 4.3368
+2022-12-19 17:20:55,149 INFO     2022-12-19 17:20:55, 1 Epoch, lrp:0.00012900, lr:0.00128997, 400 Iter, Loss: 1.2760, Data time: 0.0001, Batch time: 0.5394
+2022-12-19 17:24:31,748 INFO     2022-12-19 17:24:31, 1 Epoch, lrp:0.00025767, lr:0.00257672, 800 Iter, Loss: 0.5887, Data time: 0.0001, Batch time: 0.5456
+2022-12-19 17:28:08,628 INFO     2022-12-19 17:28:08, 1 Epoch, lrp:0.00038635, lr:0.00386348, 1200 Iter, Loss: 0.4234, Data time: 0.0001, Batch time: 0.5394
+2022-12-19 17:31:45,594 INFO     2022-12-19 17:31:45, 1 Epoch, lrp:0.00051502, lr:0.00515023, 1600 Iter, Loss: 0.4728, Data time: 0.0002, Batch time: 0.5414
+2022-12-19 17:35:22,812 INFO     2022-12-19 17:35:22, 1 Epoch, lrp:0.00064370, lr:0.00643698, 2000 Iter, Loss: 0.3790, Data time: 0.0001, Batch time: 0.5412
+2022-12-19 17:38:59,647 INFO     2022-12-19 17:38:59, 1 Epoch, lrp:0.00077237, lr:0.00772373, 2400 Iter, Loss: 0.3946, Data time: 0.0001, Batch time: 0.5405
+2022-12-19 17:42:36,591 INFO     2022-12-19 17:42:36, 1 Epoch, lrp:0.00090105, lr:0.00901049, 2800 Iter, Loss: 0.3839, Data time: 0.0002, Batch time: 0.5414
+2022-12-19 17:46:13,688 INFO     2022-12-19 17:46:13, 1 Epoch, lrp:0.00102972, lr:0.01029724, 3200 Iter, Loss: 0.3403, Data time: 0.0002, Batch time: 0.5410
+2022-12-19 17:49:50,384 INFO     2022-12-19 17:49:50, 1 Epoch, lrp:0.00115840, lr:0.01158399, 3600 Iter, Loss: 0.2915, Data time: 0.0001, Batch time: 0.5393
+2022-12-19 17:53:27,150 INFO     2022-12-19 17:53:27, 1 Epoch, lrp:0.00128707, lr:0.01287075, 4000 Iter, Loss: 0.3700, Data time: 0.0002, Batch time: 0.5395
+2022-12-19 17:57:04,176 INFO     2022-12-19 17:57:04, 1 Epoch, lrp:0.00141575, lr:0.01415750, 4400 Iter, Loss: 0.3236, Data time: 0.0002, Batch time: 0.5400
+2022-12-19 18:00:41,324 INFO     2022-12-19 18:00:41, 1 Epoch, lrp:0.00154443, lr:0.01544425, 4800 Iter, Loss: 0.3449, Data time: 0.0001, Batch time: 0.5401
+2022-12-19 18:04:07,573 INFO     ====== star eval ======
+2022-12-19 18:04:08,555 INFO     2022-12-19 18:04:08, 1 Epoch, 0 Iter, Loss: 0.3311, Data time: 0.7872, Batch time: 0.9799
+2022-12-19 18:05:25,768 INFO     2022-12-19 18:05:25, 1 Epoch, 400 Iter, Loss: 0.3338, Data time: 0.0002, Batch time: 0.1889
+2022-12-19 18:07:29,094 INFO     * Test
+2022-12-19 18:07:29,094 INFO     * Loss: 0.3287	 mAP: 0.2579	Data_time: 0.0015	 Batch_time: 0.1935
+2022-12-19 18:07:29,094 INFO     OP: 0.662	 OR: 0.226	 OF1: 0.337	CP: 0.279	 CR: 0.103	 CF1: 0.151
+2022-12-19 18:07:29,094 INFO     OP_3: 0.725	 OR_3: 0.144	 OF1_3: 0.241	CP_3: 0.246	 CR_3: 0.058	 CF1_3: 0.094
+2022-12-19 18:07:29,095 INFO     Now lrp:0.00166667, lr:0.01666667
+2022-12-19 18:07:29,098 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 18:07:29,854 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 18:07:34,654 INFO      * best mAP=0.2579
+2022-12-19 18:07:36,063 INFO     2022-12-19 18:07:36, 2 Epoch, lrp:0.00166699, lr:0.01666988, 0 Iter, Loss: 0.3401, Data time: 0.8519, Batch time: 1.3982
+2022-12-19 18:11:12,337 INFO     2022-12-19 18:11:12, 2 Epoch, lrp:0.00179566, lr:0.01795664, 400 Iter, Loss: 0.3270, Data time: 0.0001, Batch time: 0.5397
+2022-12-19 18:14:49,353 INFO     2022-12-19 18:14:49, 2 Epoch, lrp:0.00192434, lr:0.01924339, 800 Iter, Loss: 0.3263, Data time: 0.0002, Batch time: 0.5410
+2022-12-19 18:18:26,574 INFO     2022-12-19 18:18:26, 2 Epoch, lrp:0.00205301, lr:0.02053014, 1200 Iter, Loss: 0.3335, Data time: 0.0001, Batch time: 0.5494
+2022-12-19 18:22:03,699 INFO     2022-12-19 18:22:03, 2 Epoch, lrp:0.00218169, lr:0.02181690, 1600 Iter, Loss: 0.3688, Data time: 0.0002, Batch time: 0.5427
+2022-12-19 18:25:40,853 INFO     2022-12-19 18:25:40, 2 Epoch, lrp:0.00231036, lr:0.02310365, 2000 Iter, Loss: 0.3436, Data time: 0.0001, Batch time: 0.5480
+2022-12-19 18:29:17,908 INFO     2022-12-19 18:29:17, 2 Epoch, lrp:0.00243904, lr:0.02439040, 2400 Iter, Loss: 0.3211, Data time: 0.0001, Batch time: 0.5400
+2022-12-19 18:32:54,984 INFO     2022-12-19 18:32:54, 2 Epoch, lrp:0.00256772, lr:0.02567715, 2800 Iter, Loss: 0.3077, Data time: 0.0001, Batch time: 0.5414
+2022-12-19 18:36:32,216 INFO     2022-12-19 18:36:32, 2 Epoch, lrp:0.00269639, lr:0.02696391, 3200 Iter, Loss: 0.3050, Data time: 0.0001, Batch time: 0.5435
+2022-12-19 18:40:09,289 INFO     2022-12-19 18:40:09, 2 Epoch, lrp:0.00282507, lr:0.02825066, 3600 Iter, Loss: 0.3136, Data time: 0.0001, Batch time: 0.5463
+2022-12-19 18:43:46,087 INFO     2022-12-19 18:43:46, 2 Epoch, lrp:0.00295374, lr:0.02953741, 4000 Iter, Loss: 0.3096, Data time: 0.0001, Batch time: 0.5414
+2022-12-19 18:47:23,044 INFO     2022-12-19 18:47:23, 2 Epoch, lrp:0.00308242, lr:0.03082417, 4400 Iter, Loss: 0.2937, Data time: 0.0002, Batch time: 0.5414
+2022-12-19 18:51:00,659 INFO     2022-12-19 18:51:00, 2 Epoch, lrp:0.00321109, lr:0.03211092, 4800 Iter, Loss: 0.3506, Data time: 0.0001, Batch time: 0.5410
+2022-12-19 18:54:27,446 INFO     ====== star eval ======
+2022-12-19 18:54:28,431 INFO     2022-12-19 18:54:28, 2 Epoch, 0 Iter, Loss: 0.3001, Data time: 0.7835, Batch time: 0.9822
+2022-12-19 18:55:45,330 INFO     2022-12-19 18:55:45, 2 Epoch, 400 Iter, Loss: 0.3055, Data time: 0.0001, Batch time: 0.1890
+2022-12-19 18:57:49,096 INFO     * Test
+2022-12-19 18:57:49,096 INFO     * Loss: 0.2954	 mAP: 0.3054	Data_time: 0.0014	 Batch_time: 0.1929
+2022-12-19 18:57:49,096 INFO     OP: 0.673	 OR: 0.268	 OF1: 0.384	CP: 0.337	 CR: 0.147	 CF1: 0.205
+2022-12-19 18:57:49,097 INFO     OP_3: 0.747	 OR_3: 0.156	 OF1_3: 0.258	CP_3: 0.305	 CR_3: 0.086	 CF1_3: 0.134
+2022-12-19 18:57:49,097 INFO     Now lrp:0.00333333, lr:0.03333333
+2022-12-19 18:57:49,101 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 18:57:53,323 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 18:57:58,814 INFO      * best mAP=0.3054
+2022-12-19 18:58:00,316 INFO     2022-12-19 18:58:00, 3 Epoch, lrp:0.00333366, lr:0.03333655, 0 Iter, Loss: 0.3038, Data time: 0.9426, Batch time: 1.4909
+2022-12-19 19:01:36,865 INFO     2022-12-19 19:01:36, 3 Epoch, lrp:0.00346233, lr:0.03462330, 400 Iter, Loss: 0.3389, Data time: 0.0001, Batch time: 0.5394
+2022-12-19 19:05:14,125 INFO     2022-12-19 19:05:14, 3 Epoch, lrp:0.00359101, lr:0.03591006, 800 Iter, Loss: 0.2905, Data time: 0.0002, Batch time: 0.5475
+2022-12-19 19:08:51,304 INFO     2022-12-19 19:08:51, 3 Epoch, lrp:0.00371968, lr:0.03719681, 1200 Iter, Loss: 0.2581, Data time: 0.0001, Batch time: 0.5403
+2022-12-19 19:12:28,319 INFO     2022-12-19 19:12:28, 3 Epoch, lrp:0.00384836, lr:0.03848356, 1600 Iter, Loss: 0.2640, Data time: 0.0002, Batch time: 0.5413
+2022-12-19 19:16:05,650 INFO     2022-12-19 19:16:05, 3 Epoch, lrp:0.00397703, lr:0.03977031, 2000 Iter, Loss: 0.2435, Data time: 0.0002, Batch time: 0.5497
+2022-12-19 19:19:42,875 INFO     2022-12-19 19:19:42, 3 Epoch, lrp:0.00410571, lr:0.04105707, 2400 Iter, Loss: 0.2501, Data time: 0.0001, Batch time: 0.5436
+2022-12-19 19:23:19,975 INFO     2022-12-19 19:23:19, 3 Epoch, lrp:0.00423438, lr:0.04234382, 2800 Iter, Loss: 0.2789, Data time: 0.0001, Batch time: 0.5390
+2022-12-19 19:26:57,182 INFO     2022-12-19 19:26:57, 3 Epoch, lrp:0.00436306, lr:0.04363057, 3200 Iter, Loss: 0.2642, Data time: 0.0002, Batch time: 0.5414
+2022-12-19 19:30:34,263 INFO     2022-12-19 19:30:34, 3 Epoch, lrp:0.00449173, lr:0.04491733, 3600 Iter, Loss: 0.2554, Data time: 0.0002, Batch time: 0.5422
+2022-12-19 19:34:11,671 INFO     2022-12-19 19:34:11, 3 Epoch, lrp:0.00462041, lr:0.04620408, 4000 Iter, Loss: 0.2985, Data time: 0.0001, Batch time: 0.5419
+2022-12-19 19:37:48,525 INFO     2022-12-19 19:37:48, 3 Epoch, lrp:0.00474908, lr:0.04749083, 4400 Iter, Loss: 0.2634, Data time: 0.0001, Batch time: 0.5405
+2022-12-19 19:41:25,910 INFO     2022-12-19 19:41:25, 3 Epoch, lrp:0.00487776, lr:0.04877758, 4800 Iter, Loss: 0.2693, Data time: 0.0002, Batch time: 0.5502
+2022-12-19 19:44:52,513 INFO     ====== star eval ======
+2022-12-19 19:44:53,525 INFO     2022-12-19 19:44:53, 3 Epoch, 0 Iter, Loss: 0.2806, Data time: 0.8137, Batch time: 1.0104
+2022-12-19 19:46:10,767 INFO     2022-12-19 19:46:10, 3 Epoch, 400 Iter, Loss: 0.2920, Data time: 0.0002, Batch time: 0.1936
+2022-12-19 19:48:14,179 INFO     * Test
+2022-12-19 19:48:14,179 INFO     * Loss: 0.2843	 mAP: 0.3251	Data_time: 0.0015	 Batch_time: 0.1933
+2022-12-19 19:48:14,179 INFO     OP: 0.693	 OR: 0.269	 OF1: 0.387	CP: 0.367	 CR: 0.153	 CF1: 0.216
+2022-12-19 19:48:14,179 INFO     OP_3: 0.762	 OR_3: 0.161	 OF1_3: 0.266	CP_3: 0.342	 CR_3: 0.090	 CF1_3: 0.143
+2022-12-19 19:48:14,180 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-19 19:48:14,184 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 19:48:18,516 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 19:48:24,239 INFO      * best mAP=0.3251
+2022-12-19 19:48:25,772 INFO     2022-12-19 19:48:25, 4 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2846, Data time: 0.9809, Batch time: 1.5275
+2022-12-19 19:52:02,085 INFO     2022-12-19 19:52:02, 4 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2723, Data time: 0.0002, Batch time: 0.5488
+2022-12-19 19:55:39,042 INFO     2022-12-19 19:55:39, 4 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2677, Data time: 0.0002, Batch time: 0.5416
+2022-12-19 19:59:16,298 INFO     2022-12-19 19:59:16, 4 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.3002, Data time: 0.0001, Batch time: 0.5557
+2022-12-19 20:02:53,493 INFO     2022-12-19 20:02:53, 4 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2780, Data time: 0.0001, Batch time: 0.5396
+2022-12-19 20:06:30,486 INFO     2022-12-19 20:06:30, 4 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2944, Data time: 0.0001, Batch time: 0.5387
+2022-12-19 20:10:07,654 INFO     2022-12-19 20:10:07, 4 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.3298, Data time: 0.0002, Batch time: 0.5461
+2022-12-19 20:13:44,741 INFO     2022-12-19 20:13:44, 4 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.3274, Data time: 0.0001, Batch time: 0.5394
+2022-12-19 20:17:22,157 INFO     2022-12-19 20:17:22, 4 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2783, Data time: 0.0002, Batch time: 0.5417
+2022-12-19 20:20:59,215 INFO     2022-12-19 20:20:59, 4 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.3259, Data time: 0.0001, Batch time: 0.5414
+2022-12-19 20:24:36,345 INFO     2022-12-19 20:24:36, 4 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2796, Data time: 0.0001, Batch time: 0.5402
+2022-12-19 20:28:13,670 INFO     2022-12-19 20:28:13, 4 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2771, Data time: 0.0001, Batch time: 0.5405
+2022-12-19 20:31:51,147 INFO     2022-12-19 20:31:51, 4 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2953, Data time: 0.0001, Batch time: 0.5424
+2022-12-19 20:35:17,486 INFO     ====== star eval ======
+2022-12-19 20:35:18,480 INFO     2022-12-19 20:35:18, 4 Epoch, 0 Iter, Loss: 0.2853, Data time: 0.8003, Batch time: 0.9920
+2022-12-19 20:36:35,364 INFO     2022-12-19 20:36:35, 4 Epoch, 400 Iter, Loss: 0.2856, Data time: 0.0002, Batch time: 0.1892
+2022-12-19 20:38:38,979 INFO     * Test
+2022-12-19 20:38:38,979 INFO     * Loss: 0.2790	 mAP: 0.3374	Data_time: 0.0015	 Batch_time: 0.1928
+2022-12-19 20:38:38,979 INFO     OP: 0.682	 OR: 0.302	 OF1: 0.419	CP: 0.397	 CR: 0.176	 CF1: 0.243
+2022-12-19 20:38:38,979 INFO     OP_3: 0.767	 OR_3: 0.164	 OF1_3: 0.270	CP_3: 0.368	 CR_3: 0.095	 CF1_3: 0.151
+2022-12-19 20:38:38,980 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-19 20:38:38,984 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 20:38:43,238 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 20:38:48,790 INFO      * best mAP=0.3374
+2022-12-19 20:38:50,306 INFO     2022-12-19 20:38:50, 5 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2789, Data time: 0.9283, Batch time: 1.4842
+2022-12-19 20:42:26,595 INFO     2022-12-19 20:42:26, 5 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.3367, Data time: 0.0001, Batch time: 0.5396
+2022-12-19 20:46:03,442 INFO     2022-12-19 20:46:03, 5 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.3093, Data time: 0.0002, Batch time: 0.5432
+2022-12-19 20:49:40,312 INFO     2022-12-19 20:49:40, 5 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2499, Data time: 0.0001, Batch time: 0.5393
+2022-12-19 20:53:17,609 INFO     2022-12-19 20:53:17, 5 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2781, Data time: 0.0001, Batch time: 0.5393
+2022-12-19 20:56:54,524 INFO     2022-12-19 20:56:54, 5 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2876, Data time: 0.0001, Batch time: 0.5396
+2022-12-19 21:00:31,430 INFO     2022-12-19 21:00:31, 5 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2969, Data time: 0.0001, Batch time: 0.5396
+2022-12-19 21:04:08,261 INFO     2022-12-19 21:04:08, 5 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.3138, Data time: 0.0001, Batch time: 0.5406
+2022-12-19 21:07:45,552 INFO     2022-12-19 21:07:45, 5 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2749, Data time: 0.0002, Batch time: 0.5420
+2022-12-19 21:11:22,290 INFO     2022-12-19 21:11:22, 5 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2514, Data time: 0.0002, Batch time: 0.5407
+2022-12-19 21:14:58,958 INFO     2022-12-19 21:14:58, 5 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3013, Data time: 0.0001, Batch time: 0.5393
+2022-12-19 21:18:35,851 INFO     2022-12-19 21:18:35, 5 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.3082, Data time: 0.0001, Batch time: 0.5429
+2022-12-19 21:22:13,226 INFO     2022-12-19 21:22:13, 5 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2522, Data time: 0.0002, Batch time: 0.5406
+2022-12-19 21:25:39,443 INFO     ====== star eval ======
+2022-12-19 21:25:40,422 INFO     2022-12-19 21:25:40, 5 Epoch, 0 Iter, Loss: 0.2845, Data time: 0.7849, Batch time: 0.9774
+2022-12-19 21:26:57,227 INFO     2022-12-19 21:26:57, 5 Epoch, 400 Iter, Loss: 0.2800, Data time: 0.0002, Batch time: 0.1887
+2022-12-19 21:29:00,398 INFO     * Test
+2022-12-19 21:29:00,398 INFO     * Loss: 0.2749	 mAP: 0.3441	Data_time: 0.0014	 Batch_time: 0.1927
+2022-12-19 21:29:00,398 INFO     OP: 0.671	 OR: 0.324	 OF1: 0.437	CP: 0.401	 CR: 0.193	 CF1: 0.260
+2022-12-19 21:29:00,398 INFO     OP_3: 0.774	 OR_3: 0.167	 OF1_3: 0.274	CP_3: 0.373	 CR_3: 0.095	 CF1_3: 0.151
+2022-12-19 21:29:00,399 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-19 21:29:00,403 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 21:29:04,731 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 21:29:10,312 INFO      * best mAP=0.3441
+2022-12-19 21:29:11,808 INFO     2022-12-19 21:29:11, 6 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2822, Data time: 0.9165, Batch time: 1.4902
+2022-12-19 21:32:47,865 INFO     2022-12-19 21:32:47, 6 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2669, Data time: 0.0001, Batch time: 0.5392
+2022-12-19 21:36:24,935 INFO     2022-12-19 21:36:24, 6 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2956, Data time: 0.0001, Batch time: 0.5410
+2022-12-19 21:40:01,939 INFO     2022-12-19 21:40:01, 6 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2929, Data time: 0.0001, Batch time: 0.5456
+2022-12-19 21:43:38,928 INFO     2022-12-19 21:43:38, 6 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2458, Data time: 0.0001, Batch time: 0.5398
+2022-12-19 21:47:16,146 INFO     2022-12-19 21:47:16, 6 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2641, Data time: 0.0002, Batch time: 0.5434
+2022-12-19 21:50:53,237 INFO     2022-12-19 21:50:53, 6 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.3167, Data time: 0.0001, Batch time: 0.5397
+2022-12-19 21:54:30,023 INFO     2022-12-19 21:54:30, 6 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.3112, Data time: 0.0001, Batch time: 0.5416
+2022-12-19 21:58:07,203 INFO     2022-12-19 21:58:07, 6 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2817, Data time: 0.0001, Batch time: 0.5419
+2022-12-19 22:01:44,293 INFO     2022-12-19 22:01:44, 6 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.3024, Data time: 0.0002, Batch time: 0.5421
+2022-12-19 22:05:20,920 INFO     2022-12-19 22:05:20, 6 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3254, Data time: 0.0001, Batch time: 0.5402
+2022-12-19 22:08:57,871 INFO     2022-12-19 22:08:57, 6 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2411, Data time: 0.0001, Batch time: 0.5396
+2022-12-19 22:12:35,129 INFO     2022-12-19 22:12:35, 6 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2477, Data time: 0.0001, Batch time: 0.5437
+2022-12-19 22:16:01,635 INFO     ====== star eval ======
+2022-12-19 22:16:02,601 INFO     2022-12-19 22:16:02, 6 Epoch, 0 Iter, Loss: 0.2821, Data time: 0.7702, Batch time: 0.9642
+2022-12-19 22:17:19,290 INFO     2022-12-19 22:17:19, 6 Epoch, 400 Iter, Loss: 0.2829, Data time: 0.0002, Batch time: 0.1954
+2022-12-19 22:19:20,799 INFO     * Test
+2022-12-19 22:19:20,799 INFO     * Loss: 0.2734	 mAP: 0.3484	Data_time: 0.0014	 Batch_time: 0.1922
+2022-12-19 22:19:20,799 INFO     OP: 0.672	 OR: 0.330	 OF1: 0.442	CP: 0.414	 CR: 0.199	 CF1: 0.269
+2022-12-19 22:19:20,799 INFO     OP_3: 0.769	 OR_3: 0.166	 OF1_3: 0.273	CP_3: 0.384	 CR_3: 0.101	 CF1_3: 0.159
+2022-12-19 22:19:20,800 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-19 22:19:20,804 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 22:19:25,006 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 22:19:30,605 INFO      * best mAP=0.3484
+2022-12-19 22:19:32,079 INFO     2022-12-19 22:19:32, 7 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2825, Data time: 0.9036, Batch time: 1.4678
+2022-12-19 22:23:08,657 INFO     2022-12-19 22:23:08, 7 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.3003, Data time: 0.0001, Batch time: 0.5415
+2022-12-19 22:26:45,874 INFO     2022-12-19 22:26:45, 7 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2364, Data time: 0.0001, Batch time: 0.5408
+2022-12-19 22:30:23,327 INFO     2022-12-19 22:30:23, 7 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2970, Data time: 0.0002, Batch time: 0.5409
+2022-12-19 22:34:00,471 INFO     2022-12-19 22:34:00, 7 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2553, Data time: 0.0001, Batch time: 0.5406
+2022-12-19 22:37:37,430 INFO     2022-12-19 22:37:37, 7 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.3000, Data time: 0.0002, Batch time: 0.5400
+2022-12-19 22:41:14,018 INFO     2022-12-19 22:41:14, 7 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2859, Data time: 0.0002, Batch time: 0.5410
+2022-12-19 22:44:50,861 INFO     2022-12-19 22:44:50, 7 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.3015, Data time: 0.0001, Batch time: 0.5398
+2022-12-19 22:48:27,947 INFO     2022-12-19 22:48:27, 7 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2513, Data time: 0.0001, Batch time: 0.5398
+2022-12-19 22:52:04,776 INFO     2022-12-19 22:52:04, 7 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2483, Data time: 0.0002, Batch time: 0.5420
+2022-12-19 22:55:41,846 INFO     2022-12-19 22:55:41, 7 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3179, Data time: 0.0002, Batch time: 0.5473
+2022-12-19 22:59:18,498 INFO     2022-12-19 22:59:18, 7 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2957, Data time: 0.0001, Batch time: 0.5399
+2022-12-19 23:02:55,490 INFO     2022-12-19 23:02:55, 7 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.3372, Data time: 0.0001, Batch time: 0.5484
+2022-12-19 23:06:21,681 INFO     ====== star eval ======
+2022-12-19 23:06:22,646 INFO     2022-12-19 23:06:22, 7 Epoch, 0 Iter, Loss: 0.2837, Data time: 0.7677, Batch time: 0.9619
+2022-12-19 23:07:39,384 INFO     2022-12-19 23:07:39, 7 Epoch, 400 Iter, Loss: 0.2824, Data time: 0.0002, Batch time: 0.1893
+2022-12-19 23:09:42,494 INFO     * Test
+2022-12-19 23:09:42,495 INFO     * Loss: 0.2718	 mAP: 0.3512	Data_time: 0.0014	 Batch_time: 0.1921
+2022-12-19 23:09:42,495 INFO     OP: 0.690	 OR: 0.316	 OF1: 0.433	CP: 0.424	 CR: 0.176	 CF1: 0.249
+2022-12-19 23:09:42,495 INFO     OP_3: 0.778	 OR_3: 0.166	 OF1_3: 0.273	CP_3: 0.384	 CR_3: 0.092	 CF1_3: 0.149
+2022-12-19 23:09:42,495 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-19 23:09:42,499 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 23:09:46,422 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 23:09:51,909 INFO      * best mAP=0.3512
+2022-12-19 23:09:53,372 INFO     2022-12-19 23:09:53, 8 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2715, Data time: 0.9025, Batch time: 1.4584
+2022-12-19 23:13:29,499 INFO     2022-12-19 23:13:29, 8 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.3194, Data time: 0.0002, Batch time: 0.5395
+2022-12-19 23:17:06,215 INFO     2022-12-19 23:17:06, 8 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2393, Data time: 0.0002, Batch time: 0.5395
+2022-12-19 23:20:42,648 INFO     2022-12-19 23:20:42, 8 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2937, Data time: 0.0002, Batch time: 0.5391
+2022-12-19 23:24:18,785 INFO     2022-12-19 23:24:18, 8 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2654, Data time: 0.0001, Batch time: 0.5382
+2022-12-19 23:27:54,980 INFO     2022-12-19 23:27:54, 8 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2440, Data time: 0.0001, Batch time: 0.5382
+2022-12-19 23:31:30,818 INFO     2022-12-19 23:31:30, 8 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.3022, Data time: 0.0001, Batch time: 0.5377
+2022-12-19 23:35:06,541 INFO     2022-12-19 23:35:06, 8 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.3202, Data time: 0.0001, Batch time: 0.5383
+2022-12-19 23:38:42,650 INFO     2022-12-19 23:38:42, 8 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2903, Data time: 0.0001, Batch time: 0.5403
+2022-12-19 23:42:18,421 INFO     2022-12-19 23:42:18, 8 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2605, Data time: 0.0001, Batch time: 0.5391
+2022-12-19 23:45:54,586 INFO     2022-12-19 23:45:54, 8 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3051, Data time: 0.0001, Batch time: 0.5397
+2022-12-19 23:49:30,339 INFO     2022-12-19 23:49:30, 8 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2111, Data time: 0.0001, Batch time: 0.5392
+2022-12-19 23:53:06,492 INFO     2022-12-19 23:53:06, 8 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2902, Data time: 0.0001, Batch time: 0.5390
+2022-12-19 23:56:31,768 INFO     ====== star eval ======
+2022-12-19 23:56:32,749 INFO     2022-12-19 23:56:32, 8 Epoch, 0 Iter, Loss: 0.2794, Data time: 0.7868, Batch time: 0.9789
+2022-12-19 23:57:48,700 INFO     2022-12-19 23:57:48, 8 Epoch, 400 Iter, Loss: 0.2798, Data time: 0.0001, Batch time: 0.1881
+2022-12-19 23:59:48,026 INFO     * Test
+2022-12-19 23:59:48,026 INFO     * Loss: 0.2705	 mAP: 0.3537	Data_time: 0.0014	 Batch_time: 0.1906
+2022-12-19 23:59:48,026 INFO     OP: 0.688	 OR: 0.317	 OF1: 0.434	CP: 0.422	 CR: 0.185	 CF1: 0.258
+2022-12-19 23:59:48,026 INFO     OP_3: 0.779	 OR_3: 0.166	 OF1_3: 0.273	CP_3: 0.373	 CR_3: 0.098	 CF1_3: 0.155
+2022-12-19 23:59:48,027 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-19 23:59:48,031 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-19 23:59:52,101 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-19 23:59:57,530 INFO      * best mAP=0.3537
+2022-12-19 23:59:58,917 INFO     2022-12-19 23:59:58, 9 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2455, Data time: 0.8378, Batch time: 1.3808
+2022-12-20 00:03:33,717 INFO     2022-12-20 00:03:33, 9 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2668, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 00:07:09,739 INFO     2022-12-20 00:07:09, 9 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.3183, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 00:10:45,833 INFO     2022-12-20 00:10:45, 9 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2594, Data time: 0.0001, Batch time: 0.5402
+2022-12-20 00:14:22,144 INFO     2022-12-20 00:14:22, 9 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2630, Data time: 0.0002, Batch time: 0.5465
+2022-12-20 00:17:58,497 INFO     2022-12-20 00:17:58, 9 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.3066, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 00:21:34,556 INFO     2022-12-20 00:21:34, 9 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2743, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 00:25:10,553 INFO     2022-12-20 00:25:10, 9 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.3070, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 00:28:46,538 INFO     2022-12-20 00:28:46, 9 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3161, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 00:32:22,270 INFO     2022-12-20 00:32:22, 9 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2512, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 00:35:57,954 INFO     2022-12-20 00:35:57, 9 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2739, Data time: 0.0001, Batch time: 0.5462
+2022-12-20 00:39:33,725 INFO     2022-12-20 00:39:33, 9 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.3180, Data time: 0.0001, Batch time: 0.5412
+2022-12-20 00:43:09,843 INFO     2022-12-20 00:43:09, 9 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2742, Data time: 0.0001, Batch time: 0.5378
+2022-12-20 00:46:35,038 INFO     ====== star eval ======
+2022-12-20 00:46:36,025 INFO     2022-12-20 00:46:36, 9 Epoch, 0 Iter, Loss: 0.2812, Data time: 0.7958, Batch time: 0.9852
+2022-12-20 00:47:52,027 INFO     2022-12-20 00:47:52, 9 Epoch, 400 Iter, Loss: 0.2779, Data time: 0.0001, Batch time: 0.1878
+2022-12-20 00:49:51,183 INFO     * Test
+2022-12-20 00:49:51,184 INFO     * Loss: 0.2692	 mAP: 0.3569	Data_time: 0.0014	 Batch_time: 0.1906
+2022-12-20 00:49:51,184 INFO     OP: 0.685	 OR: 0.324	 OF1: 0.440	CP: 0.432	 CR: 0.194	 CF1: 0.268
+2022-12-20 00:49:51,184 INFO     OP_3: 0.777	 OR_3: 0.167	 OF1_3: 0.275	CP_3: 0.397	 CR_3: 0.101	 CF1_3: 0.161
+2022-12-20 00:49:51,184 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 00:49:51,188 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 00:49:55,113 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 00:50:00,725 INFO      * best mAP=0.3569
+2022-12-20 00:50:02,111 INFO     2022-12-20 00:50:02, 10 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.3340, Data time: 0.8418, Batch time: 1.3807
+2022-12-20 00:53:37,138 INFO     2022-12-20 00:53:37, 10 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2516, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 00:57:12,897 INFO     2022-12-20 00:57:12, 10 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2881, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 01:00:48,919 INFO     2022-12-20 01:00:48, 10 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2524, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 01:04:25,034 INFO     2022-12-20 01:04:25, 10 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2615, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 01:08:00,839 INFO     2022-12-20 01:08:00, 10 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2547, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 01:11:36,606 INFO     2022-12-20 01:11:36, 10 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2531, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 01:15:12,445 INFO     2022-12-20 01:15:12, 10 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2836, Data time: 0.0001, Batch time: 0.5374
+2022-12-20 01:18:48,774 INFO     2022-12-20 01:18:48, 10 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2645, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 01:22:24,861 INFO     2022-12-20 01:22:24, 10 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2748, Data time: 0.0002, Batch time: 0.5465
+2022-12-20 01:26:00,714 INFO     2022-12-20 01:26:00, 10 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2756, Data time: 0.0001, Batch time: 0.5377
+2022-12-20 01:29:36,554 INFO     2022-12-20 01:29:36, 10 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2439, Data time: 0.0002, Batch time: 0.5391
+2022-12-20 01:33:12,742 INFO     2022-12-20 01:33:12, 10 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2714, Data time: 0.0001, Batch time: 0.5396
+2022-12-20 01:36:38,044 INFO     ====== star eval ======
+2022-12-20 01:36:39,112 INFO     2022-12-20 01:36:39, 10 Epoch, 0 Iter, Loss: 0.2767, Data time: 0.8753, Batch time: 1.0661
+2022-12-20 01:37:55,116 INFO     2022-12-20 01:37:55, 10 Epoch, 400 Iter, Loss: 0.2788, Data time: 0.0001, Batch time: 0.1877
+2022-12-20 01:39:53,832 INFO     * Test
+2022-12-20 01:39:53,832 INFO     * Loss: 0.2691	 mAP: 0.3581	Data_time: 0.0016	 Batch_time: 0.1906
+2022-12-20 01:39:53,832 INFO     OP: 0.684	 OR: 0.326	 OF1: 0.442	CP: 0.408	 CR: 0.209	 CF1: 0.276
+2022-12-20 01:39:53,832 INFO     OP_3: 0.777	 OR_3: 0.167	 OF1_3: 0.275	CP_3: 0.393	 CR_3: 0.109	 CF1_3: 0.171
+2022-12-20 01:39:53,833 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 01:39:53,836 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 01:39:58,118 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 01:40:03,602 INFO      * best mAP=0.3581
+2022-12-20 01:40:05,013 INFO     2022-12-20 01:40:05, 11 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2821, Data time: 0.8575, Batch time: 1.4055
+2022-12-20 01:43:39,945 INFO     2022-12-20 01:43:39, 11 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2790, Data time: 0.0001, Batch time: 0.5375
+2022-12-20 01:47:16,128 INFO     2022-12-20 01:47:16, 11 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2497, Data time: 0.0001, Batch time: 0.5378
+2022-12-20 01:50:52,039 INFO     2022-12-20 01:50:52, 11 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2951, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 01:54:28,144 INFO     2022-12-20 01:54:28, 11 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2852, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 01:58:04,127 INFO     2022-12-20 01:58:04, 11 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2648, Data time: 0.0002, Batch time: 0.5392
+2022-12-20 02:01:39,790 INFO     2022-12-20 02:01:39, 11 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2697, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 02:05:15,680 INFO     2022-12-20 02:05:15, 11 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2922, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 02:08:51,859 INFO     2022-12-20 02:08:51, 11 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3240, Data time: 0.0002, Batch time: 0.5384
+2022-12-20 02:12:27,521 INFO     2022-12-20 02:12:27, 11 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2573, Data time: 0.0002, Batch time: 0.5391
+2022-12-20 02:16:03,330 INFO     2022-12-20 02:16:03, 11 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3001, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 02:19:39,257 INFO     2022-12-20 02:19:39, 11 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2461, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 02:23:15,627 INFO     2022-12-20 02:23:15, 11 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.3109, Data time: 0.0001, Batch time: 0.5373
+2022-12-20 02:26:40,789 INFO     ====== star eval ======
+2022-12-20 02:26:41,740 INFO     2022-12-20 02:26:41, 11 Epoch, 0 Iter, Loss: 0.2725, Data time: 0.7565, Batch time: 0.9488
+2022-12-20 02:27:57,600 INFO     2022-12-20 02:27:57, 11 Epoch, 400 Iter, Loss: 0.2750, Data time: 0.0001, Batch time: 0.1883
+2022-12-20 02:30:10,658 INFO     * Test
+2022-12-20 02:30:10,658 INFO     * Loss: 0.2672	 mAP: 0.3589	Data_time: 0.0014	 Batch_time: 0.1905
+2022-12-20 02:30:10,658 INFO     OP: 0.706	 OR: 0.310	 OF1: 0.431	CP: 0.421	 CR: 0.180	 CF1: 0.253
+2022-12-20 02:30:10,659 INFO     OP_3: 0.787	 OR_3: 0.168	 OF1_3: 0.276	CP_3: 0.378	 CR_3: 0.099	 CF1_3: 0.156
+2022-12-20 02:30:10,659 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 02:30:10,664 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 02:30:15,039 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 02:30:20,532 INFO      * best mAP=0.3589
+2022-12-20 02:30:21,951 INFO     2022-12-20 02:30:21, 12 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.3106, Data time: 0.8627, Batch time: 1.4063
+2022-12-20 02:33:56,830 INFO     2022-12-20 02:33:56, 12 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2782, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 02:37:32,575 INFO     2022-12-20 02:37:32, 12 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2311, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 02:41:08,566 INFO     2022-12-20 02:41:08, 12 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.3110, Data time: 0.0001, Batch time: 0.5454
+2022-12-20 02:44:44,596 INFO     2022-12-20 02:44:44, 12 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2859, Data time: 0.0001, Batch time: 0.5373
+2022-12-20 02:48:20,463 INFO     2022-12-20 02:48:20, 12 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.3097, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 02:51:56,180 INFO     2022-12-20 02:51:56, 12 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.3057, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 02:55:32,084 INFO     2022-12-20 02:55:32, 12 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2846, Data time: 0.0001, Batch time: 0.5372
+2022-12-20 02:59:08,167 INFO     2022-12-20 02:59:08, 12 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3098, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 03:02:43,858 INFO     2022-12-20 03:02:43, 12 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2646, Data time: 0.0002, Batch time: 0.5397
+2022-12-20 03:06:19,702 INFO     2022-12-20 03:06:19, 12 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3077, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 03:09:55,531 INFO     2022-12-20 03:09:55, 12 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.3097, Data time: 0.0001, Batch time: 0.5402
+2022-12-20 03:13:31,682 INFO     2022-12-20 03:13:31, 12 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2839, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 03:16:56,801 INFO     ====== star eval ======
+2022-12-20 03:16:57,792 INFO     2022-12-20 03:16:57, 12 Epoch, 0 Iter, Loss: 0.2778, Data time: 0.7966, Batch time: 0.9885
+2022-12-20 03:18:13,694 INFO     2022-12-20 03:18:13, 12 Epoch, 400 Iter, Loss: 0.2799, Data time: 0.0001, Batch time: 0.1882
+2022-12-20 03:20:58,887 INFO     * Test
+2022-12-20 03:20:58,887 INFO     * Loss: 0.2684	 mAP: 0.3591	Data_time: 0.0014	 Batch_time: 0.1905
+2022-12-20 03:20:58,888 INFO     OP: 0.675	 OR: 0.340	 OF1: 0.452	CP: 0.416	 CR: 0.203	 CF1: 0.272
+2022-12-20 03:20:58,888 INFO     OP_3: 0.778	 OR_3: 0.167	 OF1_3: 0.276	CP_3: 0.390	 CR_3: 0.099	 CF1_3: 0.158
+2022-12-20 03:20:58,888 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 03:20:58,893 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 03:21:03,045 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 03:21:08,492 INFO      * best mAP=0.3591
+2022-12-20 03:21:09,933 INFO     2022-12-20 03:21:09, 13 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2430, Data time: 0.8937, Batch time: 1.4294
+2022-12-20 03:24:44,470 INFO     2022-12-20 03:24:44, 13 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2850, Data time: 0.0001, Batch time: 0.5372
+2022-12-20 03:28:19,927 INFO     2022-12-20 03:28:19, 13 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2886, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 03:31:55,596 INFO     2022-12-20 03:31:55, 13 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.3061, Data time: 0.0001, Batch time: 0.5391
+2022-12-20 03:35:31,356 INFO     2022-12-20 03:35:31, 13 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.3109, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 03:39:07,759 INFO     2022-12-20 03:39:07, 13 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2759, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 03:42:43,526 INFO     2022-12-20 03:42:43, 13 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2727, Data time: 0.0001, Batch time: 0.5461
+2022-12-20 03:46:19,578 INFO     2022-12-20 03:46:19, 13 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2581, Data time: 0.0001, Batch time: 0.5374
+2022-12-20 03:49:55,527 INFO     2022-12-20 03:49:55, 13 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2720, Data time: 0.0001, Batch time: 0.5377
+2022-12-20 03:53:31,330 INFO     2022-12-20 03:53:31, 13 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2777, Data time: 0.0001, Batch time: 0.5377
+2022-12-20 03:57:07,325 INFO     2022-12-20 03:57:07, 13 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3428, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 04:00:42,920 INFO     2022-12-20 04:00:42, 13 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2911, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 04:04:19,171 INFO     2022-12-20 04:04:19, 13 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2398, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 04:07:44,432 INFO     ====== star eval ======
+2022-12-20 04:07:45,345 INFO     2022-12-20 04:07:45, 13 Epoch, 0 Iter, Loss: 0.2724, Data time: 0.7160, Batch time: 0.9108
+2022-12-20 04:09:01,514 INFO     2022-12-20 04:09:01, 13 Epoch, 400 Iter, Loss: 0.2776, Data time: 0.0002, Batch time: 0.1883
+2022-12-20 04:11:01,442 INFO     * Test
+2022-12-20 04:11:01,442 INFO     * Loss: 0.2672	 mAP: 0.3602	Data_time: 0.0013	 Batch_time: 0.1909
+2022-12-20 04:11:01,442 INFO     OP: 0.695	 OR: 0.322	 OF1: 0.440	CP: 0.436	 CR: 0.189	 CF1: 0.264
+2022-12-20 04:11:01,442 INFO     OP_3: 0.785	 OR_3: 0.168	 OF1_3: 0.277	CP_3: 0.396	 CR_3: 0.099	 CF1_3: 0.159
+2022-12-20 04:11:01,443 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 04:11:01,447 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 04:11:06,261 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 04:11:11,971 INFO      * best mAP=0.3602
+2022-12-20 04:11:13,376 INFO     2022-12-20 04:11:13, 14 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2750, Data time: 0.8551, Batch time: 1.3941
+2022-12-20 04:14:48,425 INFO     2022-12-20 04:14:48, 14 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2730, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 04:18:24,284 INFO     2022-12-20 04:18:24, 14 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2803, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 04:22:00,046 INFO     2022-12-20 04:22:00, 14 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2673, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 04:25:35,699 INFO     2022-12-20 04:25:35, 14 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2445, Data time: 0.0001, Batch time: 0.5415
+2022-12-20 04:29:11,542 INFO     2022-12-20 04:29:11, 14 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2880, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 04:32:47,082 INFO     2022-12-20 04:32:47, 14 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2589, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 04:36:22,817 INFO     2022-12-20 04:36:22, 14 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2499, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 04:39:58,843 INFO     2022-12-20 04:39:58, 14 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2602, Data time: 0.0001, Batch time: 0.5374
+2022-12-20 04:43:34,530 INFO     2022-12-20 04:43:34, 14 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2549, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 04:47:10,336 INFO     2022-12-20 04:47:10, 14 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3171, Data time: 0.0001, Batch time: 0.5377
+2022-12-20 04:50:46,035 INFO     2022-12-20 04:50:46, 14 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2093, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 04:54:22,174 INFO     2022-12-20 04:54:22, 14 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2483, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 04:57:47,340 INFO     ====== star eval ======
+2022-12-20 04:57:48,274 INFO     2022-12-20 04:57:48, 14 Epoch, 0 Iter, Loss: 0.2720, Data time: 0.7395, Batch time: 0.9316
+2022-12-20 04:59:04,297 INFO     2022-12-20 04:59:04, 14 Epoch, 400 Iter, Loss: 0.2749, Data time: 0.0002, Batch time: 0.1884
+2022-12-20 05:01:48,979 INFO     * Test
+2022-12-20 05:01:48,979 INFO     * Loss: 0.2676	 mAP: 0.3621	Data_time: 0.0013	 Batch_time: 0.1906
+2022-12-20 05:01:48,979 INFO     OP: 0.703	 OR: 0.311	 OF1: 0.432	CP: 0.434	 CR: 0.180	 CF1: 0.255
+2022-12-20 05:01:48,979 INFO     OP_3: 0.786	 OR_3: 0.167	 OF1_3: 0.276	CP_3: 0.387	 CR_3: 0.095	 CF1_3: 0.153
+2022-12-20 05:01:48,980 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 05:01:48,984 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 05:01:53,326 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 05:01:58,929 INFO      * best mAP=0.3621
+2022-12-20 05:02:00,414 INFO     2022-12-20 05:02:00, 15 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2999, Data time: 0.9294, Batch time: 1.4766
+2022-12-20 05:05:34,939 INFO     2022-12-20 05:05:34, 15 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2689, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 05:09:10,838 INFO     2022-12-20 05:09:10, 15 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2589, Data time: 0.0001, Batch time: 0.5451
+2022-12-20 05:12:46,460 INFO     2022-12-20 05:12:46, 15 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2916, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 05:16:21,905 INFO     2022-12-20 05:16:21, 15 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2604, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 05:19:57,818 INFO     2022-12-20 05:19:57, 15 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2853, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 05:23:33,344 INFO     2022-12-20 05:23:33, 15 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2718, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 05:27:08,728 INFO     2022-12-20 05:27:08, 15 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2447, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 05:30:44,423 INFO     2022-12-20 05:30:44, 15 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2929, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 05:34:19,925 INFO     2022-12-20 05:34:19, 15 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.3096, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 05:37:55,558 INFO     2022-12-20 05:37:55, 15 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2446, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 05:41:31,110 INFO     2022-12-20 05:41:31, 15 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.3129, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 05:45:07,372 INFO     2022-12-20 05:45:07, 15 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.3017, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 05:48:32,640 INFO     ====== star eval ======
+2022-12-20 05:48:33,586 INFO     2022-12-20 05:48:33, 15 Epoch, 0 Iter, Loss: 0.2795, Data time: 0.7529, Batch time: 0.9444
+2022-12-20 05:49:50,098 INFO     2022-12-20 05:49:50, 15 Epoch, 400 Iter, Loss: 0.2767, Data time: 0.0001, Batch time: 0.1889
+2022-12-20 05:51:50,483 INFO     * Test
+2022-12-20 05:51:50,483 INFO     * Loss: 0.2677	 mAP: 0.3613	Data_time: 0.0014	 Batch_time: 0.1915
+2022-12-20 05:51:50,484 INFO     OP: 0.677	 OR: 0.336	 OF1: 0.449	CP: 0.424	 CR: 0.195	 CF1: 0.268
+2022-12-20 05:51:50,484 INFO     OP_3: 0.772	 OR_3: 0.166	 OF1_3: 0.274	CP_3: 0.370	 CR_3: 0.098	 CF1_3: 0.155
+2022-12-20 05:51:50,484 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 05:51:50,488 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 05:51:52,595 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 05:51:57,302 INFO      * best mAP=0.3621
+2022-12-20 05:51:58,713 INFO     2022-12-20 05:51:58, 16 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2671, Data time: 0.8608, Batch time: 1.4044
+2022-12-20 05:55:33,425 INFO     2022-12-20 05:55:33, 16 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2797, Data time: 0.0001, Batch time: 0.5377
+2022-12-20 05:59:09,210 INFO     2022-12-20 05:59:09, 16 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2812, Data time: 0.0001, Batch time: 0.5376
+2022-12-20 06:02:44,797 INFO     2022-12-20 06:02:44, 16 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.3087, Data time: 0.0001, Batch time: 0.5377
+2022-12-20 06:06:20,492 INFO     2022-12-20 06:06:20, 16 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2832, Data time: 0.0001, Batch time: 0.5365
+2022-12-20 06:09:56,101 INFO     2022-12-20 06:09:56, 16 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2820, Data time: 0.0002, Batch time: 0.5389
+2022-12-20 06:13:31,755 INFO     2022-12-20 06:13:31, 16 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2768, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 06:17:07,457 INFO     2022-12-20 06:17:07, 16 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2489, Data time: 0.0001, Batch time: 0.5367
+2022-12-20 06:20:43,311 INFO     2022-12-20 06:20:43, 16 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3000, Data time: 0.0001, Batch time: 0.5372
+2022-12-20 06:24:18,926 INFO     2022-12-20 06:24:18, 16 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2791, Data time: 0.0001, Batch time: 0.5442
+2022-12-20 06:27:54,620 INFO     2022-12-20 06:27:54, 16 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2652, Data time: 0.0001, Batch time: 0.5373
+2022-12-20 06:31:30,111 INFO     2022-12-20 06:31:30, 16 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2616, Data time: 0.0001, Batch time: 0.5376
+2022-12-20 06:35:06,775 INFO     2022-12-20 06:35:06, 16 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2796, Data time: 0.0001, Batch time: 0.5459
+2022-12-20 06:38:32,051 INFO     ====== star eval ======
+2022-12-20 06:38:33,068 INFO     2022-12-20 06:38:33, 16 Epoch, 0 Iter, Loss: 0.2820, Data time: 0.8220, Batch time: 1.0143
+2022-12-20 06:39:49,208 INFO     2022-12-20 06:39:49, 16 Epoch, 400 Iter, Loss: 0.2774, Data time: 0.0001, Batch time: 0.1884
+2022-12-20 06:41:49,256 INFO     * Test
+2022-12-20 06:41:49,256 INFO     * Loss: 0.2680	 mAP: 0.3621	Data_time: 0.0015	 Batch_time: 0.1910
+2022-12-20 06:41:49,256 INFO     OP: 0.692	 OR: 0.326	 OF1: 0.443	CP: 0.428	 CR: 0.187	 CF1: 0.261
+2022-12-20 06:41:49,257 INFO     OP_3: 0.787	 OR_3: 0.167	 OF1_3: 0.276	CP_3: 0.380	 CR_3: 0.097	 CF1_3: 0.155
+2022-12-20 06:41:49,257 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 06:41:49,262 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 06:41:53,646 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 06:41:59,123 INFO      * best mAP=0.3621
+2022-12-20 06:42:00,520 INFO     2022-12-20 06:42:00, 17 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2961, Data time: 0.8336, Batch time: 1.3907
+2022-12-20 06:45:35,334 INFO     2022-12-20 06:45:35, 17 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.3013, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 06:49:10,881 INFO     2022-12-20 06:49:10, 17 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2726, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 06:52:46,522 INFO     2022-12-20 06:52:46, 17 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2480, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 06:56:22,242 INFO     2022-12-20 06:56:22, 17 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2769, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 06:59:58,018 INFO     2022-12-20 06:59:58, 17 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2685, Data time: 0.0001, Batch time: 0.5378
+2022-12-20 07:03:33,400 INFO     2022-12-20 07:03:33, 17 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2597, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 07:07:08,915 INFO     2022-12-20 07:07:08, 17 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2559, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 07:10:44,927 INFO     2022-12-20 07:10:44, 17 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3057, Data time: 0.0002, Batch time: 0.5371
+2022-12-20 07:14:20,728 INFO     2022-12-20 07:14:20, 17 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2609, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 07:17:56,357 INFO     2022-12-20 07:17:56, 17 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2738, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 07:21:31,999 INFO     2022-12-20 07:21:31, 17 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2844, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 07:25:08,157 INFO     2022-12-20 07:25:08, 17 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2593, Data time: 0.0002, Batch time: 0.5383
+2022-12-20 07:28:33,412 INFO     ====== star eval ======
+2022-12-20 07:28:34,361 INFO     2022-12-20 07:28:34, 17 Epoch, 0 Iter, Loss: 0.2746, Data time: 0.7531, Batch time: 0.9469
+2022-12-20 07:29:50,308 INFO     2022-12-20 07:29:50, 17 Epoch, 400 Iter, Loss: 0.2698, Data time: 0.0001, Batch time: 0.1977
+2022-12-20 07:31:50,342 INFO     * Test
+2022-12-20 07:31:50,342 INFO     * Loss: 0.2670	 mAP: 0.3642	Data_time: 0.0014	 Batch_time: 0.1906
+2022-12-20 07:31:50,342 INFO     OP: 0.698	 OR: 0.316	 OF1: 0.435	CP: 0.424	 CR: 0.188	 CF1: 0.261
+2022-12-20 07:31:50,342 INFO     OP_3: 0.781	 OR_3: 0.168	 OF1_3: 0.277	CP_3: 0.387	 CR_3: 0.099	 CF1_3: 0.158
+2022-12-20 07:31:50,343 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 07:31:50,347 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 07:31:54,613 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 07:32:00,208 INFO      * best mAP=0.3642
+2022-12-20 07:32:01,641 INFO     2022-12-20 07:32:01, 18 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2924, Data time: 0.8702, Batch time: 1.4220
+2022-12-20 07:35:36,797 INFO     2022-12-20 07:35:36, 18 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2679, Data time: 0.0001, Batch time: 0.5375
+2022-12-20 07:39:12,418 INFO     2022-12-20 07:39:12, 18 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2778, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 07:42:48,280 INFO     2022-12-20 07:42:48, 18 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2574, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 07:46:23,998 INFO     2022-12-20 07:46:23, 18 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2754, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 07:49:59,809 INFO     2022-12-20 07:49:59, 18 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2760, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 07:53:35,514 INFO     2022-12-20 07:53:35, 18 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2780, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 07:57:11,394 INFO     2022-12-20 07:57:11, 18 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2826, Data time: 0.0001, Batch time: 0.5370
+2022-12-20 08:00:47,557 INFO     2022-12-20 08:00:47, 18 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2482, Data time: 0.0001, Batch time: 0.5365
+2022-12-20 08:04:22,965 INFO     2022-12-20 08:04:22, 18 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2713, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 08:07:58,359 INFO     2022-12-20 08:07:58, 18 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2881, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 08:11:33,954 INFO     2022-12-20 08:11:33, 18 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2948, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 08:15:10,309 INFO     2022-12-20 08:15:10, 18 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2570, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 08:18:35,489 INFO     ====== star eval ======
+2022-12-20 08:18:36,476 INFO     2022-12-20 08:18:36, 18 Epoch, 0 Iter, Loss: 0.2748, Data time: 0.7930, Batch time: 0.9848
+2022-12-20 08:19:52,619 INFO     2022-12-20 08:19:52, 18 Epoch, 400 Iter, Loss: 0.2753, Data time: 0.0001, Batch time: 0.1881
+2022-12-20 08:21:53,230 INFO     * Test
+2022-12-20 08:21:53,230 INFO     * Loss: 0.2679	 mAP: 0.3643	Data_time: 0.0014	 Batch_time: 0.1911
+2022-12-20 08:21:53,230 INFO     OP: 0.709	 OR: 0.301	 OF1: 0.423	CP: 0.436	 CR: 0.173	 CF1: 0.248
+2022-12-20 08:21:53,230 INFO     OP_3: 0.786	 OR_3: 0.165	 OF1_3: 0.273	CP_3: 0.399	 CR_3: 0.094	 CF1_3: 0.152
+2022-12-20 08:21:53,231 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 08:21:53,235 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 08:21:57,786 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 08:22:03,425 INFO      * best mAP=0.3643
+2022-12-20 08:22:04,800 INFO     2022-12-20 08:22:04, 19 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2888, Data time: 0.8255, Batch time: 1.3643
+2022-12-20 08:25:39,594 INFO     2022-12-20 08:25:39, 19 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2573, Data time: 0.0001, Batch time: 0.5371
+2022-12-20 08:29:15,166 INFO     2022-12-20 08:29:15, 19 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2514, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 08:32:50,751 INFO     2022-12-20 08:32:50, 19 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2769, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 08:36:26,509 INFO     2022-12-20 08:36:26, 19 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2724, Data time: 0.0001, Batch time: 0.5466
+2022-12-20 08:40:02,296 INFO     2022-12-20 08:40:02, 19 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2345, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 08:43:38,058 INFO     2022-12-20 08:43:38, 19 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2295, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 08:47:13,756 INFO     2022-12-20 08:47:13, 19 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2825, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 08:50:49,884 INFO     2022-12-20 08:50:49, 19 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2539, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 08:54:25,491 INFO     2022-12-20 08:54:25, 19 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2278, Data time: 0.0001, Batch time: 0.5373
+2022-12-20 08:58:01,069 INFO     2022-12-20 08:58:01, 19 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2686, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 09:01:36,706 INFO     2022-12-20 09:01:36, 19 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2518, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 09:05:12,832 INFO     2022-12-20 09:05:12, 19 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2921, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 09:08:38,010 INFO     ====== star eval ======
+2022-12-20 09:08:38,937 INFO     2022-12-20 09:08:38, 19 Epoch, 0 Iter, Loss: 0.2738, Data time: 0.7342, Batch time: 0.9257
+2022-12-20 09:09:54,900 INFO     2022-12-20 09:09:54, 19 Epoch, 400 Iter, Loss: 0.2741, Data time: 0.0002, Batch time: 0.1881
+2022-12-20 09:12:40,395 INFO     * Test
+2022-12-20 09:12:40,395 INFO     * Loss: 0.2674	 mAP: 0.3658	Data_time: 0.0014	 Batch_time: 0.1907
+2022-12-20 09:12:40,395 INFO     OP: 0.702	 OR: 0.317	 OF1: 0.437	CP: 0.432	 CR: 0.194	 CF1: 0.268
+2022-12-20 09:12:40,395 INFO     OP_3: 0.784	 OR_3: 0.168	 OF1_3: 0.277	CP_3: 0.392	 CR_3: 0.102	 CF1_3: 0.162
+2022-12-20 09:12:40,396 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 09:12:40,400 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 09:12:44,916 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 09:12:50,442 INFO      * best mAP=0.3658
+2022-12-20 09:12:51,940 INFO     2022-12-20 09:12:51, 20 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.3154, Data time: 0.9493, Batch time: 1.4885
+2022-12-20 09:16:26,774 INFO     2022-12-20 09:16:26, 20 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2681, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 09:20:02,470 INFO     2022-12-20 09:20:02, 20 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2688, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 09:23:38,401 INFO     2022-12-20 09:23:38, 20 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2620, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 09:27:14,048 INFO     2022-12-20 09:27:14, 20 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2788, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 09:30:49,919 INFO     2022-12-20 09:30:49, 20 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2647, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 09:34:25,466 INFO     2022-12-20 09:34:25, 20 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2610, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 09:38:01,120 INFO     2022-12-20 09:38:01, 20 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2503, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 09:41:37,187 INFO     2022-12-20 09:41:37, 20 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2434, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 09:45:12,711 INFO     2022-12-20 09:45:12, 20 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2702, Data time: 0.0001, Batch time: 0.5371
+2022-12-20 09:48:48,210 INFO     2022-12-20 09:48:48, 20 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2835, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 09:52:23,847 INFO     2022-12-20 09:52:23, 20 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2571, Data time: 0.0001, Batch time: 0.5371
+2022-12-20 09:56:00,242 INFO     2022-12-20 09:56:00, 20 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2807, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 09:59:25,553 INFO     ====== star eval ======
+2022-12-20 09:59:26,535 INFO     2022-12-20 09:59:26, 20 Epoch, 0 Iter, Loss: 0.2738, Data time: 0.7848, Batch time: 0.9796
+2022-12-20 10:00:42,472 INFO     2022-12-20 10:00:42, 20 Epoch, 400 Iter, Loss: 0.2687, Data time: 0.0002, Batch time: 0.1974
+2022-12-20 10:02:42,957 INFO     * Test
+2022-12-20 10:02:42,958 INFO     * Loss: 0.2663	 mAP: 0.3641	Data_time: 0.0015	 Batch_time: 0.1905
+2022-12-20 10:02:42,958 INFO     OP: 0.701	 OR: 0.323	 OF1: 0.443	CP: 0.441	 CR: 0.195	 CF1: 0.270
+2022-12-20 10:02:42,958 INFO     OP_3: 0.789	 OR_3: 0.169	 OF1_3: 0.278	CP_3: 0.395	 CR_3: 0.101	 CF1_3: 0.161
+2022-12-20 10:02:42,958 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 10:02:42,962 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 10:02:45,390 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 10:02:50,463 INFO      * best mAP=0.3658
+2022-12-20 10:02:51,961 INFO     2022-12-20 10:02:51, 21 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.3053, Data time: 0.9498, Batch time: 1.4909
+2022-12-20 10:06:26,735 INFO     2022-12-20 10:06:26, 21 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.3286, Data time: 0.0001, Batch time: 0.5373
+2022-12-20 10:10:02,165 INFO     2022-12-20 10:10:02, 21 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2842, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 10:13:37,808 INFO     2022-12-20 10:13:37, 21 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2649, Data time: 0.0001, Batch time: 0.5376
+2022-12-20 10:17:13,544 INFO     2022-12-20 10:17:13, 21 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2750, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 10:20:49,276 INFO     2022-12-20 10:20:49, 21 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2423, Data time: 0.0001, Batch time: 0.5375
+2022-12-20 10:24:24,937 INFO     2022-12-20 10:24:24, 21 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2489, Data time: 0.0001, Batch time: 0.5374
+2022-12-20 10:28:00,703 INFO     2022-12-20 10:28:00, 21 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2810, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 10:31:36,507 INFO     2022-12-20 10:31:36, 21 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3038, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 10:35:12,507 INFO     2022-12-20 10:35:12, 21 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2796, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 10:38:48,125 INFO     2022-12-20 10:38:48, 21 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2688, Data time: 0.0001, Batch time: 0.5364
+2022-12-20 10:42:23,770 INFO     2022-12-20 10:42:23, 21 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2721, Data time: 0.0001, Batch time: 0.5374
+2022-12-20 10:45:59,978 INFO     2022-12-20 10:45:59, 21 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2456, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 10:49:24,940 INFO     ====== star eval ======
+2022-12-20 10:49:25,848 INFO     2022-12-20 10:49:25, 21 Epoch, 0 Iter, Loss: 0.2751, Data time: 0.7139, Batch time: 0.9062
+2022-12-20 10:50:41,802 INFO     2022-12-20 10:50:41, 21 Epoch, 400 Iter, Loss: 0.2674, Data time: 0.0001, Batch time: 0.1881
+2022-12-20 10:52:42,028 INFO     * Test
+2022-12-20 10:52:42,028 INFO     * Loss: 0.2662	 mAP: 0.3658	Data_time: 0.0013	 Batch_time: 0.1904
+2022-12-20 10:52:42,028 INFO     OP: 0.709	 OR: 0.312	 OF1: 0.433	CP: 0.443	 CR: 0.187	 CF1: 0.263
+2022-12-20 10:52:42,028 INFO     OP_3: 0.788	 OR_3: 0.168	 OF1_3: 0.277	CP_3: 0.391	 CR_3: 0.103	 CF1_3: 0.163
+2022-12-20 10:52:42,029 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 10:52:42,032 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 10:52:44,462 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 10:52:49,507 INFO      * best mAP=0.3658
+2022-12-20 10:52:50,911 INFO     2022-12-20 10:52:50, 22 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2954, Data time: 0.8449, Batch time: 1.3933
+2022-12-20 10:56:25,911 INFO     2022-12-20 10:56:25, 22 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2785, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 11:00:02,259 INFO     2022-12-20 11:00:02, 22 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2881, Data time: 0.0001, Batch time: 0.5376
+2022-12-20 11:03:38,335 INFO     2022-12-20 11:03:38, 22 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2677, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 11:07:14,184 INFO     2022-12-20 11:07:14, 22 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2845, Data time: 0.0001, Batch time: 0.5391
+2022-12-20 11:10:50,191 INFO     2022-12-20 11:10:50, 22 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2313, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 11:14:26,180 INFO     2022-12-20 11:14:26, 22 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2645, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 11:18:01,814 INFO     2022-12-20 11:18:01, 22 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2498, Data time: 0.0001, Batch time: 0.5374
+2022-12-20 11:21:37,852 INFO     2022-12-20 11:21:37, 22 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2477, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 11:25:13,508 INFO     2022-12-20 11:25:13, 22 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2924, Data time: 0.0001, Batch time: 0.5452
+2022-12-20 11:28:49,559 INFO     2022-12-20 11:28:49, 22 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2726, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 11:32:25,583 INFO     2022-12-20 11:32:25, 22 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.3135, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 11:36:01,617 INFO     2022-12-20 11:36:01, 22 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2665, Data time: 0.0001, Batch time: 0.5371
+2022-12-20 11:39:26,699 INFO     ====== star eval ======
+2022-12-20 11:39:27,637 INFO     2022-12-20 11:39:27, 22 Epoch, 0 Iter, Loss: 0.2711, Data time: 0.7439, Batch time: 0.9360
+2022-12-20 11:40:43,535 INFO     2022-12-20 11:40:43, 22 Epoch, 400 Iter, Loss: 0.2723, Data time: 0.0002, Batch time: 0.1881
+2022-12-20 11:42:44,040 INFO     * Test
+2022-12-20 11:42:44,041 INFO     * Loss: 0.2655	 mAP: 0.3667	Data_time: 0.0013	 Batch_time: 0.1903
+2022-12-20 11:42:44,041 INFO     OP: 0.681	 OR: 0.346	 OF1: 0.459	CP: 0.425	 CR: 0.207	 CF1: 0.278
+2022-12-20 11:42:44,041 INFO     OP_3: 0.783	 OR_3: 0.169	 OF1_3: 0.278	CP_3: 0.399	 CR_3: 0.101	 CF1_3: 0.161
+2022-12-20 11:42:44,041 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 11:42:44,045 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 11:42:47,862 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 11:42:53,440 INFO      * best mAP=0.3667
+2022-12-20 11:42:54,812 INFO     2022-12-20 11:42:54, 23 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.3053, Data time: 0.8238, Batch time: 1.3666
+2022-12-20 11:46:29,844 INFO     2022-12-20 11:46:29, 23 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2528, Data time: 0.0002, Batch time: 0.5395
+2022-12-20 11:50:05,654 INFO     2022-12-20 11:50:05, 23 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2329, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 11:53:41,667 INFO     2022-12-20 11:53:41, 23 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2565, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 11:57:17,639 INFO     2022-12-20 11:57:17, 23 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2287, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 12:00:53,530 INFO     2022-12-20 12:00:53, 23 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2695, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 12:04:29,503 INFO     2022-12-20 12:04:29, 23 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2728, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 12:08:05,585 INFO     2022-12-20 12:08:05, 23 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2706, Data time: 0.0001, Batch time: 0.5414
+2022-12-20 12:11:41,820 INFO     2022-12-20 12:11:41, 23 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2996, Data time: 0.0001, Batch time: 0.5376
+2022-12-20 12:15:17,638 INFO     2022-12-20 12:15:17, 23 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2401, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 12:18:53,216 INFO     2022-12-20 12:18:53, 23 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.3022, Data time: 0.0001, Batch time: 0.5373
+2022-12-20 12:22:29,281 INFO     2022-12-20 12:22:29, 23 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2989, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 12:26:05,870 INFO     2022-12-20 12:26:05, 23 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2638, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 12:29:31,438 INFO     ====== star eval ======
+2022-12-20 12:29:32,401 INFO     2022-12-20 12:29:32, 23 Epoch, 0 Iter, Loss: 0.2761, Data time: 0.7671, Batch time: 0.9605
+2022-12-20 12:30:48,597 INFO     2022-12-20 12:30:48, 23 Epoch, 400 Iter, Loss: 0.2697, Data time: 0.0001, Batch time: 0.1883
+2022-12-20 12:32:50,679 INFO     * Test
+2022-12-20 12:32:50,679 INFO     * Loss: 0.2659	 mAP: 0.3667	Data_time: 0.0014	 Batch_time: 0.1909
+2022-12-20 12:32:50,679 INFO     OP: 0.705	 OR: 0.317	 OF1: 0.437	CP: 0.437	 CR: 0.189	 CF1: 0.264
+2022-12-20 12:32:50,679 INFO     OP_3: 0.791	 OR_3: 0.168	 OF1_3: 0.278	CP_3: 0.401	 CR_3: 0.103	 CF1_3: 0.164
+2022-12-20 12:32:50,680 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 12:32:50,684 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 12:32:53,107 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 12:32:58,293 INFO      * best mAP=0.3667
+2022-12-20 12:32:59,763 INFO     2022-12-20 12:32:59, 24 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.3112, Data time: 0.9101, Batch time: 1.4587
+2022-12-20 12:36:35,147 INFO     2022-12-20 12:36:35, 24 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2408, Data time: 0.0002, Batch time: 0.5470
+2022-12-20 12:40:11,456 INFO     2022-12-20 12:40:11, 24 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2889, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 12:43:47,706 INFO     2022-12-20 12:43:47, 24 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2930, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 12:47:24,311 INFO     2022-12-20 12:47:24, 24 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.3064, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 12:51:00,661 INFO     2022-12-20 12:51:00, 24 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2120, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 12:54:36,857 INFO     2022-12-20 12:54:36, 24 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2847, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 12:58:13,143 INFO     2022-12-20 12:58:13, 24 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2869, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 13:01:49,886 INFO     2022-12-20 13:01:49, 24 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.2612, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 13:05:25,931 INFO     2022-12-20 13:05:25, 24 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.3253, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 13:09:02,044 INFO     2022-12-20 13:09:02, 24 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2697, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 13:12:38,331 INFO     2022-12-20 13:12:38, 24 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2683, Data time: 0.0001, Batch time: 0.5474
+2022-12-20 13:16:14,997 INFO     2022-12-20 13:16:14, 24 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2417, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 13:19:40,726 INFO     ====== star eval ======
+2022-12-20 13:19:41,637 INFO     2022-12-20 13:19:41, 24 Epoch, 0 Iter, Loss: 0.2707, Data time: 0.7176, Batch time: 0.9089
+2022-12-20 13:20:57,957 INFO     2022-12-20 13:20:57, 24 Epoch, 400 Iter, Loss: 0.2760, Data time: 0.0001, Batch time: 0.1890
+2022-12-20 13:23:00,076 INFO     * Test
+2022-12-20 13:23:00,076 INFO     * Loss: 0.2655	 mAP: 0.3678	Data_time: 0.0013	 Batch_time: 0.1913
+2022-12-20 13:23:00,076 INFO     OP: 0.676	 OR: 0.351	 OF1: 0.462	CP: 0.426	 CR: 0.212	 CF1: 0.283
+2022-12-20 13:23:00,076 INFO     OP_3: 0.784	 OR_3: 0.169	 OF1_3: 0.278	CP_3: 0.405	 CR_3: 0.103	 CF1_3: 0.164
+2022-12-20 13:23:00,077 INFO     Now lrp:0.00500000, lr:0.05000000
+2022-12-20 13:23:00,081 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 13:23:04,623 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 13:23:10,182 INFO      * best mAP=0.3678
+2022-12-20 13:23:11,666 INFO     2022-12-20 13:23:11, 25 Epoch, lrp:0.00500000, lr:0.05000000, 0 Iter, Loss: 0.2361, Data time: 0.9324, Batch time: 1.4784
+2022-12-20 13:26:47,555 INFO     2022-12-20 13:26:47, 25 Epoch, lrp:0.00500000, lr:0.05000000, 400 Iter, Loss: 0.2703, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 13:30:24,221 INFO     2022-12-20 13:30:24, 25 Epoch, lrp:0.00500000, lr:0.05000000, 800 Iter, Loss: 0.2777, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 13:34:01,098 INFO     2022-12-20 13:34:01, 25 Epoch, lrp:0.00500000, lr:0.05000000, 1200 Iter, Loss: 0.2673, Data time: 0.0002, Batch time: 0.5401
+2022-12-20 13:37:37,531 INFO     2022-12-20 13:37:37, 25 Epoch, lrp:0.00500000, lr:0.05000000, 1600 Iter, Loss: 0.2252, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 13:41:14,026 INFO     2022-12-20 13:41:14, 25 Epoch, lrp:0.00500000, lr:0.05000000, 2000 Iter, Loss: 0.2663, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 13:44:50,401 INFO     2022-12-20 13:44:50, 25 Epoch, lrp:0.00500000, lr:0.05000000, 2400 Iter, Loss: 0.2976, Data time: 0.0001, Batch time: 0.5399
+2022-12-20 13:48:26,642 INFO     2022-12-20 13:48:26, 25 Epoch, lrp:0.00500000, lr:0.05000000, 2800 Iter, Loss: 0.2690, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 13:52:02,996 INFO     2022-12-20 13:52:02, 25 Epoch, lrp:0.00500000, lr:0.05000000, 3200 Iter, Loss: 0.3024, Data time: 0.0002, Batch time: 0.5393
+2022-12-20 13:55:39,064 INFO     2022-12-20 13:55:39, 25 Epoch, lrp:0.00500000, lr:0.05000000, 3600 Iter, Loss: 0.2838, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 13:59:15,078 INFO     2022-12-20 13:59:15, 25 Epoch, lrp:0.00500000, lr:0.05000000, 4000 Iter, Loss: 0.2607, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 14:02:51,266 INFO     2022-12-20 14:02:51, 25 Epoch, lrp:0.00500000, lr:0.05000000, 4400 Iter, Loss: 0.2511, Data time: 0.0001, Batch time: 0.5396
+2022-12-20 14:06:28,073 INFO     2022-12-20 14:06:28, 25 Epoch, lrp:0.00500000, lr:0.05000000, 4800 Iter, Loss: 0.2493, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 14:09:53,992 INFO     ====== star eval ======
+2022-12-20 14:09:54,967 INFO     2022-12-20 14:09:54, 25 Epoch, 0 Iter, Loss: 0.2748, Data time: 0.7800, Batch time: 0.9727
+2022-12-20 14:11:11,551 INFO     2022-12-20 14:11:11, 25 Epoch, 400 Iter, Loss: 0.2710, Data time: 0.0002, Batch time: 0.1885
+2022-12-20 14:13:32,693 INFO     * Test
+2022-12-20 14:13:32,694 INFO     * Loss: 0.2657	 mAP: 0.3675	Data_time: 0.0015	 Batch_time: 0.1917
+2022-12-20 14:13:32,694 INFO     OP: 0.673	 OR: 0.362	 OF1: 0.471	CP: 0.431	 CR: 0.226	 CF1: 0.297
+2022-12-20 14:13:32,694 INFO     OP_3: 0.788	 OR_3: 0.171	 OF1_3: 0.281	CP_3: 0.408	 CR_3: 0.107	 CF1_3: 0.170
+2022-12-20 14:13:32,694 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 14:13:32,699 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 14:13:35,004 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 14:13:40,182 INFO      * best mAP=0.3678
+2022-12-20 14:13:41,626 INFO     2022-12-20 14:13:41, 26 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2576, Data time: 0.8803, Batch time: 1.4384
+2022-12-20 14:17:17,322 INFO     2022-12-20 14:17:17, 26 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2204, Data time: 0.0002, Batch time: 0.5394
+2022-12-20 14:20:53,792 INFO     2022-12-20 14:20:53, 26 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.1989, Data time: 0.0002, Batch time: 0.5393
+2022-12-20 14:24:30,236 INFO     2022-12-20 14:24:30, 26 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2754, Data time: 0.0001, Batch time: 0.5401
+2022-12-20 14:28:06,936 INFO     2022-12-20 14:28:06, 26 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2155, Data time: 0.0002, Batch time: 0.5404
+2022-12-20 14:31:43,596 INFO     2022-12-20 14:31:43, 26 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2739, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 14:35:19,887 INFO     2022-12-20 14:35:19, 26 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2847, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 14:38:56,347 INFO     2022-12-20 14:38:56, 26 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2795, Data time: 0.0002, Batch time: 0.5391
+2022-12-20 14:42:32,939 INFO     2022-12-20 14:42:32, 26 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2526, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 14:46:09,339 INFO     2022-12-20 14:46:09, 26 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2840, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 14:49:45,871 INFO     2022-12-20 14:49:45, 26 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2643, Data time: 0.0002, Batch time: 0.5469
+2022-12-20 14:53:22,282 INFO     2022-12-20 14:53:22, 26 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2703, Data time: 0.0001, Batch time: 0.5402
+2022-12-20 14:56:58,780 INFO     2022-12-20 14:56:58, 26 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2306, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 15:00:24,679 INFO     ====== star eval ======
+2022-12-20 15:00:25,625 INFO     2022-12-20 15:00:25, 26 Epoch, 0 Iter, Loss: 0.2701, Data time: 0.7516, Batch time: 0.9439
+2022-12-20 15:01:41,928 INFO     2022-12-20 15:01:41, 26 Epoch, 400 Iter, Loss: 0.2673, Data time: 0.0002, Batch time: 0.1889
+2022-12-20 15:03:43,282 INFO     * Test
+2022-12-20 15:03:43,283 INFO     * Loss: 0.2599	 mAP: 0.3727	Data_time: 0.0014	 Batch_time: 0.1911
+2022-12-20 15:03:43,283 INFO     OP: 0.697	 OR: 0.351	 OF1: 0.467	CP: 0.448	 CR: 0.216	 CF1: 0.291
+2022-12-20 15:03:43,283 INFO     OP_3: 0.797	 OR_3: 0.172	 OF1_3: 0.283	CP_3: 0.415	 CR_3: 0.106	 CF1_3: 0.168
+2022-12-20 15:03:43,284 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 15:03:43,288 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 15:03:47,906 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 15:03:53,528 INFO      * best mAP=0.3727
+2022-12-20 15:03:54,960 INFO     2022-12-20 15:03:54, 27 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2382, Data time: 0.8773, Batch time: 1.4239
+2022-12-20 15:07:30,389 INFO     2022-12-20 15:07:30, 27 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2639, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 15:11:06,396 INFO     2022-12-20 15:11:06, 27 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2322, Data time: 0.0002, Batch time: 0.5391
+2022-12-20 15:14:42,787 INFO     2022-12-20 15:14:42, 27 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2733, Data time: 0.0002, Batch time: 0.5406
+2022-12-20 15:18:19,107 INFO     2022-12-20 15:18:19, 27 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2505, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 15:21:55,429 INFO     2022-12-20 15:21:55, 27 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2794, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 15:25:31,580 INFO     2022-12-20 15:25:31, 27 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2578, Data time: 0.0001, Batch time: 0.5450
+2022-12-20 15:29:07,642 INFO     2022-12-20 15:29:07, 27 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2588, Data time: 0.0001, Batch time: 0.5383
+2022-12-20 15:32:43,917 INFO     2022-12-20 15:32:43, 27 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2349, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 15:36:19,862 INFO     2022-12-20 15:36:19, 27 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2696, Data time: 0.0002, Batch time: 0.5392
+2022-12-20 15:39:56,004 INFO     2022-12-20 15:39:56, 27 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2479, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 15:43:32,101 INFO     2022-12-20 15:43:32, 27 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2533, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 15:47:08,567 INFO     2022-12-20 15:47:08, 27 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2610, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 15:50:33,999 INFO     ====== star eval ======
+2022-12-20 15:50:34,976 INFO     2022-12-20 15:50:34, 27 Epoch, 0 Iter, Loss: 0.2709, Data time: 0.7770, Batch time: 0.9747
+2022-12-20 15:51:51,304 INFO     2022-12-20 15:51:51, 27 Epoch, 400 Iter, Loss: 0.2662, Data time: 0.0002, Batch time: 0.1884
+2022-12-20 15:53:53,479 INFO     * Test
+2022-12-20 15:53:53,479 INFO     * Loss: 0.2597	 mAP: 0.3734	Data_time: 0.0014	 Batch_time: 0.1914
+2022-12-20 15:53:53,479 INFO     OP: 0.701	 OR: 0.347	 OF1: 0.464	CP: 0.451	 CR: 0.216	 CF1: 0.292
+2022-12-20 15:53:53,479 INFO     OP_3: 0.799	 OR_3: 0.172	 OF1_3: 0.283	CP_3: 0.421	 CR_3: 0.108	 CF1_3: 0.171
+2022-12-20 15:53:53,480 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 15:53:53,484 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 15:53:58,353 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 15:54:04,012 INFO      * best mAP=0.3734
+2022-12-20 15:54:05,395 INFO     2022-12-20 15:54:05, 28 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2741, Data time: 0.8280, Batch time: 1.3724
+2022-12-20 15:57:40,861 INFO     2022-12-20 15:57:40, 28 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2492, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 16:01:17,209 INFO     2022-12-20 16:01:17, 28 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2886, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 16:04:53,662 INFO     2022-12-20 16:04:53, 28 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.3057, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 16:08:29,995 INFO     2022-12-20 16:08:29, 28 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2510, Data time: 0.0002, Batch time: 0.5402
+2022-12-20 16:12:06,455 INFO     2022-12-20 16:12:06, 28 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2152, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 16:15:42,708 INFO     2022-12-20 16:15:42, 28 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2638, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 16:19:18,869 INFO     2022-12-20 16:19:18, 28 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.3043, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 16:22:55,274 INFO     2022-12-20 16:22:55, 28 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2998, Data time: 0.0001, Batch time: 0.5407
+2022-12-20 16:26:31,466 INFO     2022-12-20 16:26:31, 28 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2354, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 16:30:07,552 INFO     2022-12-20 16:30:07, 28 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2492, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 16:33:43,903 INFO     2022-12-20 16:33:43, 28 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2241, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 16:37:20,352 INFO     2022-12-20 16:37:20, 28 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.3388, Data time: 0.0002, Batch time: 0.5391
+2022-12-20 16:40:45,882 INFO     ====== star eval ======
+2022-12-20 16:40:46,807 INFO     2022-12-20 16:40:46, 28 Epoch, 0 Iter, Loss: 0.2714, Data time: 0.7302, Batch time: 0.9221
+2022-12-20 16:42:02,937 INFO     2022-12-20 16:42:02, 28 Epoch, 400 Iter, Loss: 0.2642, Data time: 0.0002, Batch time: 0.1886
+2022-12-20 16:44:49,307 INFO     * Test
+2022-12-20 16:44:49,308 INFO     * Loss: 0.2594	 mAP: 0.3740	Data_time: 0.0013	 Batch_time: 0.1909
+2022-12-20 16:44:49,308 INFO     OP: 0.689	 OR: 0.361	 OF1: 0.474	CP: 0.440	 CR: 0.224	 CF1: 0.297
+2022-12-20 16:44:49,308 INFO     OP_3: 0.797	 OR_3: 0.172	 OF1_3: 0.283	CP_3: 0.426	 CR_3: 0.107	 CF1_3: 0.171
+2022-12-20 16:44:49,308 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 16:44:49,313 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 16:44:54,006 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 16:44:59,718 INFO      * best mAP=0.3740
+2022-12-20 16:45:01,133 INFO     2022-12-20 16:45:01, 29 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2537, Data time: 0.8417, Batch time: 1.3954
+2022-12-20 16:48:36,269 INFO     2022-12-20 16:48:36, 29 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2167, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 16:52:12,621 INFO     2022-12-20 16:52:12, 29 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2651, Data time: 0.0001, Batch time: 0.5396
+2022-12-20 16:55:48,560 INFO     2022-12-20 16:55:48, 29 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2802, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 16:59:24,456 INFO     2022-12-20 16:59:24, 29 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2492, Data time: 0.0001, Batch time: 0.5419
+2022-12-20 17:03:00,593 INFO     2022-12-20 17:03:00, 29 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2840, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 17:06:36,694 INFO     2022-12-20 17:06:36, 29 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2706, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 17:10:12,773 INFO     2022-12-20 17:10:12, 29 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.1984, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 17:13:49,278 INFO     2022-12-20 17:13:49, 29 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2507, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 17:17:25,300 INFO     2022-12-20 17:17:25, 29 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2411, Data time: 0.0001, Batch time: 0.5391
+2022-12-20 17:21:01,393 INFO     2022-12-20 17:21:01, 29 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2369, Data time: 0.0001, Batch time: 0.5406
+2022-12-20 17:24:37,495 INFO     2022-12-20 17:24:37, 29 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2442, Data time: 0.0002, Batch time: 0.5482
+2022-12-20 17:28:14,154 INFO     2022-12-20 17:28:14, 29 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2506, Data time: 0.0002, Batch time: 0.5398
+2022-12-20 17:31:39,922 INFO     ====== star eval ======
+2022-12-20 17:31:40,859 INFO     2022-12-20 17:31:40, 29 Epoch, 0 Iter, Loss: 0.2711, Data time: 0.7442, Batch time: 0.9351
+2022-12-20 17:32:57,309 INFO     2022-12-20 17:32:57, 29 Epoch, 400 Iter, Loss: 0.2673, Data time: 0.0002, Batch time: 0.1893
+2022-12-20 17:34:59,103 INFO     * Test
+2022-12-20 17:34:59,104 INFO     * Loss: 0.2593	 mAP: 0.3747	Data_time: 0.0014	 Batch_time: 0.1914
+2022-12-20 17:34:59,104 INFO     OP: 0.690	 OR: 0.363	 OF1: 0.476	CP: 0.447	 CR: 0.231	 CF1: 0.304
+2022-12-20 17:34:59,104 INFO     OP_3: 0.798	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.430	 CR_3: 0.109	 CF1_3: 0.174
+2022-12-20 17:34:59,104 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 17:34:59,109 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 17:35:03,638 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 17:35:09,301 INFO      * best mAP=0.3747
+2022-12-20 17:35:10,780 INFO     2022-12-20 17:35:10, 30 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2537, Data time: 0.9202, Batch time: 1.4742
+2022-12-20 17:38:46,428 INFO     2022-12-20 17:38:46, 30 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2393, Data time: 0.0001, Batch time: 0.5379
+2022-12-20 17:42:22,922 INFO     2022-12-20 17:42:22, 30 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2687, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 17:45:59,316 INFO     2022-12-20 17:45:59, 30 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2532, Data time: 0.0001, Batch time: 0.5401
+2022-12-20 17:49:35,531 INFO     2022-12-20 17:49:35, 30 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2501, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 17:53:11,808 INFO     2022-12-20 17:53:11, 30 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2410, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 17:56:48,389 INFO     2022-12-20 17:56:48, 30 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2611, Data time: 0.0001, Batch time: 0.5401
+2022-12-20 18:00:24,584 INFO     2022-12-20 18:00:24, 30 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2676, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 18:04:00,999 INFO     2022-12-20 18:04:00, 30 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2422, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 18:07:37,607 INFO     2022-12-20 18:07:37, 30 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2373, Data time: 0.0001, Batch time: 0.5399
+2022-12-20 18:11:14,146 INFO     2022-12-20 18:11:14, 30 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2234, Data time: 0.0001, Batch time: 0.5406
+2022-12-20 18:14:50,571 INFO     2022-12-20 18:14:50, 30 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2626, Data time: 0.0001, Batch time: 0.5422
+2022-12-20 18:18:27,511 INFO     2022-12-20 18:18:27, 30 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2431, Data time: 0.0001, Batch time: 0.5401
+2022-12-20 18:21:53,255 INFO     ====== star eval ======
+2022-12-20 18:21:54,309 INFO     2022-12-20 18:21:54, 30 Epoch, 0 Iter, Loss: 0.2702, Data time: 0.8604, Batch time: 1.0526
+2022-12-20 18:23:10,609 INFO     2022-12-20 18:23:10, 30 Epoch, 400 Iter, Loss: 0.2661, Data time: 0.0002, Batch time: 0.1889
+2022-12-20 18:25:13,244 INFO     * Test
+2022-12-20 18:25:13,244 INFO     * Loss: 0.2589	 mAP: 0.3754	Data_time: 0.0016	 Batch_time: 0.1917
+2022-12-20 18:25:13,244 INFO     OP: 0.691	 OR: 0.362	 OF1: 0.475	CP: 0.447	 CR: 0.224	 CF1: 0.299
+2022-12-20 18:25:13,244 INFO     OP_3: 0.799	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.429	 CR_3: 0.106	 CF1_3: 0.170
+2022-12-20 18:25:13,245 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 18:25:13,248 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 18:25:17,855 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 18:25:23,463 INFO      * best mAP=0.3754
+2022-12-20 18:25:24,906 INFO     2022-12-20 18:25:24, 31 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2644, Data time: 0.8767, Batch time: 1.4359
+2022-12-20 18:29:00,461 INFO     2022-12-20 18:29:00, 31 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2133, Data time: 0.0002, Batch time: 0.5401
+2022-12-20 18:32:36,789 INFO     2022-12-20 18:32:36, 31 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2579, Data time: 0.0001, Batch time: 0.5404
+2022-12-20 18:36:13,313 INFO     2022-12-20 18:36:13, 31 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2561, Data time: 0.0001, Batch time: 0.5408
+2022-12-20 18:39:49,770 INFO     2022-12-20 18:39:49, 31 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2668, Data time: 0.0001, Batch time: 0.5405
+2022-12-20 18:43:26,351 INFO     2022-12-20 18:43:26, 31 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2631, Data time: 0.0001, Batch time: 0.5415
+2022-12-20 18:47:02,732 INFO     2022-12-20 18:47:02, 31 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2886, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 18:50:39,200 INFO     2022-12-20 18:50:39, 31 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2348, Data time: 0.0002, Batch time: 0.5481
+2022-12-20 18:54:16,040 INFO     2022-12-20 18:54:16, 31 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2732, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 18:57:52,597 INFO     2022-12-20 18:57:52, 31 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2948, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 19:01:29,268 INFO     2022-12-20 19:01:29, 31 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2654, Data time: 0.0001, Batch time: 0.5406
+2022-12-20 19:05:05,674 INFO     2022-12-20 19:05:05, 31 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2211, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 19:08:42,157 INFO     2022-12-20 19:08:42, 31 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2495, Data time: 0.0001, Batch time: 0.5388
+2022-12-20 19:12:07,806 INFO     ====== star eval ======
+2022-12-20 19:12:08,714 INFO     2022-12-20 19:12:08, 31 Epoch, 0 Iter, Loss: 0.2702, Data time: 0.7120, Batch time: 0.9066
+2022-12-20 19:13:24,853 INFO     2022-12-20 19:13:24, 31 Epoch, 400 Iter, Loss: 0.2677, Data time: 0.0002, Batch time: 0.1884
+2022-12-20 19:15:26,899 INFO     * Test
+2022-12-20 19:15:26,900 INFO     * Loss: 0.2591	 mAP: 0.3754	Data_time: 0.0013	 Batch_time: 0.1909
+2022-12-20 19:15:26,900 INFO     OP: 0.689	 OR: 0.365	 OF1: 0.477	CP: 0.451	 CR: 0.229	 CF1: 0.304
+2022-12-20 19:15:26,900 INFO     OP_3: 0.798	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.433	 CR_3: 0.108	 CF1_3: 0.173
+2022-12-20 19:15:26,900 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 19:15:26,904 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 19:15:31,438 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 19:15:37,082 INFO      * best mAP=0.3754
+2022-12-20 19:15:38,522 INFO     2022-12-20 19:15:38, 32 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2479, Data time: 0.8963, Batch time: 1.4352
+2022-12-20 19:19:14,089 INFO     2022-12-20 19:19:14, 32 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.3003, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 19:22:50,519 INFO     2022-12-20 19:22:50, 32 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2782, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 19:26:27,034 INFO     2022-12-20 19:26:27, 32 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2378, Data time: 0.0002, Batch time: 0.5390
+2022-12-20 19:30:03,388 INFO     2022-12-20 19:30:03, 32 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2496, Data time: 0.0001, Batch time: 0.5409
+2022-12-20 19:33:39,962 INFO     2022-12-20 19:33:39, 32 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2648, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 19:37:16,114 INFO     2022-12-20 19:37:16, 32 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2376, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 19:40:52,652 INFO     2022-12-20 19:40:52, 32 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2369, Data time: 0.0001, Batch time: 0.5475
+2022-12-20 19:44:29,680 INFO     2022-12-20 19:44:29, 32 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2600, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 19:48:06,310 INFO     2022-12-20 19:48:06, 32 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2147, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 19:51:42,431 INFO     2022-12-20 19:51:42, 32 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2905, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 19:55:18,529 INFO     2022-12-20 19:55:18, 32 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2573, Data time: 0.0001, Batch time: 0.5400
+2022-12-20 19:58:55,495 INFO     2022-12-20 19:58:55, 32 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2419, Data time: 0.0003, Batch time: 0.5473
+2022-12-20 20:02:21,084 INFO     ====== star eval ======
+2022-12-20 20:02:22,022 INFO     2022-12-20 20:02:22, 32 Epoch, 0 Iter, Loss: 0.2702, Data time: 0.7428, Batch time: 0.9353
+2022-12-20 20:03:38,216 INFO     2022-12-20 20:03:38, 32 Epoch, 400 Iter, Loss: 0.2637, Data time: 0.0001, Batch time: 0.1883
+2022-12-20 20:05:39,862 INFO     * Test
+2022-12-20 20:05:39,863 INFO     * Loss: 0.2591	 mAP: 0.3759	Data_time: 0.0014	 Batch_time: 0.1908
+2022-12-20 20:05:39,863 INFO     OP: 0.692	 OR: 0.361	 OF1: 0.475	CP: 0.451	 CR: 0.227	 CF1: 0.302
+2022-12-20 20:05:39,863 INFO     OP_3: 0.798	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.430	 CR_3: 0.109	 CF1_3: 0.174
+2022-12-20 20:05:39,863 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 20:05:39,867 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 20:05:44,573 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 20:05:50,266 INFO      * best mAP=0.3759
+2022-12-20 20:05:51,764 INFO     2022-12-20 20:05:51, 33 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2521, Data time: 0.9486, Batch time: 1.4924
+2022-12-20 20:09:27,320 INFO     2022-12-20 20:09:27, 33 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2048, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 20:13:03,685 INFO     2022-12-20 20:13:03, 33 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2446, Data time: 0.0001, Batch time: 0.5453
+2022-12-20 20:16:40,237 INFO     2022-12-20 20:16:40, 33 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2235, Data time: 0.0002, Batch time: 0.5388
+2022-12-20 20:20:16,544 INFO     2022-12-20 20:20:16, 33 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2448, Data time: 0.0002, Batch time: 0.5384
+2022-12-20 20:23:52,976 INFO     2022-12-20 20:23:52, 33 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2938, Data time: 0.0006, Batch time: 0.5627
+2022-12-20 20:27:29,103 INFO     2022-12-20 20:27:29, 33 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.3099, Data time: 0.0001, Batch time: 0.5396
+2022-12-20 20:31:05,301 INFO     2022-12-20 20:31:05, 33 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2299, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 20:34:41,850 INFO     2022-12-20 20:34:41, 33 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2557, Data time: 0.0001, Batch time: 0.5455
+2022-12-20 20:38:18,103 INFO     2022-12-20 20:38:18, 33 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2439, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 20:41:54,396 INFO     2022-12-20 20:41:54, 33 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2877, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 20:45:30,558 INFO     2022-12-20 20:45:30, 33 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2337, Data time: 0.0001, Batch time: 0.5390
+2022-12-20 20:49:07,229 INFO     2022-12-20 20:49:07, 33 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2163, Data time: 0.0003, Batch time: 0.5395
+2022-12-20 20:52:33,421 INFO     ====== star eval ======
+2022-12-20 20:52:34,540 INFO     2022-12-20 20:52:34, 33 Epoch, 0 Iter, Loss: 0.2704, Data time: 0.9252, Batch time: 1.1162
+2022-12-20 20:53:50,811 INFO     2022-12-20 20:53:50, 33 Epoch, 400 Iter, Loss: 0.2656, Data time: 0.0003, Batch time: 0.1889
+2022-12-20 20:56:30,451 INFO     * Test
+2022-12-20 20:56:30,451 INFO     * Loss: 0.2592	 mAP: 0.3761	Data_time: 0.0017	 Batch_time: 0.1915
+2022-12-20 20:56:30,451 INFO     OP: 0.686	 OR: 0.369	 OF1: 0.480	CP: 0.449	 CR: 0.234	 CF1: 0.307
+2022-12-20 20:56:30,451 INFO     OP_3: 0.798	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.437	 CR_3: 0.110	 CF1_3: 0.175
+2022-12-20 20:56:30,452 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 20:56:30,456 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 20:56:35,154 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 20:56:40,789 INFO      * best mAP=0.3761
+2022-12-20 20:56:42,252 INFO     2022-12-20 20:56:42, 34 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2386, Data time: 0.9063, Batch time: 1.4561
+2022-12-20 21:00:17,828 INFO     2022-12-20 21:00:17, 34 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.1993, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 21:03:53,808 INFO     2022-12-20 21:03:53, 34 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2909, Data time: 0.0001, Batch time: 0.5457
+2022-12-20 21:07:30,237 INFO     2022-12-20 21:07:30, 34 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2543, Data time: 0.0002, Batch time: 0.5392
+2022-12-20 21:11:06,364 INFO     2022-12-20 21:11:06, 34 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2348, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 21:14:42,933 INFO     2022-12-20 21:14:42, 34 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2483, Data time: 0.0001, Batch time: 0.5376
+2022-12-20 21:18:19,120 INFO     2022-12-20 21:18:19, 34 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2925, Data time: 0.0001, Batch time: 0.5416
+2022-12-20 21:21:55,827 INFO     2022-12-20 21:21:55, 34 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2601, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 21:25:32,300 INFO     2022-12-20 21:25:32, 34 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2441, Data time: 0.0001, Batch time: 0.5398
+2022-12-20 21:29:08,380 INFO     2022-12-20 21:29:08, 34 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2444, Data time: 0.0001, Batch time: 0.5400
+2022-12-20 21:32:44,678 INFO     2022-12-20 21:32:44, 34 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2985, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 21:36:20,865 INFO     2022-12-20 21:36:20, 34 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2252, Data time: 0.0002, Batch time: 0.5386
+2022-12-20 21:39:57,220 INFO     2022-12-20 21:39:57, 34 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2534, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 21:43:22,702 INFO     ====== star eval ======
+2022-12-20 21:43:23,697 INFO     2022-12-20 21:43:23, 34 Epoch, 0 Iter, Loss: 0.2693, Data time: 0.8021, Batch time: 0.9934
+2022-12-20 21:44:39,816 INFO     2022-12-20 21:44:39, 34 Epoch, 400 Iter, Loss: 0.2668, Data time: 0.0002, Batch time: 0.1888
+2022-12-20 21:46:41,498 INFO     * Test
+2022-12-20 21:46:41,498 INFO     * Loss: 0.2594	 mAP: 0.3761	Data_time: 0.0015	 Batch_time: 0.1909
+2022-12-20 21:46:41,499 INFO     OP: 0.690	 OR: 0.363	 OF1: 0.475	CP: 0.450	 CR: 0.226	 CF1: 0.301
+2022-12-20 21:46:41,499 INFO     OP_3: 0.798	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.427	 CR_3: 0.106	 CF1_3: 0.170
+2022-12-20 21:46:41,499 INFO     Now lrp:0.00050000, lr:0.00500000
+2022-12-20 21:46:41,503 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 21:46:43,955 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 21:46:49,054 INFO      * best mAP=0.3761
+2022-12-20 21:46:50,446 INFO     2022-12-20 21:46:50, 35 Epoch, lrp:0.00050000, lr:0.00500000, 0 Iter, Loss: 0.2409, Data time: 0.8241, Batch time: 1.3865
+2022-12-20 21:50:25,886 INFO     2022-12-20 21:50:25, 35 Epoch, lrp:0.00050000, lr:0.00500000, 400 Iter, Loss: 0.2513, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 21:54:02,035 INFO     2022-12-20 21:54:02, 35 Epoch, lrp:0.00050000, lr:0.00500000, 800 Iter, Loss: 0.2114, Data time: 0.0001, Batch time: 0.5396
+2022-12-20 21:57:38,187 INFO     2022-12-20 21:57:38, 35 Epoch, lrp:0.00050000, lr:0.00500000, 1200 Iter, Loss: 0.2714, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 22:01:14,636 INFO     2022-12-20 22:01:14, 35 Epoch, lrp:0.00050000, lr:0.00500000, 1600 Iter, Loss: 0.2229, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 22:04:50,768 INFO     2022-12-20 22:04:50, 35 Epoch, lrp:0.00050000, lr:0.00500000, 2000 Iter, Loss: 0.2474, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 22:08:26,981 INFO     2022-12-20 22:08:26, 35 Epoch, lrp:0.00050000, lr:0.00500000, 2400 Iter, Loss: 0.2906, Data time: 0.0001, Batch time: 0.5465
+2022-12-20 22:12:03,144 INFO     2022-12-20 22:12:03, 35 Epoch, lrp:0.00050000, lr:0.00500000, 2800 Iter, Loss: 0.2465, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 22:15:39,766 INFO     2022-12-20 22:15:39, 35 Epoch, lrp:0.00050000, lr:0.00500000, 3200 Iter, Loss: 0.2355, Data time: 0.0002, Batch time: 0.5389
+2022-12-20 22:19:15,755 INFO     2022-12-20 22:19:15, 35 Epoch, lrp:0.00050000, lr:0.00500000, 3600 Iter, Loss: 0.2995, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 22:22:51,886 INFO     2022-12-20 22:22:51, 35 Epoch, lrp:0.00050000, lr:0.00500000, 4000 Iter, Loss: 0.2728, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 22:26:28,161 INFO     2022-12-20 22:26:28, 35 Epoch, lrp:0.00050000, lr:0.00500000, 4400 Iter, Loss: 0.2459, Data time: 0.0001, Batch time: 0.5380
+2022-12-20 22:30:04,719 INFO     2022-12-20 22:30:04, 35 Epoch, lrp:0.00050000, lr:0.00500000, 4800 Iter, Loss: 0.2920, Data time: 0.0001, Batch time: 0.5396
+2022-12-20 22:33:30,270 INFO     ====== star eval ======
+2022-12-20 22:33:31,217 INFO     2022-12-20 22:33:31, 35 Epoch, 0 Iter, Loss: 0.2709, Data time: 0.7495, Batch time: 0.9442
+2022-12-20 22:34:47,306 INFO     2022-12-20 22:34:47, 35 Epoch, 400 Iter, Loss: 0.2658, Data time: 0.0001, Batch time: 0.1889
+2022-12-20 22:37:00,187 INFO     * Test
+2022-12-20 22:37:00,188 INFO     * Loss: 0.2595	 mAP: 0.3765	Data_time: 0.0014	 Batch_time: 0.1908
+2022-12-20 22:37:00,188 INFO     OP: 0.699	 OR: 0.350	 OF1: 0.466	CP: 0.459	 CR: 0.226	 CF1: 0.303
+2022-12-20 22:37:00,188 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.443	 CR_3: 0.112	 CF1_3: 0.179
+2022-12-20 22:37:00,188 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-20 22:37:00,192 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 22:37:04,920 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-20 22:37:10,299 INFO      * best mAP=0.3765
+2022-12-20 22:37:11,745 INFO     2022-12-20 22:37:11, 36 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2830, Data time: 0.8773, Batch time: 1.4216
+2022-12-20 22:40:47,216 INFO     2022-12-20 22:40:47, 36 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2487, Data time: 0.0001, Batch time: 0.5394
+2022-12-20 22:44:23,165 INFO     2022-12-20 22:44:23, 36 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2269, Data time: 0.0001, Batch time: 0.5385
+2022-12-20 22:47:59,279 INFO     2022-12-20 22:47:59, 36 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2308, Data time: 0.0001, Batch time: 0.5384
+2022-12-20 22:51:35,683 INFO     2022-12-20 22:51:35, 36 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2385, Data time: 0.0001, Batch time: 0.5381
+2022-12-20 22:55:12,166 INFO     2022-12-20 22:55:12, 36 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2453, Data time: 0.0001, Batch time: 0.5402
+2022-12-20 22:58:48,500 INFO     2022-12-20 22:58:48, 36 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2072, Data time: 0.0001, Batch time: 0.5408
+2022-12-20 23:02:24,751 INFO     2022-12-20 23:02:24, 36 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2702, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 23:06:01,440 INFO     2022-12-20 23:06:01, 36 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2553, Data time: 0.0001, Batch time: 0.5387
+2022-12-20 23:09:37,517 INFO     2022-12-20 23:09:37, 36 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2577, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 23:13:13,718 INFO     2022-12-20 23:13:13, 36 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2416, Data time: 0.0001, Batch time: 0.5391
+2022-12-20 23:16:49,763 INFO     2022-12-20 23:16:49, 36 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2682, Data time: 0.0001, Batch time: 0.5397
+2022-12-20 23:20:26,355 INFO     2022-12-20 23:20:26, 36 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2157, Data time: 0.0001, Batch time: 0.5382
+2022-12-20 23:23:51,809 INFO     ====== star eval ======
+2022-12-20 23:23:52,807 INFO     2022-12-20 23:23:52, 36 Epoch, 0 Iter, Loss: 0.2705, Data time: 0.8059, Batch time: 0.9957
+2022-12-20 23:25:09,301 INFO     2022-12-20 23:25:09, 36 Epoch, 400 Iter, Loss: 0.2654, Data time: 0.0002, Batch time: 0.1889
+2022-12-20 23:27:11,008 INFO     * Test
+2022-12-20 23:27:11,008 INFO     * Loss: 0.2589	 mAP: 0.3764	Data_time: 0.0015	 Batch_time: 0.1915
+2022-12-20 23:27:11,008 INFO     OP: 0.695	 OR: 0.357	 OF1: 0.472	CP: 0.460	 CR: 0.226	 CF1: 0.303
+2022-12-20 23:27:11,008 INFO     OP_3: 0.801	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.438	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-20 23:27:11,009 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-20 23:27:11,014 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-20 23:27:13,636 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-20 23:27:18,850 INFO      * best mAP=0.3765
+2022-12-20 23:27:20,262 INFO     2022-12-20 23:27:20, 37 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.1983, Data time: 0.8468, Batch time: 1.4067
+2022-12-20 23:30:55,751 INFO     2022-12-20 23:30:55, 37 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2817, Data time: 0.0002, Batch time: 0.5382
+2022-12-20 23:34:31,880 INFO     2022-12-20 23:34:31, 37 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.3195, Data time: 0.0002, Batch time: 0.5384
+2022-12-20 23:38:08,094 INFO     2022-12-20 23:38:08, 37 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2444, Data time: 0.0001, Batch time: 0.5395
+2022-12-20 23:41:44,477 INFO     2022-12-20 23:41:44, 37 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2492, Data time: 0.0001, Batch time: 0.5386
+2022-12-20 23:45:21,005 INFO     2022-12-20 23:45:21, 37 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2765, Data time: 0.0001, Batch time: 0.5392
+2022-12-20 23:48:57,152 INFO     2022-12-20 23:48:57, 37 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2690, Data time: 0.0001, Batch time: 0.5393
+2022-12-20 23:52:33,322 INFO     2022-12-20 23:52:33, 37 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2910, Data time: 0.0002, Batch time: 0.5399
+2022-12-20 23:56:09,770 INFO     2022-12-20 23:56:09, 37 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2951, Data time: 0.0001, Batch time: 0.5389
+2022-12-20 23:59:45,865 INFO     2022-12-20 23:59:45, 37 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2895, Data time: 0.0001, Batch time: 0.5388
+2022-12-21 00:03:22,004 INFO     2022-12-21 00:03:22, 37 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2439, Data time: 0.0001, Batch time: 0.5475
+2022-12-21 00:06:58,199 INFO     2022-12-21 00:06:58, 37 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2393, Data time: 0.0001, Batch time: 0.5398
+2022-12-21 00:10:34,904 INFO     2022-12-21 00:10:34, 37 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2372, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 00:14:00,546 INFO     ====== star eval ======
+2022-12-21 00:14:01,486 INFO     2022-12-21 00:14:01, 37 Epoch, 0 Iter, Loss: 0.2709, Data time: 0.7452, Batch time: 0.9379
+2022-12-21 00:15:17,685 INFO     2022-12-21 00:15:17, 37 Epoch, 400 Iter, Loss: 0.2649, Data time: 0.0003, Batch time: 0.1960
+2022-12-21 00:17:20,621 INFO     * Test
+2022-12-21 00:17:20,622 INFO     * Loss: 0.2589	 mAP: 0.3761	Data_time: 0.0014	 Batch_time: 0.1913
+2022-12-21 00:17:20,622 INFO     OP: 0.695	 OR: 0.359	 OF1: 0.473	CP: 0.456	 CR: 0.226	 CF1: 0.302
+2022-12-21 00:17:20,622 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.443	 CR_3: 0.108	 CF1_3: 0.173
+2022-12-21 00:17:20,622 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 00:17:20,627 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 00:17:23,268 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 00:17:28,360 INFO      * best mAP=0.3765
+2022-12-21 00:17:29,757 INFO     2022-12-21 00:17:29, 38 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2681, Data time: 0.8450, Batch time: 1.3912
+2022-12-21 00:21:05,179 INFO     2022-12-21 00:21:05, 38 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2636, Data time: 0.0001, Batch time: 0.5380
+2022-12-21 00:24:41,223 INFO     2022-12-21 00:24:41, 38 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2735, Data time: 0.0001, Batch time: 0.5389
+2022-12-21 00:28:17,568 INFO     2022-12-21 00:28:17, 38 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2618, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 00:31:53,874 INFO     2022-12-21 00:31:53, 38 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2254, Data time: 0.0002, Batch time: 0.5444
+2022-12-21 00:35:30,404 INFO     2022-12-21 00:35:30, 38 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2552, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 00:39:06,423 INFO     2022-12-21 00:39:06, 38 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.3068, Data time: 0.0001, Batch time: 0.5384
+2022-12-21 00:42:42,687 INFO     2022-12-21 00:42:42, 38 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2446, Data time: 0.0002, Batch time: 0.5473
+2022-12-21 00:46:18,973 INFO     2022-12-21 00:46:18, 38 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.3115, Data time: 0.0001, Batch time: 0.5381
+2022-12-21 00:49:55,389 INFO     2022-12-21 00:49:55, 38 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2330, Data time: 0.0001, Batch time: 0.5393
+2022-12-21 00:53:31,543 INFO     2022-12-21 00:53:31, 38 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2793, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 00:57:07,504 INFO     2022-12-21 00:57:07, 38 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2590, Data time: 0.0001, Batch time: 0.5390
+2022-12-21 01:00:44,244 INFO     2022-12-21 01:00:44, 38 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2902, Data time: 0.0001, Batch time: 0.5378
+2022-12-21 01:04:09,787 INFO     ====== star eval ======
+2022-12-21 01:04:10,700 INFO     2022-12-21 01:04:10, 38 Epoch, 0 Iter, Loss: 0.2695, Data time: 0.7177, Batch time: 0.9109
+2022-12-21 01:05:26,896 INFO     2022-12-21 01:05:26, 38 Epoch, 400 Iter, Loss: 0.2652, Data time: 0.0002, Batch time: 0.1884
+2022-12-21 01:08:01,343 INFO     * Test
+2022-12-21 01:08:01,344 INFO     * Loss: 0.2588	 mAP: 0.3767	Data_time: 0.0013	 Batch_time: 0.1911
+2022-12-21 01:08:01,344 INFO     OP: 0.692	 OR: 0.362	 OF1: 0.475	CP: 0.458	 CR: 0.229	 CF1: 0.305
+2022-12-21 01:08:01,344 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.439	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-21 01:08:01,344 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 01:08:01,348 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 01:08:06,090 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-21 01:08:11,718 INFO      * best mAP=0.3767
+2022-12-21 01:08:13,094 INFO     2022-12-21 01:08:13, 39 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2625, Data time: 0.8211, Batch time: 1.3713
+2022-12-21 01:11:48,630 INFO     2022-12-21 01:11:48, 39 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2594, Data time: 0.0001, Batch time: 0.5387
+2022-12-21 01:15:24,988 INFO     2022-12-21 01:15:24, 39 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2555, Data time: 0.0001, Batch time: 0.5389
+2022-12-21 01:19:01,297 INFO     2022-12-21 01:19:01, 39 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2436, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 01:22:37,424 INFO     2022-12-21 01:22:37, 39 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2458, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 01:26:13,835 INFO     2022-12-21 01:26:13, 39 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2238, Data time: 0.0002, Batch time: 0.5467
+2022-12-21 01:29:49,787 INFO     2022-12-21 01:29:49, 39 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2455, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 01:33:25,835 INFO     2022-12-21 01:33:25, 39 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2663, Data time: 0.0001, Batch time: 0.5389
+2022-12-21 01:37:02,460 INFO     2022-12-21 01:37:02, 39 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2611, Data time: 0.0002, Batch time: 0.5390
+2022-12-21 01:40:38,516 INFO     2022-12-21 01:40:38, 39 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2426, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 01:44:14,499 INFO     2022-12-21 01:44:14, 39 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2833, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 01:47:50,687 INFO     2022-12-21 01:47:50, 39 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2701, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 01:51:27,399 INFO     2022-12-21 01:51:27, 39 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2305, Data time: 0.0001, Batch time: 0.5387
+2022-12-21 01:54:53,088 INFO     ====== star eval ======
+2022-12-21 01:54:54,074 INFO     2022-12-21 01:54:54, 39 Epoch, 0 Iter, Loss: 0.2708, Data time: 0.7896, Batch time: 0.9832
+2022-12-21 01:56:10,285 INFO     2022-12-21 01:56:10, 39 Epoch, 400 Iter, Loss: 0.2641, Data time: 0.0002, Batch time: 0.1886
+2022-12-21 01:58:12,348 INFO     * Test
+2022-12-21 01:58:12,348 INFO     * Loss: 0.2589	 mAP: 0.3762	Data_time: 0.0014	 Batch_time: 0.1911
+2022-12-21 01:58:12,348 INFO     OP: 0.696	 OR: 0.355	 OF1: 0.471	CP: 0.454	 CR: 0.224	 CF1: 0.300
+2022-12-21 01:58:12,348 INFO     OP_3: 0.799	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.438	 CR_3: 0.108	 CF1_3: 0.174
+2022-12-21 01:58:12,349 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 01:58:12,353 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 01:58:15,237 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 01:58:20,287 INFO      * best mAP=0.3767
+2022-12-21 01:58:21,764 INFO     2022-12-21 01:58:21, 40 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2698, Data time: 0.9277, Batch time: 1.4716
+2022-12-21 02:01:57,413 INFO     2022-12-21 02:01:57, 40 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2903, Data time: 0.0002, Batch time: 0.5408
+2022-12-21 02:05:33,764 INFO     2022-12-21 02:05:33, 40 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2777, Data time: 0.0003, Batch time: 0.5394
+2022-12-21 02:09:10,256 INFO     2022-12-21 02:09:10, 40 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2841, Data time: 0.0002, Batch time: 0.5521
+2022-12-21 02:12:46,437 INFO     2022-12-21 02:12:46, 40 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2597, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 02:16:22,838 INFO     2022-12-21 02:16:22, 40 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2301, Data time: 0.0002, Batch time: 0.5382
+2022-12-21 02:19:59,048 INFO     2022-12-21 02:19:59, 40 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2320, Data time: 0.0001, Batch time: 0.5384
+2022-12-21 02:23:35,102 INFO     2022-12-21 02:23:35, 40 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2373, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 02:27:11,689 INFO     2022-12-21 02:27:11, 40 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2326, Data time: 0.0001, Batch time: 0.5400
+2022-12-21 02:30:47,678 INFO     2022-12-21 02:30:47, 40 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2646, Data time: 0.0001, Batch time: 0.5388
+2022-12-21 02:34:23,684 INFO     2022-12-21 02:34:23, 40 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2850, Data time: 0.0001, Batch time: 0.5390
+2022-12-21 02:37:59,779 INFO     2022-12-21 02:37:59, 40 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2373, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 02:41:36,588 INFO     2022-12-21 02:41:36, 40 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2317, Data time: 0.0001, Batch time: 0.5393
+2022-12-21 02:45:02,317 INFO     ====== star eval ======
+2022-12-21 02:45:03,306 INFO     2022-12-21 02:45:03, 40 Epoch, 0 Iter, Loss: 0.2703, Data time: 0.7917, Batch time: 0.9863
+2022-12-21 02:46:19,581 INFO     2022-12-21 02:46:19, 40 Epoch, 400 Iter, Loss: 0.2649, Data time: 0.0002, Batch time: 0.1887
+2022-12-21 02:48:21,223 INFO     * Test
+2022-12-21 02:48:21,224 INFO     * Loss: 0.2590	 mAP: 0.3765	Data_time: 0.0014	 Batch_time: 0.1913
+2022-12-21 02:48:21,224 INFO     OP: 0.697	 OR: 0.355	 OF1: 0.471	CP: 0.458	 CR: 0.225	 CF1: 0.302
+2022-12-21 02:48:21,224 INFO     OP_3: 0.801	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.443	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-21 02:48:21,224 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 02:48:21,228 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 02:48:23,906 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 02:48:28,949 INFO      * best mAP=0.3767
+2022-12-21 02:48:30,318 INFO     2022-12-21 02:48:30, 41 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2386, Data time: 0.8074, Batch time: 1.3592
+2022-12-21 02:52:06,102 INFO     2022-12-21 02:52:06, 41 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2740, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 02:55:42,769 INFO     2022-12-21 02:55:42, 41 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.3370, Data time: 0.0001, Batch time: 0.5403
+2022-12-21 02:59:19,126 INFO     2022-12-21 02:59:19, 41 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2547, Data time: 0.0001, Batch time: 0.5384
+2022-12-21 03:02:55,553 INFO     2022-12-21 03:02:55, 41 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2769, Data time: 0.0002, Batch time: 0.5480
+2022-12-21 03:06:31,934 INFO     2022-12-21 03:06:31, 41 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2507, Data time: 0.0002, Batch time: 0.5467
+2022-12-21 03:10:08,549 INFO     2022-12-21 03:10:08, 41 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.3148, Data time: 0.0001, Batch time: 0.5400
+2022-12-21 03:13:44,914 INFO     2022-12-21 03:13:44, 41 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2863, Data time: 0.0001, Batch time: 0.5401
+2022-12-21 03:17:21,443 INFO     2022-12-21 03:17:21, 41 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2463, Data time: 0.0001, Batch time: 0.5386
+2022-12-21 03:20:57,686 INFO     2022-12-21 03:20:57, 41 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2166, Data time: 0.0002, Batch time: 0.5397
+2022-12-21 03:24:34,152 INFO     2022-12-21 03:24:34, 41 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2903, Data time: 0.0001, Batch time: 0.5388
+2022-12-21 03:28:10,604 INFO     2022-12-21 03:28:10, 41 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2498, Data time: 0.0001, Batch time: 0.5416
+2022-12-21 03:31:47,200 INFO     2022-12-21 03:31:47, 41 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2599, Data time: 0.0001, Batch time: 0.5392
+2022-12-21 03:35:12,880 INFO     ====== star eval ======
+2022-12-21 03:35:13,873 INFO     2022-12-21 03:35:13, 41 Epoch, 0 Iter, Loss: 0.2698, Data time: 0.7965, Batch time: 0.9901
+2022-12-21 03:36:30,205 INFO     2022-12-21 03:36:30, 41 Epoch, 400 Iter, Loss: 0.2663, Data time: 0.0002, Batch time: 0.2086
+2022-12-21 03:38:32,187 INFO     * Test
+2022-12-21 03:38:32,187 INFO     * Loss: 0.2590	 mAP: 0.3763	Data_time: 0.0015	 Batch_time: 0.1913
+2022-12-21 03:38:32,188 INFO     OP: 0.692	 OR: 0.362	 OF1: 0.475	CP: 0.454	 CR: 0.228	 CF1: 0.304
+2022-12-21 03:38:32,188 INFO     OP_3: 0.799	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.444	 CR_3: 0.108	 CF1_3: 0.174
+2022-12-21 03:38:32,188 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 03:38:32,192 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 03:38:34,518 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 03:38:39,644 INFO      * best mAP=0.3767
+2022-12-21 03:38:41,002 INFO     2022-12-21 03:38:41, 42 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2332, Data time: 0.8062, Batch time: 1.3479
+2022-12-21 03:42:16,632 INFO     2022-12-21 03:42:16, 42 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2565, Data time: 0.0002, Batch time: 0.5503
+2022-12-21 03:45:53,245 INFO     2022-12-21 03:45:53, 42 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2386, Data time: 0.0002, Batch time: 0.5400
+2022-12-21 03:49:29,426 INFO     2022-12-21 03:49:29, 42 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2581, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 03:53:05,914 INFO     2022-12-21 03:53:05, 42 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2212, Data time: 0.0001, Batch time: 0.5386
+2022-12-21 03:56:42,282 INFO     2022-12-21 03:56:42, 42 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2772, Data time: 0.0001, Batch time: 0.5399
+2022-12-21 04:00:18,911 INFO     2022-12-21 04:00:18, 42 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2467, Data time: 0.0002, Batch time: 0.5388
+2022-12-21 04:03:55,283 INFO     2022-12-21 04:03:55, 42 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2497, Data time: 0.0001, Batch time: 0.5398
+2022-12-21 04:07:31,831 INFO     2022-12-21 04:07:31, 42 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2732, Data time: 0.0001, Batch time: 0.5384
+2022-12-21 04:11:07,879 INFO     2022-12-21 04:11:07, 42 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2401, Data time: 0.0001, Batch time: 0.5392
+2022-12-21 04:14:44,207 INFO     2022-12-21 04:14:44, 42 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.3005, Data time: 0.0001, Batch time: 0.5380
+2022-12-21 04:18:20,396 INFO     2022-12-21 04:18:20, 42 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2322, Data time: 0.0001, Batch time: 0.5389
+2022-12-21 04:21:57,069 INFO     2022-12-21 04:21:57, 42 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2650, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 04:25:22,779 INFO     ====== star eval ======
+2022-12-21 04:25:23,814 INFO     2022-12-21 04:25:23, 42 Epoch, 0 Iter, Loss: 0.2700, Data time: 0.8405, Batch time: 1.0334
+2022-12-21 04:26:40,280 INFO     2022-12-21 04:26:40, 42 Epoch, 400 Iter, Loss: 0.2659, Data time: 0.0003, Batch time: 0.1886
+2022-12-21 04:29:26,887 INFO     * Test
+2022-12-21 04:29:26,887 INFO     * Loss: 0.2586	 mAP: 0.3769	Data_time: 0.0015	 Batch_time: 0.1916
+2022-12-21 04:29:26,887 INFO     OP: 0.691	 OR: 0.364	 OF1: 0.477	CP: 0.455	 CR: 0.231	 CF1: 0.306
+2022-12-21 04:29:26,887 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.445	 CR_3: 0.109	 CF1_3: 0.176
+2022-12-21 04:29:26,887 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 04:29:26,892 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 04:29:31,538 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-21 04:29:37,321 INFO      * best mAP=0.3769
+2022-12-21 04:29:38,702 INFO     2022-12-21 04:29:38, 43 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2408, Data time: 0.8122, Batch time: 1.3712
+2022-12-21 04:33:13,969 INFO     2022-12-21 04:33:13, 43 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2742, Data time: 0.0001, Batch time: 0.5384
+2022-12-21 04:36:50,065 INFO     2022-12-21 04:36:50, 43 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2467, Data time: 0.0002, Batch time: 0.5472
+2022-12-21 04:40:26,345 INFO     2022-12-21 04:40:26, 43 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2373, Data time: 0.0001, Batch time: 0.5405
+2022-12-21 04:44:02,728 INFO     2022-12-21 04:44:02, 43 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2336, Data time: 0.0001, Batch time: 0.5387
+2022-12-21 04:47:39,437 INFO     2022-12-21 04:47:39, 43 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2487, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 04:51:15,770 INFO     2022-12-21 04:51:15, 43 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2959, Data time: 0.0001, Batch time: 0.5379
+2022-12-21 04:54:52,065 INFO     2022-12-21 04:54:52, 43 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2619, Data time: 0.0001, Batch time: 0.5392
+2022-12-21 04:58:28,670 INFO     2022-12-21 04:58:28, 43 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2439, Data time: 0.0002, Batch time: 0.5389
+2022-12-21 05:02:04,895 INFO     2022-12-21 05:02:04, 43 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2775, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 05:05:41,088 INFO     2022-12-21 05:05:41, 43 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.3031, Data time: 0.0001, Batch time: 0.5389
+2022-12-21 05:09:17,136 INFO     2022-12-21 05:09:17, 43 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2379, Data time: 0.0001, Batch time: 0.5393
+2022-12-21 05:12:53,666 INFO     2022-12-21 05:12:53, 43 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2313, Data time: 0.0002, Batch time: 0.5386
+2022-12-21 05:16:19,302 INFO     ====== star eval ======
+2022-12-21 05:16:20,209 INFO     2022-12-21 05:16:20, 43 Epoch, 0 Iter, Loss: 0.2705, Data time: 0.7125, Batch time: 0.9050
+2022-12-21 05:17:36,301 INFO     2022-12-21 05:17:36, 43 Epoch, 400 Iter, Loss: 0.2648, Data time: 0.0002, Batch time: 0.1889
+2022-12-21 05:19:38,634 INFO     * Test
+2022-12-21 05:19:38,634 INFO     * Loss: 0.2589	 mAP: 0.3763	Data_time: 0.0013	 Batch_time: 0.1907
+2022-12-21 05:19:38,634 INFO     OP: 0.695	 OR: 0.358	 OF1: 0.472	CP: 0.457	 CR: 0.226	 CF1: 0.302
+2022-12-21 05:19:38,634 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.442	 CR_3: 0.109	 CF1_3: 0.174
+2022-12-21 05:19:38,635 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 05:19:38,639 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 05:19:41,487 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 05:19:46,679 INFO      * best mAP=0.3769
+2022-12-21 05:19:48,144 INFO     2022-12-21 05:19:48, 44 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2451, Data time: 0.9150, Batch time: 1.4596
+2022-12-21 05:23:23,581 INFO     2022-12-21 05:23:23, 44 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2812, Data time: 0.0002, Batch time: 0.5385
+2022-12-21 05:26:59,807 INFO     2022-12-21 05:26:59, 44 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2582, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 05:30:35,932 INFO     2022-12-21 05:30:35, 44 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2902, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 05:34:12,281 INFO     2022-12-21 05:34:12, 44 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2335, Data time: 0.0001, Batch time: 0.5386
+2022-12-21 05:37:48,532 INFO     2022-12-21 05:37:48, 44 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2996, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 05:41:24,774 INFO     2022-12-21 05:41:24, 44 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2773, Data time: 0.0001, Batch time: 0.5463
+2022-12-21 05:45:00,758 INFO     2022-12-21 05:45:00, 44 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2672, Data time: 0.0001, Batch time: 0.5386
+2022-12-21 05:48:37,216 INFO     2022-12-21 05:48:37, 44 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2619, Data time: 0.0001, Batch time: 0.5399
+2022-12-21 05:52:13,521 INFO     2022-12-21 05:52:13, 44 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2468, Data time: 0.0002, Batch time: 0.5384
+2022-12-21 05:55:49,751 INFO     2022-12-21 05:55:49, 44 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2782, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 05:59:25,718 INFO     2022-12-21 05:59:25, 44 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2430, Data time: 0.0001, Batch time: 0.5387
+2022-12-21 06:03:02,374 INFO     2022-12-21 06:03:02, 44 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2201, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 06:06:27,988 INFO     ====== star eval ======
+2022-12-21 06:06:28,919 INFO     2022-12-21 06:06:28, 44 Epoch, 0 Iter, Loss: 0.2707, Data time: 0.7349, Batch time: 0.9292
+2022-12-21 06:07:45,267 INFO     2022-12-21 06:07:45, 44 Epoch, 400 Iter, Loss: 0.2652, Data time: 0.0002, Batch time: 0.1885
+2022-12-21 06:09:48,339 INFO     * Test
+2022-12-21 06:09:48,340 INFO     * Loss: 0.2590	 mAP: 0.3767	Data_time: 0.0014	 Batch_time: 0.1915
+2022-12-21 06:09:48,340 INFO     OP: 0.695	 OR: 0.359	 OF1: 0.473	CP: 0.460	 CR: 0.227	 CF1: 0.304
+2022-12-21 06:09:48,340 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.438	 CR_3: 0.109	 CF1_3: 0.174
+2022-12-21 06:09:48,340 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 06:09:48,344 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 06:09:51,133 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 06:09:56,205 INFO      * best mAP=0.3769
+2022-12-21 06:09:57,584 INFO     2022-12-21 06:09:57, 45 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2590, Data time: 0.8313, Batch time: 1.3727
+2022-12-21 06:13:33,085 INFO     2022-12-21 06:13:33, 45 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2694, Data time: 0.0002, Batch time: 0.5391
+2022-12-21 06:17:09,492 INFO     2022-12-21 06:17:09, 45 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2960, Data time: 0.0001, Batch time: 0.5390
+2022-12-21 06:20:45,767 INFO     2022-12-21 06:20:45, 45 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2294, Data time: 0.0002, Batch time: 0.5394
+2022-12-21 06:24:22,214 INFO     2022-12-21 06:24:22, 45 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2433, Data time: 0.0002, Batch time: 0.5384
+2022-12-21 06:27:58,623 INFO     2022-12-21 06:27:58, 45 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2671, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 06:31:34,612 INFO     2022-12-21 06:31:34, 45 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2433, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 06:35:10,735 INFO     2022-12-21 06:35:10, 45 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2069, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 06:38:47,175 INFO     2022-12-21 06:38:47, 45 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2607, Data time: 0.0001, Batch time: 0.5392
+2022-12-21 06:42:23,261 INFO     2022-12-21 06:42:23, 45 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2466, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 06:45:59,282 INFO     2022-12-21 06:45:59, 45 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2551, Data time: 0.0001, Batch time: 0.5402
+2022-12-21 06:49:35,254 INFO     2022-12-21 06:49:35, 45 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2204, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 06:53:12,146 INFO     2022-12-21 06:53:12, 45 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2929, Data time: 0.0002, Batch time: 0.5405
+2022-12-21 06:56:38,121 INFO     ====== star eval ======
+2022-12-21 06:56:39,110 INFO     2022-12-21 06:56:39, 45 Epoch, 0 Iter, Loss: 0.2704, Data time: 0.7948, Batch time: 0.9876
+2022-12-21 06:57:55,119 INFO     2022-12-21 06:57:55, 45 Epoch, 400 Iter, Loss: 0.2653, Data time: 0.0002, Batch time: 0.1880
+2022-12-21 06:59:56,537 INFO     * Test
+2022-12-21 06:59:56,537 INFO     * Loss: 0.2587	 mAP: 0.3769	Data_time: 0.0014	 Batch_time: 0.1907
+2022-12-21 06:59:56,537 INFO     OP: 0.688	 OR: 0.368	 OF1: 0.480	CP: 0.455	 CR: 0.233	 CF1: 0.308
+2022-12-21 06:59:56,537 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.445	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-21 06:59:56,538 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 06:59:56,542 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 07:00:01,619 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-21 07:00:07,257 INFO      * best mAP=0.3769
+2022-12-21 07:00:08,699 INFO     2022-12-21 07:00:08, 46 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2247, Data time: 0.8870, Batch time: 1.4370
+2022-12-21 07:03:44,171 INFO     2022-12-21 07:03:44, 46 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2545, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 07:07:20,791 INFO     2022-12-21 07:07:20, 46 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2525, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 07:10:57,337 INFO     2022-12-21 07:10:57, 46 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2213, Data time: 0.0001, Batch time: 0.5400
+2022-12-21 07:14:33,808 INFO     2022-12-21 07:14:33, 46 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2559, Data time: 0.0001, Batch time: 0.5392
+2022-12-21 07:18:10,414 INFO     2022-12-21 07:18:10, 46 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2799, Data time: 0.0002, Batch time: 0.5403
+2022-12-21 07:21:46,590 INFO     2022-12-21 07:21:46, 46 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2257, Data time: 0.0002, Batch time: 0.5398
+2022-12-21 07:25:22,842 INFO     2022-12-21 07:25:22, 46 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2821, Data time: 0.0002, Batch time: 0.5395
+2022-12-21 07:28:59,308 INFO     2022-12-21 07:28:59, 46 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2719, Data time: 0.0001, Batch time: 0.5447
+2022-12-21 07:32:35,605 INFO     2022-12-21 07:32:35, 46 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2518, Data time: 0.0001, Batch time: 0.5392
+2022-12-21 07:36:11,919 INFO     2022-12-21 07:36:11, 46 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2513, Data time: 0.0001, Batch time: 0.5398
+2022-12-21 07:39:48,122 INFO     2022-12-21 07:39:48, 46 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.1760, Data time: 0.0001, Batch time: 0.5403
+2022-12-21 07:43:24,980 INFO     2022-12-21 07:43:24, 46 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2844, Data time: 0.0001, Batch time: 0.5388
+2022-12-21 07:46:50,675 INFO     ====== star eval ======
+2022-12-21 07:46:51,697 INFO     2022-12-21 07:46:51, 46 Epoch, 0 Iter, Loss: 0.2703, Data time: 0.8253, Batch time: 1.0192
+2022-12-21 07:48:07,885 INFO     2022-12-21 07:48:07, 46 Epoch, 400 Iter, Loss: 0.2657, Data time: 0.0002, Batch time: 0.1927
+2022-12-21 07:50:09,914 INFO     * Test
+2022-12-21 07:50:09,915 INFO     * Loss: 0.2587	 mAP: 0.3770	Data_time: 0.0015	 Batch_time: 0.1911
+2022-12-21 07:50:09,915 INFO     OP: 0.687	 OR: 0.369	 OF1: 0.480	CP: 0.456	 CR: 0.234	 CF1: 0.309
+2022-12-21 07:50:09,915 INFO     OP_3: 0.799	 OR_3: 0.174	 OF1_3: 0.285	CP_3: 0.436	 CR_3: 0.110	 CF1_3: 0.175
+2022-12-21 07:50:09,915 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 07:50:09,919 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 07:50:14,964 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/best_results.csv
+2022-12-21 07:50:20,636 INFO      * best mAP=0.3770
+2022-12-21 07:50:22,056 INFO     2022-12-21 07:50:22, 47 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2388, Data time: 0.8691, Batch time: 1.4139
+2022-12-21 07:53:57,693 INFO     2022-12-21 07:53:57, 47 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2555, Data time: 0.0001, Batch time: 0.5393
+2022-12-21 07:57:34,251 INFO     2022-12-21 07:57:34, 47 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2623, Data time: 0.0002, Batch time: 0.5423
+2022-12-21 08:01:10,983 INFO     2022-12-21 08:01:10, 47 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.3201, Data time: 0.0001, Batch time: 0.5403
+2022-12-21 08:04:47,655 INFO     2022-12-21 08:04:47, 47 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2068, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 08:08:24,149 INFO     2022-12-21 08:08:24, 47 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2089, Data time: 0.0002, Batch time: 0.5397
+2022-12-21 08:12:00,570 INFO     2022-12-21 08:12:00, 47 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2672, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 08:15:36,929 INFO     2022-12-21 08:15:36, 47 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2670, Data time: 0.0001, Batch time: 0.5401
+2022-12-21 08:19:13,479 INFO     2022-12-21 08:19:13, 47 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2102, Data time: 0.0001, Batch time: 0.5408
+2022-12-21 08:22:49,840 INFO     2022-12-21 08:22:49, 47 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2745, Data time: 0.0001, Batch time: 0.5406
+2022-12-21 08:26:26,523 INFO     2022-12-21 08:26:26, 47 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2789, Data time: 0.0001, Batch time: 0.5399
+2022-12-21 08:30:02,786 INFO     2022-12-21 08:30:02, 47 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2440, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 08:33:39,651 INFO     2022-12-21 08:33:39, 47 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2581, Data time: 0.0001, Batch time: 0.5418
+2022-12-21 08:37:05,457 INFO     ====== star eval ======
+2022-12-21 08:37:06,492 INFO     2022-12-21 08:37:06, 47 Epoch, 0 Iter, Loss: 0.2705, Data time: 0.8383, Batch time: 1.0328
+2022-12-21 08:38:22,501 INFO     2022-12-21 08:38:22, 47 Epoch, 400 Iter, Loss: 0.2648, Data time: 0.0002, Batch time: 0.1886
+2022-12-21 08:41:08,637 INFO     * Test
+2022-12-21 08:41:08,638 INFO     * Loss: 0.2588	 mAP: 0.3765	Data_time: 0.0015	 Batch_time: 0.1908
+2022-12-21 08:41:08,638 INFO     OP: 0.693	 OR: 0.360	 OF1: 0.473	CP: 0.457	 CR: 0.228	 CF1: 0.305
+2022-12-21 08:41:08,638 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.440	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-21 08:41:08,638 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 08:41:08,643 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 08:41:11,862 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 08:41:17,077 INFO      * best mAP=0.3770
+2022-12-21 08:41:18,556 INFO     2022-12-21 08:41:18, 48 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2663, Data time: 0.9247, Batch time: 1.4681
+2022-12-21 08:44:53,828 INFO     2022-12-21 08:44:53, 48 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2500, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 08:48:30,136 INFO     2022-12-21 08:48:30, 48 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2770, Data time: 0.0001, Batch time: 0.5398
+2022-12-21 08:52:06,553 INFO     2022-12-21 08:52:06, 48 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2858, Data time: 0.0001, Batch time: 0.5405
+2022-12-21 08:55:43,074 INFO     2022-12-21 08:55:43, 48 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2577, Data time: 0.0001, Batch time: 0.5393
+2022-12-21 08:59:19,424 INFO     2022-12-21 08:59:19, 48 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2101, Data time: 0.0001, Batch time: 0.5396
+2022-12-21 09:02:55,839 INFO     2022-12-21 09:02:55, 48 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2143, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 09:06:32,125 INFO     2022-12-21 09:06:32, 48 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2617, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 09:10:08,863 INFO     2022-12-21 09:10:08, 48 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2371, Data time: 0.0002, Batch time: 0.5481
+2022-12-21 09:13:45,600 INFO     2022-12-21 09:13:45, 48 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2307, Data time: 0.0001, Batch time: 0.5409
+2022-12-21 09:17:21,993 INFO     2022-12-21 09:17:21, 48 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2345, Data time: 0.0001, Batch time: 0.5387
+2022-12-21 09:20:58,633 INFO     2022-12-21 09:20:58, 48 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2457, Data time: 0.0001, Batch time: 0.5422
+2022-12-21 09:24:35,724 INFO     2022-12-21 09:24:35, 48 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2452, Data time: 0.0001, Batch time: 0.5388
+2022-12-21 09:28:01,465 INFO     ====== star eval ======
+2022-12-21 09:28:02,446 INFO     2022-12-21 09:28:02, 48 Epoch, 0 Iter, Loss: 0.2711, Data time: 0.7821, Batch time: 0.9783
+2022-12-21 09:29:18,715 INFO     2022-12-21 09:29:18, 48 Epoch, 400 Iter, Loss: 0.2661, Data time: 0.0001, Batch time: 0.1884
+2022-12-21 09:31:20,498 INFO     * Test
+2022-12-21 09:31:20,498 INFO     * Loss: 0.2589	 mAP: 0.3765	Data_time: 0.0014	 Batch_time: 0.1913
+2022-12-21 09:31:20,498 INFO     OP: 0.694	 OR: 0.358	 OF1: 0.472	CP: 0.459	 CR: 0.225	 CF1: 0.302
+2022-12-21 09:31:20,498 INFO     OP_3: 0.800	 OR_3: 0.173	 OF1_3: 0.284	CP_3: 0.444	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-21 09:31:20,499 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 09:31:20,502 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 09:31:23,041 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 09:31:28,104 INFO      * best mAP=0.3770
+2022-12-21 09:31:29,466 INFO     2022-12-21 09:31:29, 49 Epoch, lrp:0.00005000, lr:0.00050000, 0 Iter, Loss: 0.2874, Data time: 0.8142, Batch time: 1.3571
+2022-12-21 09:35:05,041 INFO     2022-12-21 09:35:05, 49 Epoch, lrp:0.00005000, lr:0.00050000, 400 Iter, Loss: 0.2519, Data time: 0.0002, Batch time: 0.5495
+2022-12-21 09:38:41,491 INFO     2022-12-21 09:38:41, 49 Epoch, lrp:0.00005000, lr:0.00050000, 800 Iter, Loss: 0.2450, Data time: 0.0001, Batch time: 0.5399
+2022-12-21 09:42:17,800 INFO     2022-12-21 09:42:17, 49 Epoch, lrp:0.00005000, lr:0.00050000, 1200 Iter, Loss: 0.2238, Data time: 0.0001, Batch time: 0.5385
+2022-12-21 09:45:54,204 INFO     2022-12-21 09:45:54, 49 Epoch, lrp:0.00005000, lr:0.00050000, 1600 Iter, Loss: 0.2530, Data time: 0.0001, Batch time: 0.5398
+2022-12-21 09:49:30,603 INFO     2022-12-21 09:49:30, 49 Epoch, lrp:0.00005000, lr:0.00050000, 2000 Iter, Loss: 0.2693, Data time: 0.0001, Batch time: 0.5391
+2022-12-21 09:53:06,839 INFO     2022-12-21 09:53:06, 49 Epoch, lrp:0.00005000, lr:0.00050000, 2400 Iter, Loss: 0.2611, Data time: 0.0001, Batch time: 0.5394
+2022-12-21 09:56:43,172 INFO     2022-12-21 09:56:43, 49 Epoch, lrp:0.00005000, lr:0.00050000, 2800 Iter, Loss: 0.2691, Data time: 0.0001, Batch time: 0.5403
+2022-12-21 10:00:19,720 INFO     2022-12-21 10:00:19, 49 Epoch, lrp:0.00005000, lr:0.00050000, 3200 Iter, Loss: 0.2608, Data time: 0.0001, Batch time: 0.5395
+2022-12-21 10:03:56,074 INFO     2022-12-21 10:03:56, 49 Epoch, lrp:0.00005000, lr:0.00050000, 3600 Iter, Loss: 0.2775, Data time: 0.0002, Batch time: 0.5394
+2022-12-21 10:07:32,415 INFO     2022-12-21 10:07:32, 49 Epoch, lrp:0.00005000, lr:0.00050000, 4000 Iter, Loss: 0.2283, Data time: 0.0001, Batch time: 0.5386
+2022-12-21 10:11:08,592 INFO     2022-12-21 10:11:08, 49 Epoch, lrp:0.00005000, lr:0.00050000, 4400 Iter, Loss: 0.2337, Data time: 0.0001, Batch time: 0.5399
+2022-12-21 10:14:45,251 INFO     2022-12-21 10:14:45, 49 Epoch, lrp:0.00005000, lr:0.00050000, 4800 Iter, Loss: 0.2526, Data time: 0.0002, Batch time: 0.5383
+2022-12-21 10:18:10,781 INFO     ====== star eval ======
+2022-12-21 10:18:11,731 INFO     2022-12-21 10:18:11, 49 Epoch, 0 Iter, Loss: 0.2717, Data time: 0.7556, Batch time: 0.9469
+2022-12-21 10:19:28,040 INFO     2022-12-21 10:19:28, 49 Epoch, 400 Iter, Loss: 0.2652, Data time: 0.0002, Batch time: 0.1912
+2022-12-21 10:21:27,721 INFO     * Test
+2022-12-21 10:21:27,722 INFO     * Loss: 0.2591	 mAP: 0.3765	Data_time: 0.0014	 Batch_time: 0.1910
+2022-12-21 10:21:27,722 INFO     OP: 0.694	 OR: 0.359	 OF1: 0.473	CP: 0.457	 CR: 0.226	 CF1: 0.303
+2022-12-21 10:21:27,722 INFO     OP_3: 0.801	 OR_3: 0.173	 OF1_3: 0.285	CP_3: 0.436	 CR_3: 0.109	 CF1_3: 0.175
+2022-12-21 10:21:27,722 INFO     Now lrp:0.00005000, lr:0.00050000
+2022-12-21 10:21:27,726 INFO     Save checkpoint to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/checkpoint.pth
+2022-12-21 10:21:30,426 INFO     Save results to ./checkpoint/VG_100K/TDRG/SGD_VG500_lr_005_setp25_35_lrp_01_bs16_fixed_tranformer/results.csv
+2022-12-21 10:21:35,467 INFO      * best mAP=0.3770
